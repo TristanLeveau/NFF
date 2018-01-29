@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>North-Fresh Farmers</title>
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+	<header th:replace="~{common::header}"></header>
+
+	<div id="mainContent" class="container-fluid">
+		<section class="ajoutsoiree">
+			<article class="soireeCadre">
+				<h3>Les livraisons</h3>
+				<p class="sousTitre">Voici la liste des livraisons disponibles cette année!</p>
+			</article>
+		</section>
+		<section class="ajoutsoiree">
+			<article class="soireeCadre">
+			<h3>Filtres</h3>
+			<form class="forumulaireLigne" method="post">
+				<div class="groupeFormulaire">
+					<label for="villeInput">Semestre</label>
+					<select class="formulaireControle" id="villeInput" name="semestre">
+						<option value="">Tous les semestres</option>
+						<option th:each="semestre : ${semestres}" th:value="${semestre.name()}" th:text="${semestre.label}" th:selected="${semestreFilter != null && semestre.name() == semestreFilter.name()}"></option>
+					</select>
+				</div>
+				<input type="submit" class="bouton1" value="Filtrer">
+			</form>
+			</article>
+		</section>
+
+		<section class="listeSoiree">
+			<article class="soireeCadre" th:each="livraison : ${livraisons}">
+				<h3 th:text="${livraison.name}"></h3>
+				<p th:text="${livraison.resume}" class="resume"></p>
+				<p th:text="${livraison.semestre.getLabel()}" class="semestre"></p>
+				<p th:text="${livraison.dateSoiree}" class="dateSoiree"></p>
+				<div class="boutonOutil" role="toolbar">
+					<div class="groupeBouton" role="group">
+						<a th:href="'detail?id='+${livraison.id}" class="bouton1"><i class="fa fa-arrow-circle-o-right"
+							aria-hidden="true"></i>  En savoir plus</a>
+					</div>
+				</div>
+				<aside class="soireePhoto">
+					<img th:src="'image?id='+${livraison.id}" th:alt="'Image ' +${livraison.name}">
+				</aside>
+			</article>
+		</section>
+	</div>
+</body>
+</html>
