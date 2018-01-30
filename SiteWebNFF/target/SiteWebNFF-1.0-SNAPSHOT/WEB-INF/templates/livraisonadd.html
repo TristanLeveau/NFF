@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Ajouter une livraison</title>
-<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/custom.css">
 
 </head>
 <body>
@@ -12,7 +12,7 @@
 
 	<div id="mainContent" class="container-fluid">
 		<section class="ajoutsoiree">
-			<article class="soireeCadre">
+			<article class="livraisonCadre">
 				<h3>Ajouter une livraison</h3>
 				<p class="alert alert-danger" role="alert" th:if="${errorMessage != null}" th:text="${errorMessage}"></p>
 				<form method="post" class="formulaireHorizontal" enctype="multipart/form-data">
@@ -23,16 +23,22 @@
 						</div>
 					</div>
 					<div class="groupeFormulaire">
+						<label for="inputContenu2" class="colonne1 control-label">Contenu</label>
+						<div class="colonne3">
+							<textarea class="formulaireControle" name="contenu" id="inputContenu2" placeholder="Contenu" maxlength="150" th:value="${livraison.contenu}">[[${livraison.resume}]]</textarea>
+						</div>
+					</div>
+					<div class="groupeFormulaire">
 						<label for="inputContenu" class="colonne1 control-label">Contenu</label>
 						<div class="colonne3">
 							<textarea class="formulaireControle" name="contenu" id="inputContenu" placeholder="Contenu" maxlength="150" th:value="${livraison.contenu}">[[${livraison.resume}]]</textarea>
 						</div>
 					</div>
 					<div class="groupeFormulaire">
-				    	<div class="colonne3">
-				      		<input type="submit" value="Ajouter"></input>
-				    	</div>
-				  	</div>
+						<div class="colonne3">
+							<button type="submit" class="bouton1">Ajouter la soirée</button>
+						</div>
+					</div>
 				</form>
 			</article>
 		</section>

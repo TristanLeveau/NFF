@@ -1,9 +1,6 @@
-html {
-	background-image: linear-gradient(to right,green 0%, white 70%);
 
-}
 body{
-	background-image: linear-gradient(to right,green 0%, white 70%);
+	background-image: linear-gradient(to right, white 0%, lightgreen 70%);
 }
 
 .sousTitre {
@@ -11,8 +8,7 @@ body{
 }
 
 #menu {
-	font-family:fantasy;
-	position:fixed;
+	font-family:Fantasy;
 	top:0;
 	bottom:0;
 	left:15px;
@@ -33,17 +29,16 @@ body{
 
 #mainContent {
 	margin-left:180px;
-	font-family:fantasy;
+	font-family:Fantasy;
 }
 
 #mainContent2 {
 	margin-left:180px;
-	font-family:fantasy;
+	font-family:Fantasy;
 }
 
-.soireeCadre {
+.livraisonCadre {
 	height:200px;
-	background-color:white;
 	margin:20px;
 	box-shadow: 0 0 25px grey;
 	position:relative;
@@ -52,20 +47,20 @@ body{
 	border-color: black;
 }
 
-.soireeCadre .soireePhoto {
+.livraisonCadre .soireePhoto {
 	position:absolute;
 	top:0;
 	right:0;
 	border-radius: 10px;
 }
 
-.soireeCadre .soireePhoto img {
+.livraisonCadre .soireePhoto img {
 	width:130px;
 	height:200px;
 	border-radius: 10px;
 }
 
-.soireeCadre h3 {
+.livraisonCadre h3 {
 	margin:0;
 	padding:5px;
 }
@@ -75,21 +70,21 @@ body{
 	flex-wrap: wrap;
 }
 
-.listeSoiree .soireeCadre {
+.listeSoiree .livraisonCadre {
 	width:500px;
 	min-width:400px;
 }
 
-.listeSoiree .soireeCadre:hover {
+.listeSoiree .livraisonCadre:hover {
 	transform: scale(0.9);
 	transition: all .2s ease-in-out;
 }
 
-.listeSoiree .soireeCadre p {
+.listeSoiree .livraisonCadre p {
 	margin:10px 0;
 }
 
-.listeSoiree .soireeCadre .actionbar {
+.listeSoiree .livraisonCadre .actionbar {
 	position: absolute;
     bottom: 15px;
     left: 20px;
@@ -98,7 +93,7 @@ body{
 
 
 
-.soireedetail .soireeCadre {
+.soireedetail .livraisonCadre {
 	height: auto;
 	min-width:820px;
 	min-height: 400px;
@@ -117,17 +112,25 @@ body{
 	margin: 5px;
 }
 
-.ajoutsoiree .soireeCadre {
+.ajoutsoiree .livraisonCadre {
 	padding:5px;
 	height: inherit;
 }
 
-.ajoutsoiree .soireeCadre form {
+.ajoutsoiree .livraisonCadre form {
 	padding:10px;
 }
 
-.ajoutsoiree .soireeCadre p.alert {
+.ajoutsoiree .livraisonCadre p.alert {
 	margin:10px 100px;
+}
+.livraisonCadre2 {
+	padding:5px;
+	margin:10px 100px;
+	height: auto;
+	min-width:820px;
+	min-height: 400px;
+
 }
 
 .container-fluid {
@@ -164,10 +167,13 @@ body{
 	margin-left:5px
 }
 .navigation1>li {
-	position:relative;display:block
+	position:relative;
+	display:block;
 }
 .navigation1>li>a {
-	position:relative;display:block;padding:10px 15px
+	position:relative;
+	display:block;
+	padding:10px 15px;
 }
 
 .bouton1 {
@@ -206,3 +212,7 @@ body{
 	vertical-align:middle;
 }
 
+.image1 {
+	alignment: center;
+	margin-left: 50px;
+}

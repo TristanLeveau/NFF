@@ -13,7 +13,7 @@
 
 <div id="mainContent" class="container-fluid">
     <section class="ajoutsoiree">
-        <article class="soireeCadre">
+        <article class="livraisonCadre">
             <h3>Modifier la livraison</h3>
             <p class="alert alert-danger" role="alert" th:if="${errorMessage != null}" th:text="${errorMessage}"></p>
             <form method="post" class="formulaireHorizontal" enctype="multipart/form-data">
@@ -28,19 +28,13 @@
                 <div class="groupeFormulaire">
                     <label for="inputResume" class="colonne1 control-label">Contenu</label>
                     <div class="colonne3">
-                        <textarea class="formulaireControle" name="resume" id="inputResume" placeholder="Résumé" maxlength="150" th:value="${livraison.contenu}">[[${livraison.resume}]]</textarea>
+                        <textarea class="formulaireControle" name="resume" id="inputResume" placeholder="Résumé" maxlength="150" th:value="${livraison.contenu}">[[${livraison.contenu}]]</textarea>
                     </div>
                 </div>
                 <div class="groupeFormulaire">
                     <label for="inputDateSoiree" class="colonne1 control-label">Date</label>
                     <div class="colonne2">
-                        <input type="text" class="formulaireControle" name="dateSoiree" id="inputDateSoiree" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.dateSoiree}">
-                    </div>
-                </div>
-                <div class="groupeFormulaire">
-                    <label for="inputImage" class="colonne1 control-label">Image</label>
-                    <div class="colonne2">
-                        <input type="file"class="formulaireControle" name="imageSoiree" id="inputImage" maxlength="10">
+                        <input type="text" class="formulaireControle" name="dateSoiree" id="inputDateSoiree" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
                     </div>
                 </div>
                 <div class="groupeFormulaire">

@@ -13,13 +13,13 @@
 
 	<div id="mainContent" class="container-fluid">
 		<section class="ajoutsoiree">
-			<article class="soireeCadre">
+			<article class="livraisonCadre">
 				<h3>Les livraisons</h3>
 				<p class="sousTitre">Voici la liste des livraisons disponibles cette année!</p>
 			</article>
 		</section>
 		<section class="ajoutsoiree">
-			<article class="soireeCadre">
+			<article class="livraisonCadre">
 			<h3>Filtres</h3>
 			<form class="forumulaireLigne" method="post">
 				<div class="groupeFormulaire">
@@ -35,22 +35,23 @@
 		</section>
 
 		<section class="listeSoiree">
-			<article class="soireeCadre" th:each="livraison : ${livraisons}">
-				<h3 th:text="${livraison.name}"></h3>
-				<p th:text="${livraison.resume}" class="resume"></p>
+			<article class="livraisonCadre" th:each="livraison : ${livraisons}">
+				<h3 th:text="${livraison.date}"></h3>
+				<p th:text="${livraison.contenu}" class="resume"></p>
 				<p th:text="${livraison.semestre.getLabel()}" class="semestre"></p>
-				<p th:text="${livraison.dateSoiree}" class="dateSoiree"></p>
 				<div class="boutonOutil" role="toolbar">
 					<div class="groupeBouton" role="group">
 						<a th:href="'detail?id='+${livraison.id}" class="bouton1"><i class="fa fa-arrow-circle-o-right"
 							aria-hidden="true"></i>  En savoir plus</a>
 					</div>
 				</div>
-				<aside class="soireePhoto">
-					<img th:src="'image?id='+${livraison.id}" th:alt="'Image ' +${livraison.name}">
-				</aside>
 			</article>
 		</section>
 	</div>
+
+	<hr align="center" size="4" color="black" width="80%">
+	<a href="home"><img src="img/fruits-et-légumes1.jpg" class="image1"></a>
+
+
 </body>
 </html>

@@ -1,11 +1,9 @@
 CREATE TABLE `livraison` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) DEFAULT NULL,
-  `summary` mediumtext DEFAULT NULL,
+  `contenu` mediumtext DEFAULT NULL,
   `semestre` varchar(40) DEFAULT NULL,
   `date` char(10) DEFAULT NULL,
-  `image` varchar(150) DEFAULT NULL,
-    `supprime` bit(1) NULL DEFAULT 0,
+  `supprime` bit(1) NULL DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

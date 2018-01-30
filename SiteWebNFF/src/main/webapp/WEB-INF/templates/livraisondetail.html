@@ -13,40 +13,38 @@
 
 	<div id="mainContent" class="container-fluid">
 		<section class="soireedetail">
-			<section class="soireeCadre">
-				<h3 th:text="${livraison.name}"></h3>
+			<section class="livraisonCadre">
+				<h3 th:text="${livraison.date}"></h3>
 				<div class="soireeinfos">
-					<h4>Résumé :</h4>
-					<p th:text="${livraison.resume}" class="resume"></p>
-					<h4>Ville :</h4>
+					<h4>Contenu :</h4>
+					<p th:text="${livraison.contenu}" class="resume"></p>
+					<h4>Semestre :</h4>
 					<p th:text="${livraison.semestre.getLabel()}" class="semestre"></p>
-					<h4>Date :</h4>
-					<p th:text="${livraison.dateSoiree}" class="date"></p>
 				</div>
 				<div class="boutonOutil" role="toolbar">
 					<div class="groupeBouton" role="group">
-						<a th:href="'soireemodif?id='+${livraison.id}" class="bouton1"><i class="fa fa-reply" aria-hidden="true"></i>Modifier la soirée</a>
+						<a th:href="'soireemodif?id='+${livraison.id}" class="bouton1"><i class="fa fa-reply" aria-hidden="true"></i>Modifier la livraison</a>
 					</div>
 					<div class="groupeBouton" role="group">
-						<a th:href="'suppression?id='+${livraison.id}" class="bouton1"><i class="fa fa-remove" aria-hidden="true"></i>Supprimer la soirée</a>
+						<a th:href="'suppression?id='+${livraison.id}" class="bouton1"><i class="fa fa-remove" aria-hidden="true"></i>Supprimer la livraison</a>
 					</div>
 					<div class="groupeBouton" role="group">
 						<a th:href="'inscription?id='+${livraison.id}" class="bouton2"><i class="fa fa-check" aria-hidden="true"></i>Je participe!</a>
 					</div>
 				</div>
 				<aside class="soireePhoto">
-					<img src="img/Four-hands-holing-pints-of-beer.jpg" alt="Image Soirée">
+					<img src="img/fruits-et-légumes1.jpg" alt="Image Soirée">
 				</aside>
 			</section>
 		</section>
 		<section class="ajoutsoiree">
-			<article class="soireeCadre">
-				<h3>Participants</h3>
-				<p class="sousTitre">Voici les participants!</p>
+			<article class="livraisonCadre">
+				<h3>Clients</h3>
+				<p class="sousTitre">Voici les clients souhaitant être livrés!</p>
 			</article>
 		</section>
 		<section class="listeSoiree">
-			<article class="soireeCadre" th:each="participant : ${participants}">
+			<article class="livraisonCadre" th:each="participant : ${participants}">
 				<h3 th:text="${participant.id}"></h3>
 				<p th:text="${participant.prenom}"></p>
 				<p th:text="${participant.nom}"></p>
