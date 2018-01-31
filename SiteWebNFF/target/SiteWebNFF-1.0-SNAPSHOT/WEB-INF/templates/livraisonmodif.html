@@ -11,7 +11,7 @@
 <header th:replace="~{common::header}"></header>
 
 <div id="mainContent" class="container-fluid">
-    <section class="ajoutsoiree">
+    <section class="ajoutlivraison">
         <article class="livraisonCadre">
             <h3>Modifier la livraison</h3>
             <p class="alert alert-danger" role="alert" th:if="${errorMessage != null}" th:text="${errorMessage}"></p>
@@ -31,9 +31,9 @@
                     </div>
                 </div>
                 <div class="groupeFormulaire">
-                    <label for="inputDateSoiree" class="colonne1 control-label">Date</label>
+                    <label for="inputDate" class="colonne1 control-label">Date</label>
                     <div class="colonne2">
-                        <input type="text" class="formulaireControle" name="dateSoiree" id="inputDateSoiree" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
+                        <input type="text" class="formulaireControle" name="date" id="inputDate" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
                     </div>
                 </div>
                 <div class="groupeFormulaire">
@@ -45,5 +45,9 @@
         </article>
     </section>
 </div>
+
+<hr align="center" size="4" color="black" width="80%">
+<a href="home"><img src="img/fruits-et-légumes1.jpg" class="image1"></a>
+
 </body>
 </html>

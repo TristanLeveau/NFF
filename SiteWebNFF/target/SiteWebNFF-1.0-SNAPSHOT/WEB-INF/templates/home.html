@@ -11,13 +11,13 @@
 	<header th:replace="~{common::header}"></header>
 
 	<div id="mainContent" class="container-fluid">
-		<section class="ajoutsoiree">
+		<section class="ajoutlivraison">
 			<article class="livraisonCadre">
 				<h3>Les livraisons</h3>
 				<p class="sousTitre">Voici la liste des livraisons disponibles cette année!</p>
 			</article>
 		</section>
-		<section class="ajoutsoiree">
+		<section class="ajoutlivraison">
 			<article class="livraisonCadre">
 			<h3>Filtres</h3>
 			<form class="forumulaireLigne" method="post">
@@ -33,7 +33,7 @@
 			</article>
 		</section>
 
-		<section class="listeSoiree">
+		<section class="listeLivraison">
 			<article class="livraisonCadre" th:each="livraison : ${livraisons}">
 				<h3 th:text="${livraison.date}"></h3>
 				<p th:text="${livraison.contenu}" class="resume"></p>
@@ -49,7 +49,7 @@
 	</div>
 
 	<hr align="center" size="4" color="black" width="80%">
-	<a href="home"><img src="img/fruits-et-légumes1.jpg" class="image1"></a>
+	<a href="home"><img src="img/fruits-et-légumes1.jpg" class="image1" width="100%"></a>
 
 
 </body>

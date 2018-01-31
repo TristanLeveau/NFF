@@ -11,10 +11,10 @@
 	<header th:replace="~{common::header}"></header>
 
 	<div id="mainContent" class="container-fluid">
-		<section class="soireedetail">
+		<section class="livraisondetail">
 			<section class="livraisonCadre">
 				<h3 th:text="${livraison.date}"></h3>
-				<div class="soireeinfos">
+				<div class="livraisoninfos">
 					<h4>Contenu :</h4>
 					<p th:text="${livraison.contenu}" class="resume"></p>
 					<h4>Semestre :</h4>
@@ -31,18 +31,18 @@
 						<a th:href="'inscription?id='+${livraison.id}" class="bouton2"><i class="fa fa-check" aria-hidden="true"></i>Je participe!</a>
 					</div>
 				</div>
-				<aside class="soireePhoto">
+				<aside class="livraisonPhoto">
 					<img src="img/fruits-et-légumes1.jpg" alt="Image Soirée">
 				</aside>
 			</section>
 		</section>
-		<section class="ajoutsoiree">
+		<section class="ajoutlivraison">
 			<article class="livraisonCadre">
 				<h3>Clients</h3>
 				<p class="sousTitre">Voici les clients souhaitant être livrés!</p>
 			</article>
 		</section>
-		<section class="listeSoiree">
+		<section class="listeLivraison">
 			<article class="livraisonCadre" th:each="participant : ${participants}">
 				<h3 th:text="${participant.id}"></h3>
 				<p th:text="${participant.prenom}"></p>
@@ -51,5 +51,9 @@
 			</article>
 		</section>
 	</div>
+
+	<hr align="center" size="4" color="black" width="80%">
+	<a href="home"><img src="img/fruits-et-légumes1.jpg" class="image1"></a>
+
 </body>
 </html>

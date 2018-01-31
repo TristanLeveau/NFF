@@ -52,7 +52,7 @@ body{
 	border-color: black;
 }
 
-.livraisonCadre .soireePhoto {
+.livraisonCadre .livraisonPhoto {
 	position:absolute;
 	top:0;
 	right:0;
@@ -65,60 +65,60 @@ body{
 	padding:5px;
 }
 
-.listeSoiree {
+.listeLivraison {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.listeSoiree .livraisonCadre {
+.listeLivraison .livraisonCadre {
 	width:500px;
 	min-width:400px;
 }
 
-.listeSoiree .livraisonCadre:hover {
+.listeLivraison .livraisonCadre:hover {
 	transform: scale(0.9);
 	transition: all .2s ease-in-out;
 }
 
-.listeSoiree .livraisonCadre p {
+.listeLivraison .livraisonCadre p {
 	margin:10px 0;
 }
 
-.listeSoiree .livraisonCadre .actionbar {
+.listeLivraison .livraisonCadre .actionbar {
 	position: absolute;
     bottom: 15px;
     left: 20px;
 }
 
-.soireedetail .livraisonCadre {
+.livraisondetail .livraisonCadre {
 	height: auto;
 	min-width:820px;
 	min-height: 400px;
 }
 
-.soireedetail .soireeinfos {
+.livraisondetail .livraisoninfos {
 	width:300px;
 }
 
 
-.soireedetail .soireeinfos p {
+.livraisondetail .livraisoninfos p {
 	margin: 5px;
 }
 
-.soireedetail .soireeinfos p {
+.livraisondetail .livraisoninfos p {
 	margin: 5px;
 }
 
-.ajoutsoiree .livraisonCadre {
+.ajoutlivraison .livraisonCadre {
 	padding:5px;
 	height: inherit;
 }
 
-.ajoutsoiree .livraisonCadre form {
+.ajoutlivraison .livraisonCadre form {
 	padding:10px;
 }
 
-.ajoutsoiree .livraisonCadre p.alert {
+.ajoutlivraison .livraisonCadre p.alert {
 	margin:10px 100px;
 }
 .livraisonCadre2 {
@@ -207,3 +207,9 @@ body{
 	vertical-align:middle;
 }
 
+.livraisonCadre .livraisonPhoto {
+	position:absolute;
+	top:0;
+	right:0;
+	border-radius: 10px;
+}
