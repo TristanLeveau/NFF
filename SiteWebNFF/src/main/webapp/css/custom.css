@@ -3,13 +3,28 @@ body{
 	background-image: linear-gradient(to right, white 0%, lightgreen 70%);
 }
 
+/* Texte explicatif des parties */
+
 .sousTitre {
 	margin-top : 10px;
 }
+
+/* Gestion des images */
+
 .image1 img {
 	width: 100%;
 	alignment: center;
 }
+
+.livraisonCadre .livraisonPhoto {
+	position:absolute;
+	top:0;
+	right:0;
+	border-radius: 10px;
+}
+
+/* Gestion du menu  !!! LE MENU EST DANS LE FICHIER common.html*/
+
 
 #menu {
 	font-family:Fantasy;
@@ -29,7 +44,23 @@ body{
 	color : black;
 }
 
+.navigation1>li {
+	position:relative;
+	display:inline;
+}
+.navigation1>li>a {
+	position:relative;
+	display:inline;
+	padding:10px 15px;
+}
+.navigation2>li {
+	float:none
+}
+.navigation2>li+li {
+	margin-top:2px;margin-left:0
+}
 
+/* Gestion du contenu principal */
 
 #mainContent {
 	margin-left:180px;
@@ -40,6 +71,8 @@ body{
 	margin-left:180px;
 	font-family:Fantasy;
 }
+
+/* Gestion des cadres de livraisons et de participants */
 
 .livraisonCadre {
 	background-color: white;
@@ -64,6 +97,8 @@ body{
 	margin:0;
 	padding:5px;
 }
+
+/* Gestion de la liste des livraisons */
 
 .listeLivraison {
 	display: flex;
@@ -90,6 +125,8 @@ body{
     left: 20px;
 }
 
+/* Gestion des détails de livraison */
+
 .livraisondetail .livraisonCadre {
 	height: auto;
 	min-width:820px;
@@ -109,6 +146,9 @@ body{
 	margin: 5px;
 }
 
+
+/* Gestion de la zone d'ajout de livraison */
+
 .ajoutlivraison .livraisonCadre {
 	padding:5px;
 	height: inherit;
@@ -121,12 +161,17 @@ body{
 .ajoutlivraison .livraisonCadre p.alert {
 	margin:10px 100px;
 }
+
+/* Gestion du 2ème type de cadre */
+
 .livraisonCadre2 {
 	padding:5px;
 	margin:10px 100px;
 	height: auto;
 	min-width:820px;
 }
+
+/* Gestion des formulaires */
 
 .container-fluid {
 	padding-right:15px;
@@ -149,27 +194,20 @@ body{
 	margin-bottom:0;
 	text-align:right
 }
-.navigation2>li {
-	float:none
+
+.groupeFormulaire {
+	margin-bottom:15px
 }
-.navigation2>li+li {
-	margin-top:2px;margin-left:0
-}
+
+/* Gestion des boutons */
+
 .boutonOutil .btn,.boutonOutil .groupeBouton{
 	float:left
 }
 .boutonOutil>.btn,.boutonOutil>.groupeBouton{
 	margin-left:5px
 }
-.navigation1>li {
-	position:relative;
-	display:inline;
-}
-.navigation1>li>a {
-	position:relative;
-	display:inline;
-	padding:10px 15px;
-}
+
 
 .bouton1 {
 	color:black;
@@ -181,9 +219,15 @@ body{
 	background-image: linear-gradient(to right, white 0%, lightgreen 70%);
 	font-family: fantasy;
 }
-.groupeFormulaire {
-	margin-bottom:15px
+
+.groupeBouton {
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
 }
+
+/* Gestion des colonnes */
+
 .colonne1 .colonne2 .colonne3 {
 	position:relative;
 	min-height:1px;
@@ -201,15 +245,6 @@ body{
 	width:33.33333333%
 }
 
-.groupeBouton {
-	position:relative;
-	display:inline-block;
-	vertical-align:middle;
-}
 
-.livraisonCadre .livraisonPhoto {
-	position:absolute;
-	top:0;
-	right:0;
-	border-radius: 10px;
-}
+
+

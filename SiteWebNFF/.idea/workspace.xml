@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accueil.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="accueil.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="63">
+              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -74,8 +74,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3142">
-              <caret line="210" column="16" lean-forward="false" selection-start-line="210" selection-start-column="15" selection-end-line="210" selection-end-column="16" />
+            <state relative-caret-position="55">
+              <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -104,18 +104,18 @@
       <file leaf-file-name="common.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+            <state relative-caret-position="123">
+              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+            <state relative-caret-position="443">
+              <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -137,6 +137,7 @@
       <find>soireedetail</find>
       <find>ajoutsoiree</find>
       <find>soiree</find>
+      <find>sousTitre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,15 +163,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/apropos.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/confirmationsuppr.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonadd.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonmodif.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetail.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/custom.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/custom.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html" />
       </list>
     </option>
   </component>
@@ -486,12 +487,12 @@
       <workItem from="1517307071918" duration="34000" />
       <workItem from="1517307140926" duration="2876000" />
       <workItem from="1517318805823" duration="2150000" />
-      <workItem from="1517399645139" duration="3464000" />
+      <workItem from="1517399645139" duration="4135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23138000" />
+    <option name="totallyTimeSpent" value="23809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="59" width="1440" height="660" extended-state="0" />
@@ -834,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/confirmationsuppr.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -874,26 +867,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3142">
-          <caret line="210" column="16" lean-forward="false" selection-start-line="210" selection-start-column="15" selection-end-line="210" selection-end-column="16" />
+        <state relative-caret-position="55">
+          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+        <state relative-caret-position="63">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
