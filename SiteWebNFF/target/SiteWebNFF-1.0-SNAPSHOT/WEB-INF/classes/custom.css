@@ -59,11 +59,6 @@ body{
 	border-radius: 10px;
 }
 
-.livraisonCadre .soireePhoto img {
-	width:130px;
-	height:200px;
-	border-radius: 10px;
-}
 
 .livraisonCadre h3 {
 	margin:0;
@@ -94,9 +89,6 @@ body{
     bottom: 15px;
     left: 20px;
 }
-
-
-
 
 .soireedetail .livraisonCadre {
 	height: auto;
@@ -134,8 +126,6 @@ body{
 	margin:10px 100px;
 	height: auto;
 	min-width:820px;
-	min-height: 400px;
-
 }
 
 .container-fluid {
