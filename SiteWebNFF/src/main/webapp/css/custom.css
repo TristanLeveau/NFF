@@ -6,6 +6,10 @@ body{
 .sousTitre {
 	margin-top : 10px;
 }
+.image1 img {
+	width: 100%;
+	alignment: center;
+}
 
 #menu {
 	font-family:Fantasy;
@@ -38,6 +42,7 @@ body{
 }
 
 .livraisonCadre {
+	background-color: white;
 	height:200px;
 	margin:20px;
 	box-shadow: 0 0 25px grey;
@@ -168,11 +173,11 @@ body{
 }
 .navigation1>li {
 	position:relative;
-	display:block;
+	display:inline;
 }
 .navigation1>li>a {
 	position:relative;
-	display:block;
+	display:inline;
 	padding:10px 15px;
 }
 
@@ -212,7 +217,3 @@ body{
 	vertical-align:middle;
 }
 
-.image1 {
-	alignment: center;
-	margin-left: 50px;
-}
