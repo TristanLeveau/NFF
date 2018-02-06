@@ -87,9 +87,8 @@ body{
 
 .livraisonCadre .livraisonPhoto {
 	position:absolute;
-	top:0;
-	right:0;
-	border-radius: 10px;
+	height:300px;
+	width: 200px;
 }
 
 
@@ -130,7 +129,7 @@ body{
 .livraisondetail .livraisonCadre {
 	height: auto;
 	min-width:820px;
-	min-height: 400px;
+	min-height: 300px;
 }
 
 .livraisondetail .livraisoninfos {
@@ -244,6 +243,23 @@ body{
 .colonne2{
 	width:33.33333333%
 }
+
+/*Gestion de la connexion admin*/
+
+#volet {
+	overflow: hidden;
+	-webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+
+#volet:target ~ .cache{
+	height: 100px;
+	visibility: visible;
+}
+.cache {
+	visibility: hidden;
+}
+
 
 
 

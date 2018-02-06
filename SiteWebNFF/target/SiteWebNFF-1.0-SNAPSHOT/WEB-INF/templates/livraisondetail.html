@@ -32,17 +32,28 @@
 					</div>
 				</div>
 				<aside class="livraisonPhoto">
-					<img src="img/fruits-et-légumes1.jpg" alt="Image Soirée">
+					<img src="img/fruits-et-légumes1.jpg"	height="300px" width="200px">
 				</aside>
 			</section>
 		</section>
 		<section class="ajoutlivraison">
 			<article class="livraisonCadre">
 				<h3>Clients</h3>
-				<p class="sousTitre">Voici les clients souhaitant être livrés!</p>
+				<a href="#volet" class="ouvrir">Connectez-vous en tant qu'admin pour voir la liste!</a>
+				<div id="volet" class="cache">
+				<form action="" id="connectionAdmin">
+					<fieldset>
+						<h1>Connection admin</h1>
+						<label>login</label><input type="text" required />
+						<label>pass</label><input type="password" required/>
+						<input type="submit" value="connection"/>
+					</fieldset>
+				</form>
 			</article>
 		</section>
+
 		<section class="listeLivraison">
+			<p class="sousTitre"> Voici les clients souhaitant être livrés!</p>
 			<article class="livraisonCadre" th:each="participant : ${participants}">
 				<h3 th:text="${participant.id}"></h3>
 				<p th:text="${participant.prenom}"></p>
@@ -51,9 +62,10 @@
 			</article>
 		</section>
 	</div>
+</body>
 
 	<hr align="center" size="4" color="black" width="80%">
-	<a href="home"><img src="img/fruits-et-légumes1.jpg" class="image1"></a>
+	<a href="home"><img src="img/fruits-et-légumes1.jpg" class="image1" width="100%"></a>
 
 </body>
 </html>
