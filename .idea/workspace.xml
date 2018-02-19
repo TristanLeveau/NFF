@@ -7,167 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39ffeaea-92f6-4a6d-9236-26685526176e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css.map" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/artifacts/SiteWebNFF_war.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/artifacts/SiteWebNFF_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_44.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__ognl_ognl_3_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__org_attoparser_attoparser_2_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_1_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/libraries/Maven__org_unbescape_unbescape_1_1_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/SiteWebNFF.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.annotation.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.ejb.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.jms.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.persistence.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.resource.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.servlet.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.servlet.jsp.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.servlet.jsp.jstl.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/lib/javax.transaction.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/daos/DataSourceProvider.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/daos/LivraisonDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/daos/ParticipantDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/exceptions/NFFRuntimeException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/pojos/Livraison.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/pojos/Participant.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/pojos/Semestre.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/rmproject/filters/EncodingFilter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/services/LivraisonService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/AbstractGenericServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/AccueilServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/AproposServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/HomeServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/ImageServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/InscriptionServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/LivraisonAjoutServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/LivraisonDetailsServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/LivraisonModificationServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/java/servlets/LivraisonSuppressionServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/resources/jdbc.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/sql/database-init.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/accueil.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/apropos.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/common.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/confirmationsuppr.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/inscription.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/livraisonadd.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/livraisondetail.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/templates/livraisonmodif.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/css/custom.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/fontawesome/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/fontawesome/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/fontawesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/fontawesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/fontawesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/fontawesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/fontawesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/img/Four-hands-holing-pints-of-beer.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/img/fruits-et-légumes1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/src/main/webapp/js/script_principal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/custom.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/DataSourceProvider$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/DataSourceProvider$DataSourceProviderHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/DataSourceProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/LivraisonDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/ParticipantDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/exceptions/NFFRuntimeException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/pojos/Livraison.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/pojos/Participant.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/pojos/Semestre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/rmproject/filters/EncodingFilter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService$LivraisonServiceHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/AbstractGenericServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/AccueilServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/AproposServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/HomeServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ImageServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/InscriptionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonAjoutServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonDetailsServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonModificationServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonSuppressionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.44.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.3.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.1.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-extras-java8time-3.0.0.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/lib/unbescape-1.1.3.RELEASE.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/accueil.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/apropos.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/common.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/confirmationsuppr.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/inscription.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisonadd.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetail.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisonmodif.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/css/custom.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/fontawesome/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/fontawesome/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/fontawesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/fontawesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/fontawesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/fontawesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/fontawesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/img/Four-hands-holing-pints-of-beer.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/img/fruits-et-légumes1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/SiteWebNFF-1.0-SNAPSHOT/js/script_principal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/custom.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/daos/DataSourceProvider$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/daos/DataSourceProvider$DataSourceProviderHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/daos/DataSourceProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/daos/LivraisonDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/daos/ParticipantDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/exceptions/NFFRuntimeException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/jdbc.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/pojos/Livraison.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/pojos/Participant.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/pojos/Semestre.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/rmproject/filters/EncodingFilter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/services/LivraisonService$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/services/LivraisonService$LivraisonServiceHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/services/LivraisonService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/AbstractGenericServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/AccueilServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/AproposServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/HomeServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/ImageServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/InscriptionServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/LivraisonAjoutServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/LivraisonDetailsServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/LivraisonModificationServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SiteWebNFF/target/classes/servlets/LivraisonSuppressionServlet.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/sql/exemple_livraison" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/home.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/home.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -186,7 +31,7 @@
       <file leaf-file-name="accueil.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
+            <state relative-caret-position="30">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
@@ -196,7 +41,7 @@
       <file leaf-file-name="common.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="585">
               <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -208,7 +53,7 @@
       <file leaf-file-name="inscription.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="330">
               <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
@@ -218,18 +63,8 @@
       <file leaf-file-name="apropos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/apropos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
+            <state relative-caret-position="555">
               <caret line="37" column="80" lean-forward="false" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccueilServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AccueilServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -238,28 +73,8 @@
       <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="255">
               <caret line="26" column="91" lean-forward="false" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InscriptionServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/InscriptionServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LivraisonService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/LivraisonService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -268,18 +83,48 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1701">
+            <state relative-caret-position="1035">
               <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="88" lean-forward="false" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exemple_livraison" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/sql/exemple_livraison">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="livraisonadd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonadd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="47" column="84" lean-forward="false" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -332,12 +177,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonmodif.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/custom.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetail.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
       </list>
     </option>
   </component>
@@ -354,11 +199,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-2" />
-    <option name="y" value="89" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="205" />
+    <option name="y" value="23" />
     <option name="width" value="1039" />
-    <option name="height" value="1038" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -376,121 +221,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pojos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SiteWebNFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SiteWebNFF" type="462c0819:PsiDirectoryNode" />
+              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -501,6 +281,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,17 +294,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-cinee-db" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="body&#9;PSI&#9;JAVA://com.sun.xml.internal.ws.wsdl.writer.document.soap.Body" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alayd\Desktop\SiteWebNFF\src\main\webapp\css" />
       <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/sql" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -535,82 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.NorthFreshServer">
     <configuration name="NorthFreshServer" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.24" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/inscription/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -684,11 +394,86 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -717,14 +502,15 @@
       <workItem from="1518953193748" duration="651000" />
       <workItem from="1518958572725" duration="8908000" />
       <workItem from="1519024769928" duration="1477000" />
+      <workItem from="1519032904800" duration="284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48315000" />
+    <option name="totallyTimeSpent" value="48599000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="205" y="23" width="1039" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -737,20 +523,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29691878" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29723758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.271875" sideWeight="0.80604535" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2768305" sideWeight="0.80604535" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.19395466" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.19395466" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -775,13 +561,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AproposServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AbstractGenericServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -933,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonadd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="47" column="84" lean-forward="false" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonmodif.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
@@ -976,31 +748,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/com/sun/xml/internal/ws/wsdl/writer/document/soap/Body.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/com/sun/xml/internal/ws/wsdl/writer/document/soap/Body.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pojos/Livraison.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/LivraisonService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
+        <state relative-caret-position="585">
           <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
           <folding />
         </state>
@@ -1008,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/InscriptionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="75">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
@@ -1016,7 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AccueilServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="75">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
@@ -1024,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="255">
           <caret line="26" column="91" lean-forward="false" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
           <folding />
         </state>
@@ -1032,7 +790,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
+        <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
@@ -1040,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/apropos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
+        <state relative-caret-position="555">
           <caret line="37" column="80" lean-forward="false" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
           <folding />
         </state>
@@ -1048,7 +806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="330">
           <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
@@ -1056,7 +814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="585">
           <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1066,16 +824,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1701">
+        <state relative-caret-position="1035">
           <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sql/exemple_livraison">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="47" column="84" lean-forward="false" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="88" lean-forward="false" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>

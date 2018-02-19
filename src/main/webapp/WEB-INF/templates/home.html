@@ -12,8 +12,7 @@
 
 
 <body style="color:black;
-background-color:white;
-background-image:url(C:/Users/alayd/Desktop/SiteWebNFF/src/main/webapp/img/imagefond.jpg); ">
+background-image:url(img/imagefond.jpg); ">
 <div class="container-fluid">
 	<header th:replace="~{common::header}"></header>
 
@@ -23,17 +22,8 @@ background-image:url(C:/Users/alayd/Desktop/SiteWebNFF/src/main/webapp/img/image
 	</div>
 
 	<div id="mainContent" class="container-fluid">
-		<ul class="list-group">
-			<li class="list-group-item d-flex justify-content-between align-items-center">
-				Livraison du 22/02
-				<input type="checkbox" aria-label="Checkbox for following text input">
-			</li>
-			<li class="list-group-item d-flex justify-content-between align-items-center">
-				Livraison du 08/03
-				<input type="checkbox" aria-label="Checkbox for following text input">
-			</li>
-			<li class="list-group-item d-flex justify-content-between align-items-center">
-				Livraison du 22/03
+		<ul class="list-group" >
+			<li class="list-group-item d-flex justify-content-between align-items-center" th:each="livraison : ${livraisons}"><p th:text="${livraison.date}"></p>
 				<input type="checkbox" aria-label="Checkbox for following text input">
 			</li>
 		</ul>

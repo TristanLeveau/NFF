@@ -1,0 +1,4 @@
+INSERT INTO livraison VALUES (1,null, 'Salade Tomate Oignon','S1', '29/09/18',null,0);
+INSERT INTO livraison VALUES (2,null, 'Salade Tomate Oignon','S1', '11/11/18',null,0);
+INSERT INTO livraison VALUES (3,null, 'Salade Tomate Oignon','S1', '21/11/18',null,0);
+INSERT INTO livraison VALUES (4,null, 'Salade Tomate Oignon','S1', '05/12/18',null,0);
