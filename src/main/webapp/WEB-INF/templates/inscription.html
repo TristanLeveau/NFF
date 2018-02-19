@@ -8,17 +8,25 @@
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 </head>
 
-<body style="color:black; background-image:url(img/imagefond.jpg); ">
-
+<body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
+<div class="container-fluid">
 <header th:replace="~{common::header}"></header>
-
-<div class="container">
-    <h3>Inscris-toi pour pouvoir commander un panier ou un abonnement</h3>
 </div>
 
-<div id="mainContent" class="container-fluid">
+<div class="d-flex justify-content-center">
+    <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center;">
+<div class="container">
+    <h3>Inscris-toi pour pouvoir commander un panier ou un abonnement !</h3>
+</div>
+    </div>
+</div>
+<div class="containeur-fluid">
+<div class="d-flex justify-content-center">
+    <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center;">
+
+        <span class="border border-success">
     <form>
-        <div class="form-row">
+        <div class="form-row align-middle">
             <div class="form-group col-md-4">
                 <label for="inputFirstName">Prénom</label>
                 <input type="text" class="form-control" id="inputFirstName" placeholder="Prénom">
@@ -67,8 +75,11 @@
             <button type="button" class="btn btn-secondary btn-lg btn-block">S'inscrire à North-Fresh Farmers</button>
         </div>
     </form>
+        </span>
 </div>
 
+</div>
+</div>
 <hr align="center" size="4" color="black" width="80%">
 
 
