@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+	<head>
+		<title>North-Fresh Farmers</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+	</head>
+
+
+<body style="color:black;
+background-color:white;
+background-image:url(C:/Users/alayd/Desktop/SiteWebNFF/src/main/webapp/img/imagefond.jpg); ">
+<div class="container-fluid">
+	<header th:replace="~{common::header}"></header>
+
+	<div class="container">
+		<h3>Commande ton panier North-Fresh Farmers</h3>
+		<h4>Choisis la date à laquelle tu souhaite recevoir ton panier : </h4>
+	</div>
+
+	<div id="mainContent" class="container-fluid">
+		<ul class="list-group">
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				Livraison du 22/02
+				<input type="checkbox" aria-label="Checkbox for following text input">
+			</li>
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				Livraison du 08/03
+				<input type="checkbox" aria-label="Checkbox for following text input">
+			</li>
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				Livraison du 22/03
+				<input type="checkbox" aria-label="Checkbox for following text input">
+			</li>
+		</ul>
+
+	</div>
+
+
+	<div class="mx-auto">
+		<button type="button" class="btn btn-dark btn-lg">Valider la commande</button>
+	</div>
+
+	<hr align="center" size="4" color="black" width="80%">
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Inscription</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+<header th:replace="~{common::header}"></header>
+
+<div class="container">
+    <h3>Inscris-toi pour pouvoir commander un panier ou un abonnement</h3>
+</div>
+
+<div id="mainContent" class="container-fluid">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputFirstName">Prénom</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="Prénom">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputLastName">Nom</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Nom">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputTel">Tél.</label>
+                <input type="text" class="form-control" id="inputTel">
+            </div>
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputPassword4">Mot de passe</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Mot de passe">
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+        <div class="form-group col-md-4">
+            <label for="inputState">Ecole</label>
+            <select id="inputState" class="form-control">
+                <option selected>Autre</option>
+                <option>HEI</option>
+                <option>ISA</option>
+                <option>ISEN</option>
+            </select>
+        </div>
+
+        </div>
+
+        <div class="form-group col-md-4">
+            <button type="button" class="btn btn-secondary btn-lg btn-block">S'inscrire à North-Fresh Farmers</button>
+        </div>
+    </form>
+</div>
+
+<hr align="center" size="4" color="black" width="80%">
+
+
+</body>
+</html>
