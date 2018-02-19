@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="utf-8">
-<title>Livraison</title>
-<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/custom.css">
-
+	<title>North-Fresh Farmers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 </head>
-<body>
-	<header th:replace="~{common::header}"></header>
 
-	<div id="mainContent" class="container-fluid">
+<body style="color:black; background-image:url(img/imagefond.jpg); ">
+
+<header th:replace="~{common::header}"></header>
+
+<div id="mainContent" class="container-fluid">
 		<section class="livraisondetail">
 			<section class="livraisonCadre">
 				<h3 th:text="${livraison.date}"></h3>

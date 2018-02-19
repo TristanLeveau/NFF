@@ -11,8 +11,7 @@
 	</head>
 
 
-<body style="color:black;
-background-image:url(img/imagefond.jpg); ">
+<body style="color:black; background-image:url(img/imagefond.jpg); ">
 <div class="container-fluid">
 	<header th:replace="~{common::header}"></header>
 
@@ -24,6 +23,7 @@ background-image:url(img/imagefond.jpg); ">
 	<div id="mainContent" class="container-fluid">
 		<ul class="list-group" >
 			<li class="list-group-item d-flex justify-content-between align-items-center" th:each="livraison : ${livraisons}"><p th:text="${livraison.date}"></p>
+				<a th:href="'detail?id='+${livraison.id}" class="bouton1"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Détails</a>
 				<input type="checkbox" aria-label="Checkbox for following text input">
 			</li>
 		</ul>
