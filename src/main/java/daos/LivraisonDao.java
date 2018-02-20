@@ -24,8 +24,7 @@ public class LivraisonDao {
 						new Livraison(
 								resultSet.getInt("id"),
 								resultSet.getString("date"),
-								resultSet.getString("contenu"),
-								Semestre.valueOf(resultSet.getString("semestre"))
+								resultSet.getString("contenu")
 						));
 
 
@@ -37,31 +36,8 @@ public class LivraisonDao {
 		return livraisons;
 	}
 
-	public List<Livraison> listLivraisonsSemestre(Semestre semestre) {
-		List<Livraison> livraisons = new ArrayList<>();
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE semestre = ? AND supprime=false ORDER BY id ")){
-			statement.setString(1, semestre.name());
-			try (ResultSet resultSet = statement.executeQuery()){
-				while (resultSet.next()){
-					livraisons.add(
-							new Livraison(
-									resultSet.getInt("id"),
-									resultSet.getString("date"),
-									resultSet.getString("contenu"),
-									Semestre.valueOf(resultSet.getString("semestre"))
-							)
-					);
 
 
-
-				}
-			}
-		}catch (SQLException e){
-			 	throw new NFFRuntimeException("Erreur lors de l'accès a la base de données", e);
-		}
-		return livraisons;
-	}
 
 	public Livraison getLivraison(Integer id) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
@@ -72,8 +48,7 @@ public class LivraisonDao {
 					return new Livraison(
 							resultSet.getInt("id"),
 							resultSet.getString("date"),
-							resultSet.getString("contenu"),
-							Semestre.valueOf(resultSet.getString("semestre"))
+							resultSet.getString("contenu")
 					);
 				}
 			}
@@ -85,10 +60,9 @@ public class LivraisonDao {
 	
 	public void addLivraison(Livraison newLivraison) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-				PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu, semestre) VALUES (?, ?,?)")) {
+				PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu) VALUES (?, ?)")) {
 			statement.setString(1, newLivraison.getDate());
 			statement.setString(2, newLivraison.getContenu());
-			statement.setString(3, newLivraison.getSemestre().name());
 			statement.executeUpdate();
 		} catch (SQLException e) {
 			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
@@ -107,11 +81,10 @@ public class LivraisonDao {
 
 	public void updateLivraison (Livraison newLivraison) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=?, semestre=? WHERE id=?")) {
+			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE id=?")) {
 			statement.setString(1, newLivraison.getDate());
 			statement.setString(2, newLivraison.getContenu());
-			statement.setString(3, newLivraison.getSemestre().name());
-			statement.setInt(4, newLivraison.getId());
+			statement.setInt(3, newLivraison.getId());
 			statement.executeUpdate();
 		} catch (SQLException e) {
 			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);

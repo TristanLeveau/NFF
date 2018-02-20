@@ -1,44 +1,35 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="utf-8">
-<title>Ajouter une livraison</title>
+	<title>North-Fresh Farmers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/custom.css">
-
 </head>
-<body style="color:black; background-image:url(img/imagefond.jpg); ">
-	<header th:replace="~{common::header}"></header>
 
-	<div id="mainContent" class="container-fluid">
-		<section class="ajoutlivraison">
-			<article class="livraisonCadre">
+<body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
+
+<header th:replace="~{common::header}"></header>
+
+<div class="d-flex justify-content-center">
+	<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
+		<div class="container-fluid">
 				<h3>Ajouter une livraison</h3>
 				<p class="alert alert-danger" role="alert" th:if="${errorMessage != null}" th:text="${errorMessage}"></p>
 				<form method="post" class="formulaireHorizontal" enctype="multipart/form-data">
-					<div class="groupeFormulaire">
-						<div class="colonne2">
-						<label for="inputDate" class="colonne1 control-label">Date</label>
-							<input type="text" class="formulaireControle" name="date" id="inputDate" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
-						</div>
-					</div>
-					<div class="groupeFormulaire">
-						<label for="inputContenu2" class="colonne1 control-label">Contenu</label>
-						<div class="colonne3">
-							<textarea class="formulaireControle" name="contenu" id="inputContenu2" placeholder="Contenu" maxlength="150" th:value="${livraison.contenu}">[[${livraison.resume}]]</textarea>
-						</div>
-					</div>
-					<div class="groupeFormulaire">
-						<div class="colonne3">
-							<button type="submit" class="bouton1">Ajouter la livraison</button>
-						</div>
-					</div>
-				</form>
-			</article>
-		</section>
-	</div>
 
-	<hr align="center" size="4" color="black" width="80%">
+					<label for="inputDate" class="colonne1 control-label">Date</label>
+					<input type="text" class="formulaireControle" name="date" id="inputDate" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
+
+
+					<button type="submit" class="btn boutonvalider" style="margin-top: 150px">Ajouter la livraison</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

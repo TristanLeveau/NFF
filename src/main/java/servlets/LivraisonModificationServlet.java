@@ -22,7 +22,7 @@ public class LivraisonModificationServlet extends AbstractGenericServlet {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
         WebContext context = new WebContext(req, resp, getServletContext());
         context.setVariable("semestres", Semestre.values());
-        context.setVariable("livraison", new Livraison(null,null,null,null));
+        context.setVariable("livraison", new Livraison(null,null,null));
         templateEngine.process("livraisonmodif", context, resp.getWriter());
     }
 
@@ -33,7 +33,7 @@ public class LivraisonModificationServlet extends AbstractGenericServlet {
         String contenu = req.getParameter("contenu");
         String semestre = req.getParameter("semestre");
         Part image = req.getPart("image");
-        Livraison newLivraison = new Livraison(id, date, contenu, Semestre.valueOf(semestre));
+        Livraison newLivraison = new Livraison(id, date, contenu);
 
         try {
             LivraisonService.getInstance().updateLivraison(newLivraison, id);

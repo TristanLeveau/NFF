@@ -31,13 +31,9 @@ public class LivraisonService {
 
 	private LivraisonService() { }
 	
-	public List<Livraison> listAllLivraisons(Semestre semestreFilter) {
-		if (semestreFilter == null){
-			return livraisonDao.listLivraisons();
-		}else {
-			return livraisonDao.listLivraisonsSemestre(semestreFilter);
+	public List<Livraison> listAllLivraisons() {
+		return livraisonDao.listLivraisons();
 
-		}
 	}
 	
 	public Livraison getLivraison(Integer id) {
@@ -48,26 +44,14 @@ public class LivraisonService {
 	}
 
 	public void addLivraison(Livraison newLivraison, Part image) throws IOException {
+
 		if(newLivraison == null){
 			throw new IllegalArgumentException("Une livraison doit être renseignée.");
 		}
 		if(newLivraison.getDate() == null || "".equals(newLivraison.getDate())) {
 			throw new IllegalArgumentException("Une date doit être renseignée.");
 		}
-		if (newLivraison.getSemestre()==null|| "".equals(newLivraison.getSemestre())){
-			throw new IllegalArgumentException("Un semestre doit être spécifié");
-		}
-		Path imagePath = null;
-		if (image !=null) {
-			//String filename = UUID.randomUUID().toString().substring(0,8) + "-" + image.getSubmittedFileName();
-			//imagePath = Paths.get(CHEMIN_IMAGE, filename);
-			try{
-				Files.copy(image.getInputStream(),imagePath);
-			}
-			catch (IOException e){
-				e.printStackTrace();
-			}
-		}
+
 		livraisonDao.addLivraison(newLivraison);
 	}
 

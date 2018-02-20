@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/pageadmin")
+@WebServlet("/admin")
 public class AdministrationServlet extends AbstractGenericServlet{
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
         WebContext context = new WebContext(req, resp, getServletContext());
-        templateEngine.process("pageadmin", context, resp.getWriter());
+        templateEngine.process("admin", context, resp.getWriter());
     }
 }

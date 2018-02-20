@@ -24,7 +24,6 @@ public class LivraisonAjoutServlet extends AbstractGenericServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		TemplateEngine templateEngine = this.createTemplateEngine(req);
 		WebContext context = new WebContext(req, resp, getServletContext());
-		context.setVariable("semestres", Semestre.values());
 		if(req.getSession().getAttribute("livraisonCreationError") != null) {
 			context.setVariable("errorMessage", req.getSession().getAttribute("livraisonCreationError"));
 			context.setVariable("livraison", (Livraison) req.getSession().getAttribute("livraisonCreationData"));
@@ -32,7 +31,7 @@ public class LivraisonAjoutServlet extends AbstractGenericServlet {
 			req.getSession().removeAttribute("livraisonCreationError");
 			req.getSession().removeAttribute("livraisonCreationData");
 		} else {
-			context.setVariable("livraison", new Livraison(null,null,null,null));
+			context.setVariable("livraison", new Livraison(null,null,null));
 		}
 		
 		templateEngine.process("livraisonadd", context, resp.getWriter());
@@ -42,8 +41,7 @@ public class LivraisonAjoutServlet extends AbstractGenericServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String date = req.getParameter("date");
 		String contenu = req.getParameter("contenu");
-		String semestre = req.getParameter("semestre");
-		Livraison newLivraison = new Livraison(null, date, contenu, Semestre.valueOf(semestre));
+		Livraison newLivraison = new Livraison(null, date, contenu);
 		Part image = req.getPart("image");
 		
 		try {

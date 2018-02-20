@@ -9,6 +9,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 		<script type="text/javascript" src="script_principal.js"></script>
+		<script src="js/javascriptNFF.js" type="application/javascript"></script>
 	</head>
 
 
@@ -19,17 +20,10 @@
 <div class="d-flex justify-content-center">
 	<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
 
-	<div class="container">
+	<div id="mainContent" class="container-fluid">
 		<h3>Commande ton panier North-Fresh Farmers</h3>
 		<h4>Choisis la date à laquelle tu souhaite recevoir ton panier : </h4>
-	</div>
-	</div>
-</div>
 
-<div class="d-flex justify-content-center">
-<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center;">
-
-	<div id="mainContent" class="container-fluid">
 		<ul class="list-group" >
 			<li class="list-group-item d-flex justify-content-between align-items-center" th:each="livraison : ${livraisons}"><p th:text="${livraison.date}"></p>
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -58,13 +52,17 @@
 			</li>
 		</ul>
 
+		<div class="mx-auto">
+			<button type="button" class="btn btn-dark btn-lg">Valider la commande</button>
+		</div>
+
+		<a class="nav-link disabled red" href="javascript:AccesProtege()">Administration</a>
+
 	</div>
 </div>
 </div>
 
-	<div class="mx-auto">
-		<button type="button" class="btn btn-dark btn-lg">Valider la commande</button>
-	</div>
+
 
 	<hr align="center" size="4" color="black" width="80%">
 </div>

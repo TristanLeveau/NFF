@@ -6,14 +6,12 @@ public class Livraison {
 	private Integer id;
 	private String date;
 	private String contenu;
-	private Semestre semestre;
 
-	public Livraison(Integer id, String date, String contenu, Semestre semestre) {
+	public Livraison(Integer id, String date, String contenu) {
 		super();
 		this.id = id;
 		this.date = date;
 		this.contenu = contenu;
-		this.semestre = semestre;
 
 	}
 	
@@ -35,7 +33,6 @@ public class Livraison {
 	public void setContenu(String contenu) {
 		this.contenu = contenu;
 	}
-	public Semestre getSemestre() { return semestre; }
-	public void setSemestre(Semestre semestre) { this.semestre = semestre; }
+
  }
 

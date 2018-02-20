@@ -24,7 +24,7 @@ public class HomeServlet extends AbstractGenericServlet {
 
 
 		WebContext context = new WebContext(req, resp, getServletContext());
-		context.setVariable("livraisons", LivraisonService.getInstance().listAllLivraisons(semestreFilter));
+		context.setVariable("livraisons", LivraisonService.getInstance().listAllLivraisons());
 		context.setVariable("semestres", Semestre.values());
 		context.setVariable("semestreFilter", semestreFilter);
 
