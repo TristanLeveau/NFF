@@ -26,7 +26,7 @@ public class LivraisonDetailsServlet extends AbstractGenericServlet {
 		Integer idLivraison = Integer.parseInt(req.getParameter("id"));
 		Livraison livraison = LivraisonService.getInstance().getLivraison(idLivraison);
 		context.setVariable("livraison", livraison);
-		context.setVariable("participants", LivraisonService.getInstance().ListeParticipantsLivraison(idLivraison));
+		context.setVariable("participants", LivraisonService.getInstance().ListeParticipants());
 		if (livraison == null) {
 			resp.sendRedirect("home");
 			return;

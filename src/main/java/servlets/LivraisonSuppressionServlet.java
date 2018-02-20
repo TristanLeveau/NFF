@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/suppression")
-public class LivraisonSuppressionServlet extends AbstractGenericServlet{
+public class  LivraisonSuppressionServlet extends AbstractGenericServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

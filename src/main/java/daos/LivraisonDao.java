@@ -83,39 +83,16 @@ public class LivraisonDao {
 		return null;
 	}
 	
-	public void addLivraison(Livraison newLivraison, Path imagePath) {
+	public void addLivraison(Livraison newLivraison) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-				PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu, semestre, image) VALUES (?, ?,?,?)")) {
+				PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu, semestre) VALUES (?, ?,?)")) {
 			statement.setString(1, newLivraison.getDate());
 			statement.setString(2, newLivraison.getContenu());
 			statement.setString(3, newLivraison.getSemestre().name());
-			if (imagePath!=null) {
-				statement.setString(4, imagePath.toString());
-			} else {
-				statement.setNull(4, Types.VARCHAR);
-			}
 			statement.executeUpdate();
 		} catch (SQLException e) {
 			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
 		}
-	}
-
-	public Path getImagePath (Integer id) {
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			PreparedStatement statement = connection.prepareStatement("SELECT image FROM livraison WHERE id = ? AND supprime=false")){
-				statement.setInt(1, id);
-				try (ResultSet resultSet = statement.executeQuery()){
-					if (resultSet.next()){
-						String imagePath= resultSet.getString("image");
-						if (imagePath!=null){
-							return Paths.get(imagePath);
-						}
-					}
-				}
-			} catch (SQLException e){
-				throw new NFFRuntimeException("Erreur lors de la réucpération de l'image", e);
-		}
-		return null;
 	}
 
 	public void supprimerLivraison(Integer id) {
@@ -128,18 +105,13 @@ public class LivraisonDao {
 		}
 	}
 
-	public void updateLivraison (Livraison newLivraison, Part imagePath) {
+	public void updateLivraison (Livraison newLivraison) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=?, semestre=? image=? WHERE id=?")) {
+			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=?, semestre=? WHERE id=?")) {
 			statement.setString(1, newLivraison.getDate());
 			statement.setString(2, newLivraison.getContenu());
 			statement.setString(3, newLivraison.getSemestre().name());
-			if (imagePath!=null) {
-				statement.setString(5, imagePath.toString());
-			} else {
-				statement.setNull(5, Types.VARCHAR);
-			}
-			statement.setInt(6, newLivraison.getId());
+			statement.setInt(4, newLivraison.getId());
 			statement.executeUpdate();
 		} catch (SQLException e) {
 			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);

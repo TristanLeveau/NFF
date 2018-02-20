@@ -28,31 +28,22 @@
     <form>
         <div class="form-row align-middle">
             <div class="form-group col-md-4">
-                <label for="inputFirstName">Prénom</label>
-                <input type="text" class="form-control" id="inputFirstName" placeholder="Prénom">
+                <label for="prenom">Prénom</label>
+                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" th:value="${participant.prenom}">
             </div>
             <div class="form-group col-md-4">
-                <label for="inputLastName">Nom</label>
-                <input type="text" class="form-control" id="inputLastName" placeholder="Nom">
+                <label for="nom">Nom</label>
+                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" th:value="${participant.nom}">
             </div>
         </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-3">
-                <label for="inputTel">Tél.</label>
-                <input type="text" class="form-control" id="inputTel">
-            </div>
-        </div>
-
-
         <div class="form-row">
             <div class="form-group col-md-4">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" th:value="${participant.email}">
             </div>
             <div class="form-group col-md-4">
-                <label for="inputPassword4">Mot de passe</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Mot de passe">
+                <label for="motDePasse">Mot de passe</label>
+                <input type="password" class="form-control" id="motDePasse" name="motDePasse" placeholder="Mot de passe" th:value="${participant.motDePasse}">
             </div>
 
         </div>
@@ -72,7 +63,7 @@
         </div>
 
         <div class="form-group col-md-4">
-            <button type="button" class="btn btn-secondary btn-lg btn-block">S'inscrire à North-Fresh Farmers</button>
+            <button type="submit" class="btn btn-secondary btn-lg btn-block">S'inscrire à North-Fresh Farmers</button>
         </div>
     </form>
         </span>

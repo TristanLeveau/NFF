@@ -68,27 +68,17 @@ public class LivraisonService {
 				e.printStackTrace();
 			}
 		}
-		livraisonDao.addLivraison(newLivraison, imagePath);
+		livraisonDao.addLivraison(newLivraison);
 	}
 
-	public Path getLivraisonImage(Integer id){
-		Path imagePath = livraisonDao.getImagePath(id);
-		if (imagePath == null){
-			try {
-				imagePath = Paths.get(this.getClass().getClassLoader().getResource("fruits-et-légumes1.jpg").toURI());
-			} catch (URISyntaxException e) {
-				e.printStackTrace();
-			}
-		}
-		return imagePath;
-	}
+
 
 	public void supprimerLivraison(Integer id){
 		livraisonDao.supprimerLivraison(id);
 	}
 
 
-	public void addParticipant(Participant participant,Integer idLivraison){
+	public void addParticipant(Participant participant){
 		if(participant.getNom() == null || "".equals(participant.getNom())) {
 			throw new IllegalArgumentException("Un nom doit être renseigné.");
 		}
@@ -98,16 +88,16 @@ public class LivraisonService {
 		if (participant.getEmail()==null|| "".equals(participant.getEmail())){
 			throw new IllegalArgumentException("Un email doit être spécifié");
 		}
-		participantDao.addParticipant(participant,idLivraison);
+		participantDao.addParticipant(participant);
 	}
 
-	public List<Participant> ListeParticipantsLivraison(Integer idLivraison){
-		List participants = participantDao.ListeParticipantsLivraison(idLivraison);
+	public List<Participant> ListeParticipants(){
+		List participants = participantDao.ListeParticipants();
 		return participants;
 	}
 
-	public void updateLivraison(Livraison newLivraison, Part image, Integer id){
-		livraisonDao.updateLivraison(newLivraison, image);
+	public void updateLivraison(Livraison newLivraison, Integer id){
+		livraisonDao.updateLivraison(newLivraison);
 	}
 
 }

@@ -12,15 +12,13 @@ import java.util.List;
 
 public class ParticipantDao {
 
-    public void addParticipant(Participant newParticipant, Integer idLivraison) {
+    public void addParticipant(Participant newParticipant) {
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("INSERT INTO participant(nom, prenom,email,motDePasse,livraison) VALUES (?, ?,?,?,?)")) {
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO participant(nom, prenom,email,motDePasse) VALUES (?, ?,?,?)")) {
             statement.setString(1, newParticipant.getNom());
             statement.setString(2, newParticipant.getPrenom());
             statement.setString(3, newParticipant.getEmail());
             statement.setString(4, newParticipant.getMotDePasse());
-            statement.setInt(5, idLivraison);
-
             statement.executeUpdate();
         } catch (SQLException e) {
             throw new NFFRuntimeException("Erreur lors de la récupération des données", e);
@@ -28,11 +26,10 @@ public class ParticipantDao {
     }
 
 
-    public List<Participant> ListeParticipantsLivraison(Integer idLivraison) {
+    public List<Participant> ListeParticipants() {
         List<Participant> participantList = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE livraison=? ORDER BY nom DESC")) {
-            statement.setInt(1, idLivraison);
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant ORDER BY nom DESC")) {
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     participantList.add(new Participant(

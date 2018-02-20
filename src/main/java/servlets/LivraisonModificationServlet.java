@@ -36,7 +36,7 @@ public class LivraisonModificationServlet extends AbstractGenericServlet {
         Livraison newLivraison = new Livraison(id, date, contenu, Semestre.valueOf(semestre));
 
         try {
-            LivraisonService.getInstance().updateLivraison(newLivraison, image, id);
+            LivraisonService.getInstance().updateLivraison(newLivraison, id);
             resp.sendRedirect("home");
         } catch (IllegalArgumentException e) {
             req.getSession().setAttribute("Livraison Update Error", e.getMessage());
