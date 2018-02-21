@@ -12,11 +12,18 @@
 <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
 
 <header th:replace="~{common::header}"></header>
-
+<div class="d-flex justify-content-center">
+    <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
+        <div class="container">
+            <h3>Gestion des livraisons</h3>
+            <p class="sousTitre">Tu peux ici modifier ou supprimer les livraisons postées.</p>
 <ul class="list-group" >
     <li class="list-group-item d-flex justify-content-between align-items-center" th:each="livraison : ${livraisons}"><p th:text="${livraison.date}"></p>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Voir le détail
+            Modifier livraison
+        </button>
+        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal" style="background-color:red">
+            Supprimer livraison
         </button>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -37,9 +44,12 @@
                 </div>
             </div>
         </div>
-        <input type="checkbox" aria-label="Checkbox for following text input">
     </li>
 </ul>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

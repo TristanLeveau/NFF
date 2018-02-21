@@ -27,7 +27,7 @@ public class InscriptionServlet extends AbstractGenericServlet {
             req.getSession().removeAttribute("ParticipantCreationError");
             req.getSession().removeAttribute("ParticipantCreationData");
         } else {
-            context.setVariable("participant", new Participant(0,null,null, null, null));
+            context.setVariable("participant", new Participant( null,null,null, null, null));
         }
 
         templateEngine.process("inscription", context, resp.getWriter());

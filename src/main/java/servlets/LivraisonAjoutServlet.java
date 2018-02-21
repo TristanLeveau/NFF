@@ -42,10 +42,9 @@ public class LivraisonAjoutServlet extends AbstractGenericServlet {
 		String date = req.getParameter("date");
 		String contenu = req.getParameter("contenu");
 		Livraison newLivraison = new Livraison(null, date, contenu);
-		Part image = req.getPart("image");
-		
+
 		try {
-			LivraisonService.getInstance().addLivraison(newLivraison, image);
+			LivraisonService.getInstance().addLivraison(newLivraison);
 			resp.sendRedirect("home");
 		} catch (IllegalArgumentException e) {
 			req.getSession().setAttribute("Livraison Update Error", e.getMessage());

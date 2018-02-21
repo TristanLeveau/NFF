@@ -20,27 +20,13 @@ public class HomeServlet extends AbstractGenericServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		TemplateEngine templateEngine = this.createTemplateEngine(req);
 
-		Semestre semestreFilter = (Semestre) req.getSession().getAttribute("semestreFilter");
-
-
 		WebContext context = new WebContext(req, resp, getServletContext());
 		context.setVariable("livraisons", LivraisonService.getInstance().listAllLivraisons());
-		context.setVariable("semestres", Semestre.values());
-		context.setVariable("semestreFilter", semestreFilter);
-
 		templateEngine.process("home", context, resp.getWriter());
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String SemestreNumber = req.getParameter("semestre");
-
-		Semestre semestre = null;
-		try {
-			semestre = Semestre.valueOf(SemestreNumber);
-		} catch (IllegalArgumentException ignored) {}
-
-		req.getSession().setAttribute("semestreFilter", semestre);
 
 		resp.sendRedirect("home");
 	}
