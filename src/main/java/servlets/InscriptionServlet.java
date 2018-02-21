@@ -22,7 +22,7 @@ public class InscriptionServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
         if(req.getSession().getAttribute("utilisateurCreationError") != null) {
             context.setVariable("errorMessage", req.getSession().getAttribute("utilisateurCreationError"));
-            context.setVariable("participant", (Livraison) req.getSession().getAttribute("utilisateurCreationData"));
+            context.setVariable("participant", req.getSession().getAttribute("utilisateurCreationData"));
 
             req.getSession().removeAttribute("ParticipantCreationError");
             req.getSession().removeAttribute("ParticipantCreationData");
