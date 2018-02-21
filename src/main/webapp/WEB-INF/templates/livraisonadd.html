@@ -20,9 +20,15 @@
 				<p class="alert alert-danger" role="alert" th:if="${errorMessage != null}" th:text="${errorMessage}"></p>
 				<form method="post" class="formulaireHorizontal" enctype="multipart/form-data">
 
-					<label for="inputDate" class="colonne1 control-label">Date</label>
-					<input type="text" class="formulaireControle" name="date" id="inputDate" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
+					<div class="form-group">
+						<label for="usr">Date:</label>
+						<input type="text" class="form-control" name="date" id="usr" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
+					</div>
 
+					<div class="form-group">
+						<label for="comment">Contenu:</label>
+						<textarea class="form-control" name="contenu" rows="5" id="comment"></textarea>
+					</div>
 
 					<button type="submit" class="btn boutonvalider" style="margin-top: 150px">Ajouter la livraison</button>
 
