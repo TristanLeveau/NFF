@@ -21,7 +21,7 @@ public class ListeClientsServlet extends AbstractGenericServlet {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
 
         WebContext context = new WebContext(req, resp, getServletContext());
-        context.setVariable("participants", LivraisonService.getInstance().listAllLivraisons());
+        context.setVariable("participants", LivraisonService.getInstance().ListeParticipants());
         templateEngine.process("listeclients", context, resp.getWriter());
     }
 

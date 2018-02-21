@@ -1,6 +1,7 @@
 package daos;
 
 import exceptions.NFFRuntimeException;
+import pojos.Livraison;
 import pojos.Participant;
 
 import java.sql.Connection;
@@ -39,6 +40,7 @@ public class ParticipantDao {
                             resultSet.getString("email"),
                             resultSet.getString("motDePasse")
 
+
                     ));
                 }
             }
@@ -46,5 +48,28 @@ public class ParticipantDao {
             throw new NFFRuntimeException("Erreur lors de l'ajout...",e);
         }
         return participantList;
+    }
+
+
+
+    public Participant getParticipant(Integer id) {
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE id = ? AND supprime=false")) {
+            statement.setInt(1, id);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    return new Participant(
+                            resultSet.getInt("id"),
+                            resultSet.getString("nom"),
+                            resultSet.getString("prenom"),
+                            resultSet.getString("email"),
+                            resultSet.getString("motDePasse")
+                    );
+                }
+            }
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
+        }
+        return null;
     }
 }

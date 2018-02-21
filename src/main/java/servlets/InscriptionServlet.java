@@ -39,6 +39,7 @@ public class InscriptionServlet extends AbstractGenericServlet {
          String prenom = req.getParameter("prenom");
          String email = req.getParameter("email");
          String motDePasse = req.getParameter("motDePasse");
+
         Participant newParticipant = new Participant(null, nom, prenom,email, motDePasse);
 
         try {
