@@ -23,24 +23,26 @@
     <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
 
         <div id="mainContent" class="container-fluid">
-            <h3>Commande ton panier North-Fresh Farmers</h3>
-            <h4>Choisis la date à laquelle tu souhaite recevoir ton panier : </h4>
+            <h3>Voici tous les inscrits NFF</h3>
+            <h4>Tu peux leur rajouter des crédits pour qu'ils puissent commander!</h4>
 
             <div class="table-responsive">
                 <table class="table">
                     <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Nom</th>
                         <th>Prénom</th>
-                        <th>Détail</th>
+                        <th>Email</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr th:each="participant : ${participants}">
-                        <td><input type="checkbox"></td>
+                        <td th:text="${participant.id}"></td>
                         <td th:text="${participant.nom}"></td>
                         <td th:text="${participant.prenom}"></td>
-                        <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Voir le détail</button></td>
+                        <td th:text="${participant.email}"></td>
+                        <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ajouter des crédits</button></td>
 
                     </tr>
                     </tbody>

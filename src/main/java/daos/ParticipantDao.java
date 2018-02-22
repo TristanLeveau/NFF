@@ -30,7 +30,7 @@ public class ParticipantDao {
     public List<Participant> ListeParticipants() {
         List<Participant> participantList = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant ORDER BY nom DESC")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant ORDER BY id DESC")) {
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     participantList.add(new Participant(
