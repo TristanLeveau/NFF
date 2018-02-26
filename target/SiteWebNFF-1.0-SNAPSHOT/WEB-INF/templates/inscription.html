@@ -1,84 +1,59 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Inscription</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-</head>
+    <head>
+        <title>Inscription</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    </head>
 
-<body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
-<div class="container-fluid">
-<header th:replace="~{common::header}"></header>
-</div>
-
-<div class="d-flex justify-content-center">
-    <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center;">
-<div class="container">
-    <h3>Inscris-toi pour pouvoir commander un panier ou un abonnement !</h3>
-</div>
+    <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
+    <div class="container-fluid">
+    <header th:replace="~{common::header}"></header>
     </div>
-</div>
-<div class="containeur-fluid">
-<div class="d-flex justify-content-center">
-    <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center;">
 
-        <span class="border border-success">
-    <form>
-        <div class="form-row align-middle">
-            <div class="form-group col-md-4">
-                <label for="prenom">Prénom</label>
-                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" th:value="${participant.prenom}">
+        <div class="d-flex justify-content-center">
+            <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center;">
+                <div class="container">
+
+                    <h3>Inscris-toi pour pouvoir commander un panier ou un abonnement !</h3>
+
+                    <span class="border border-success">
+                        <form method="post" class="formulaireHorizontal" enctype="multipart/form-data">
+                            <div class="form-row align-middle">
+                                <div class="form-group col-md-4">
+                                    <label for="prenom">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" th:value="${participant.prenom}">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="nom">Nom</label>
+                                    <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" th:value="${participant.nom}">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" th:value="${participant.email}">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="motDePasse">Mot de passe</label>
+                                    <input type="password" class="form-control" id="motDePasse" name="motDePasse" placeholder="Mot de passe" th:value="${participant.motDePasse}">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <button type="submit" class="btn boutonvalider">S'inscrire à North-Fresh Farmers</button>
+                            </div>
+                        </form>
+                    </span>
+                </div>
             </div>
-            <div class="form-group col-md-4">
-                <label for="nom">Nom</label>
-                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" th:value="${participant.nom}">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email" th:value="${participant.email}">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="motDePasse">Mot de passe</label>
-                <input type="password" class="form-control" id="motDePasse" name="motDePasse" placeholder="Mot de passe" th:value="${participant.motDePasse}">
-            </div>
-
         </div>
 
-        <div class="form-row">
 
-        <div class="form-group col-md-4">
-            <label for="ecole">Ecole</label>
-            <select id="ecole" class="form-control">
-                <option selected>Autre</option>
-                <option>HEI</option>
-                <option>ISA</option>
-                <option>ISEN</option>
-            </select>
-        </div>
-
-        </div>
-
-        <div class="form-group col-md-4">
-            <button type="submit" class="btn btn-secondary btn-lg btn-block">S'inscrire à North-Fresh Farmers</button>
-        </div>
-    </form>
-        </span>
-</div>
-
-</div>
-</div>
-<hr align="center" size="4" color="black" width="80%">
-<div class="d-flex justify-content-center">
-    <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
-
-        <footer th:replace="~{common::footer}"></footer>
-    </div>
-</div>
+    <footer th:replace="~{common::footer}"></footer>
 
 
-</body>
+    </body>
 </html>

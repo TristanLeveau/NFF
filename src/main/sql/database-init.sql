@@ -18,6 +18,16 @@ CREATE TABLE `participant` (
   INDEX fk_participant_soiree_idx (livraison ASC),
   CONSTRAINT fk_participant_soiree FOREIGN KEY (livraison) REFERENCES livraison(id))ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+  CREATE TABLE `participantALivrer` (
+  `idInstance` int(11) NOT NULL AUTO_INCREMENT,
+  `idLivraison` int(11) NOT NULL,
+  `idParticipant` int(11) NOT NULL,
+  `nom` varchar(45) DEFAULT NULL,
+  `prenom` varchar(45) DEFAULT NULL,
+  `dateLivraison` char(10) DEFAULT NULL,
+  PRIMARY KEY (`idInstance`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE `semestre` (
   label VARCHAR(40) PRIMARY KEY
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

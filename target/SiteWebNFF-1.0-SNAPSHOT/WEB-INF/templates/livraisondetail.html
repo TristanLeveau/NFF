@@ -13,66 +13,45 @@
 
 <header th:replace="~{common::header}"></header>
 
-<div id="mainContent" class="container-fluid">
-		<section class="livraisondetail">
-			<section class="livraisonCadre">
-				<h3 th:text="${livraison.date}"></h3>
-				<div class="livraisoninfos">
-					<h4>Contenu :</h4>
-					<p th:text="${livraison.contenu}" class="resume"></p>
-					<h4>Semestre :</h4>
-					<p th:text="${livraison.semestre.getLabel()}" class="semestre"></p>
-				</div>
-				<div class="boutonOutil" role="toolbar">
-					<div class="groupeBouton" role="group">
-						<a th:href="'soireemodif?id='+${livraison.id}" class="bouton1"><i class="fa fa-reply" aria-hidden="true"></i>Modifier la livraison</a>
-					</div>
-					<div class="groupeBouton" role="group">
-						<a th:href="'suppression?id='+${livraison.id}" class="bouton1"><i class="fa fa-remove" aria-hidden="true"></i>Supprimer la livraison</a>
-					</div>
-					<div class="groupeBouton" role="group">
-						<a th:href="'inscription?id='+${livraison.id}" class="bouton2"><i class="fa fa-check" aria-hidden="true"></i>Je participe!</a>
-					</div>
-				</div>
-				<aside class="livraisonPhoto">
-					<img src="img/fruits-et-légumes1.jpg"	height="300px" width="200px">
-				</aside>
-			</section>
-		</section>
-		<section class="ajoutlivraison">
-			<article class="livraisonCadre">
-				<h3>Clients</h3>
-				<a href="#volet" class="ouvrir">Connectez-vous en tant qu'admin pour voir la liste!</a>
-				<div id="volet" class="cache">
-				<form action="" id="connectionAdmin">
-					<fieldset>
-						<h1>Connection admin</h1>
-						<label>Login</label><input type="text" required />
-						<label>Mot de passe</label><input type="password" required/>
-						<input type="submit" value="connection"/>
-					</fieldset>
-				</form>
-			</article>
-		</section>
-
-		<section class="listeLivraison">
-			<p class="sousTitre"> Voici les clients souhaitant être livrés!</p>
-			<article class="livraisonCadre" th:each="participant : ${participants}">
-				<h3 th:text="${participant.id}"></h3>
-				<p th:text="${participant.prenom}"></p>
-				<p th:text="${participant.nom}"></p>
-				<p th:text="${participant.email}"></p>
-			</article>
-		</section>
-	</div>
-</body>
-
-	<hr align="center" size="4" color="black" width="80%">
 <div class="d-flex justify-content-center">
 	<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
+		<div class="container">
+			<h3>Livraison du</h3>
+				<h3 th:text="${livraison.date}"></h3>
+				<h4>Contenu :</h4>
+				<p th:text="${livraison.contenu}" class="resume"></p>
 
-		<footer th:replace="~{common::footer}"></footer>
+				<h3>Clients</h3>
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+							<tr>
+								<th>ID</th>
+								<th>Nom</th>
+								<th>Prénom</th>
+								<th>Email</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr th:each="participant : ${participants}">
+								<td th:text="${participant.id}"></td>
+								<td th:text="${participant.nom}"></td>
+								<td th:text="${participant.prenom}"></td>
+								<td th:text="${participant.email}"></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
+			<a th:href="'inscription?id='+${livraison.id}" class="bouton2"><i class="fa fa-check" aria-hidden="true"></i>Je participe!</a>
+
+		</div>
+			</div>
+		</div>
 	</div>
-</div>
+
+
+<footer th:replace="~{common::footer}"></footer>
+
 </body>
 </html>

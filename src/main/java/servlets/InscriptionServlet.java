@@ -14,7 +14,6 @@ import java.io.IOException;
 
 @WebServlet("/inscription")
 public class InscriptionServlet extends AbstractGenericServlet {
-    private static final long serialVersionUID = -3497793006266174453L;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -22,7 +21,7 @@ public class InscriptionServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
         if(req.getSession().getAttribute("utilisateurCreationError") != null) {
             context.setVariable("errorMessage", req.getSession().getAttribute("utilisateurCreationError"));
-            context.setVariable("participant", req.getSession().getAttribute("utilisateurCreationData"));
+            context.setVariable("participant",(Participant) req.getSession().getAttribute("utilisateurCreationData"));
 
             req.getSession().removeAttribute("ParticipantCreationError");
             req.getSession().removeAttribute("ParticipantCreationData");
@@ -32,6 +31,7 @@ public class InscriptionServlet extends AbstractGenericServlet {
 
         templateEngine.process("inscription", context, resp.getWriter());
     }
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

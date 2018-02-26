@@ -1,45 +1,51 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="utf-8">
-    <title>À propos</title>
+    <title>North-Fresh Farmers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
 
 <header th:replace="~{common::header}"></header>
 
-<div id="mainContent" class="container-fluid">
-    <section class="ajoutlivraison">
-        <article class="livraisonCadre">
-            <h3>À propos...</h3>
-            <p class="sousTitre">Développeurs du site :
-                <h4>Tristan LEVEAU - Alae-Eddine RACHIDI</h4>
-               <h5> Étudiant aux Hautes Études D'Ingénieur
-                13 Rue de Toul,
-                59000 Lille</h5>
-
-            </p>
-            <p> class="sousTitre">Responsables NFF 2017-2018:</br>
-            <h4>Alae-eddine RACHIDI (Président)
-                </br>Tristan Leveau (Vice-Président)
-                </br>Amélie REGAUD (Trésorière)
-                </br>Vincent Taupin (Communication)
-                </br>Florian Hugault (Logistique)
-                </br>Gauthier DUJARDIN (Assistant)
-            </h4>
-
-            </p>
-        </article>
-    </section>
-</div>
 <div class="d-flex justify-content-center">
     <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
+        <div class="container">
+            <h3>À propos...</h3>
+            <p class="sousTitre">
+                Développeurs du site :
+                </br>
+                </br>
+                Tristan LEVEAU - Alae-Eddine RACHIDI
+                </br>
+                </br>
+                Étudiants aux Hautes Études D'Ingénieur
+                13 Rue de Toul,
+                59000 Lille
+                </br>
+                </br>
 
-        <footer th:replace="~{common::footer}"></footer>
+
+            Responsables NFF 2017-2018:
+            </br>Alae-eddine RACHIDI (Président)
+            </br>Tristan Leveau (Vice-Président)
+            </br>Amélie REGAUD (Trésorière)
+            </br>Vincent Taupin (Communication)
+            </br>Florian Hugault (Logistique)
+            </br>Gauthier DUJARDIN (Assistant)
+
+
+            </p>
+        </div>
     </div>
 </div>
+
+<footer th:replace="~{common::footer}"></footer>
+
 </body>
 </html>
