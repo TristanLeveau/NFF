@@ -81,10 +81,12 @@ public class ParticipantDao {
     public ParticipantALivrer verificationInscription(String email, String motDePasse){
 
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE (email=? AND motDePasse=?)")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE (email=? AND motDePasse=?) LIMIT 1;")) {
+            statement.setString(1, email);
+            statement.setString(2, motDePasse);
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
-                    return new ParticipantALivrer(null,null,
+                    return new ParticipantALivrer(0,0,
                             resultSet.getInt("id"),
                             resultSet.getString("nom"),
                             resultSet.getString("prenom"),
@@ -100,23 +102,25 @@ public class ParticipantDao {
         return null;
     }
 
-    public void addParticipantALivrer(ParticipantALivrer newParticipantALivrer, int idLivraison,String dateLivraison){
+    public void addParticipantALivrer(ParticipantALivrer newParticipantALivrer, int idLivraison,String dateLivraison, int idParticipant){
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("INSERT INTO participantALivrer(idLivraison,nom, prenom,dateLivraison) VALUES (?,?,?,?)")) {
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO participantALivrer(idLivraison,idParticipant prenom,nom,dateLivraison) VALUES (?,?,?,?,?)")) {
             statement.setInt(1,idLivraison);
-            statement.setInt(2, newParticipantALivrer.getIdParticipant());
+            statement.setInt(2, idParticipant);
             statement.setString(3, newParticipantALivrer.getPrenom());
-            statement.setString(4,dateLivraison);
+            statement.setString(4, newParticipantALivrer.getNom());
+            statement.setString(5,dateLivraison);
             statement.executeUpdate();
         } catch (SQLException e) {
             throw new NFFRuntimeException("Erreur lors de la récupération des données", e);
         }
     }
 
-    public List<ParticipantALivrer> ListeParticipantsALivrer() {
+    public List<ParticipantALivrer> ListeParticipantsALivrer(Integer idLivraison) {
         List<ParticipantALivrer> participantLivraisonList = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participantALivrer ORDER BY idInstance DESC")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participantALivrer WHERE idLivraison=? ORDER BY idInstance DESC")) {
+            statement.setInt(1, idLivraison);
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     participantLivraisonList.add(new ParticipantALivrer(

@@ -30,7 +30,6 @@
 			<table class="table">
 				<thead>
 				<tr>
-					<th>Choix</th>
 					<th>Date</th>
 					<th>Contenu</th>
 					<th>Détails</th>
@@ -38,7 +37,6 @@
 				</thead>
 				<tbody>
 				<tr th:each="livraison : ${livraisons}">
-					<td><input type="checkbox"></td>
 					<td th:text="${livraison.date}"></td>
 					<td th:text="${livraison.contenu}"></td>
 					<td><a th:href="'livraisondetail?id='+${livraison.id}" type="button" class="btn btn-info btn-lg">Voir le détail</a></td>
@@ -47,10 +45,6 @@
 			</table>
 		</div>
 
-
-		<div class="mx-auto">
-			<button type="button" class="btn btn-dark btn-lg">Valider la commande</button>
-		</div>
 
 		<a class="nav-link disabled red" href="javascript:AccesProtege()">Administration</a>
 	</div>

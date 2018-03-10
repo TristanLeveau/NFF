@@ -10,27 +10,24 @@
 </head>
 
 <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
-<div class="container-fluid">
-    <header th:replace="~{common::header}"></header>
-</div>
+
+<header th:replace="~{common::header}"></header>
+
 <div class="d-flex justify-content-center">
     <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
         <div class="container">
-            <h1>Administration</h1>
-            <p>Bienvenue! Voici les fonctionnalités admin.</p>
-            <div class="list-group">
-                <a href="livraisonadd" class="list-group-item list-group-item-action">Ajouter une livraison</a>
-                <a href="gestionlivraison" class="list-group-item list-group-item-action">Récapitulatif des livraisons</a>
-                <a href="listeclients" class="list-group-item list-group-item-action">Liste des inscrits</a>
-                <a href="#" class="list-group-item list-group-item-action">Écrire un article</a>
-            </div>
+            <h3>Participation</h3>
+            <p>Rentres tes identifiants pour pouvoir participer!</p>
+            <form  method="post" class="formulaireHorizontal" enctype="multipart/form-data">
+                <input class="form-control mr-sm-1" type="email" name="email" placeholder="Email" aria-label="Email">
+                <input class="form-control mr-sm-1" type="password" name="motDePasse" placeholder="Mot de passe" aria-label="password">
+                <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Commander</button>
+            </form>
         </div>
     </div>
 </div>
 
-
 <footer th:replace="~{common::footer}"></footer>
-
 
 </body>
 </html>

@@ -4,6 +4,7 @@ import daos.ParticipantDao;
 import daos.LivraisonDao;
 import pojos.Livraison;
 import pojos.Participant;
+import pojos.ParticipantALivrer;
 import java.io.IOException;
 import java.util.List;
 
@@ -56,4 +57,17 @@ public class LivraisonService {
 		livraisonDao.updateLivraison(newLivraison);
 	}
 
+
+	public ParticipantALivrer verificationInscription (String email, String motDePasse){
+	ParticipantALivrer newParticipantLivraison = participantDao.verificationInscription(email,motDePasse);
+	return newParticipantLivraison;
+}
+	public void addParticipantALivrer(ParticipantALivrer newParticipantLivraison,int idLivraison, String dateLivraison, int idParticipant) {
+		participantDao.addParticipantALivrer(newParticipantLivraison,idLivraison,dateLivraison, idParticipant);
+	}
+
+	public List<ParticipantALivrer> ListeParticipantsALivrer(Integer idLivraison){
+		List participantsALivrer = participantDao.ListeParticipantsALivrer(idLivraison);
+		return participantsALivrer;
+	}
 }

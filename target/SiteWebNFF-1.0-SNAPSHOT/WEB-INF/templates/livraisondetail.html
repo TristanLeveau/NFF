@@ -18,32 +18,39 @@
 		<div class="container">
 			<h3>Livraison du</h3>
 				<h3 th:text="${livraison.date}"></h3>
+
 				<h4>Contenu :</h4>
 				<p th:text="${livraison.contenu}" class="resume"></p>
+
+			<a th:href="'participation?id='+${livraison.id}+'&date='+${livraison.date}" class="bouton2"><i class="fa fa-check" aria-hidden="true"></i>Je participe!</a>
+
 
 				<h3>Clients</h3>
 					<div class="table-responsive">
 						<table class="table">
 							<thead>
 							<tr>
-								<th>ID</th>
+								<th>ID Commande</th>
+								<th>ID Livraison</th>
+								<th>ID Client</th>
 								<th>Nom</th>
 								<th>Prénom</th>
 								<th>Email</th>
 							</tr>
 							</thead>
 							<tbody>
-							<tr th:each="participant : ${participants}">
-								<td th:text="${participant.id}"></td>
-								<td th:text="${participant.nom}"></td>
-								<td th:text="${participant.prenom}"></td>
-								<td th:text="${participant.email}"></td>
+							<tr th:each="participantALivrer : ${participantsALivrer}">
+								<td th:text="${participantALivrer.idInstance}"></td>
+								<td th:text="${participantALivrer.idLivraison}"></td>
+								<td th:text="${participantALivrer.idParticipant}"></td>
+								<td th:text="${participantALivrer.nom}"></td>
+								<td th:text="${participantALivrer.prenom}"></td>
+								<td th:text="${participantALivrer.email}"></td>
 							</tr>
 							</tbody>
 						</table>
 					</div>
 
-			<a th:href="'inscription?id='+${livraison.id}" class="bouton2"><i class="fa fa-check" aria-hidden="true"></i>Je participe!</a>
 
 		</div>
 			</div>
