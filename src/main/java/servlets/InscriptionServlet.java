@@ -1,6 +1,6 @@
 package servlets;
 
-import pojos.Participant;
+//import pojos.Participant;
 import pojos.Livraison;
 import services.LivraisonService;
 import org.thymeleaf.TemplateEngine;
@@ -15,8 +15,8 @@ import java.io.IOException;
 @WebServlet("/inscription")
 public class InscriptionServlet extends AbstractGenericServlet {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+   /* protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
         WebContext context = new WebContext(req, resp, getServletContext());
         if(req.getSession().getAttribute("utilisateurCreationError") != null) {
@@ -53,6 +53,6 @@ public class InscriptionServlet extends AbstractGenericServlet {
             resp.sendRedirect("home");
         }
 
-    }
+    }*/
 
 }

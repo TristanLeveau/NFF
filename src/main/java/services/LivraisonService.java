@@ -3,7 +3,7 @@ package services;
 import daos.ParticipantDao;
 import daos.LivraisonDao;
 import pojos.Livraison;
-import pojos.Participant;
+//import pojos.Participant;
 import pojos.ParticipantALivrer;
 import java.io.IOException;
 import java.util.List;
@@ -44,7 +44,7 @@ public class LivraisonService {
 	}
 
 
-	public void addParticipant(Participant participant){
+	/*public void addParticipant(Participant participant){
 		participantDao.addParticipant(participant);
 	}
 
@@ -59,11 +59,12 @@ public class LivraisonService {
 
 
 	public ParticipantALivrer verificationInscription (String email, String motDePasse){
-	ParticipantALivrer newParticipantLivraison = participantDao.verificationInscription(email,motDePasse);
+	ParticipantALivrer newParticipantLivraison = participantDao.addParticipantALivrer(email,motDePasse);
 	return newParticipantLivraison;
-}
-	public void addParticipantALivrer(ParticipantALivrer newParticipantLivraison,int idLivraison, String dateLivraison, int idParticipant) {
-		participantDao.addParticipantALivrer(newParticipantLivraison,idLivraison,dateLivraison, idParticipant);
+}*/
+
+	public void addParticipantALivrer(ParticipantALivrer newParticipantLivraison, Integer idLivraison) {
+		participantDao.addParticipantALivrer(newParticipantLivraison,idLivraison);
 	}
 
 	public List<ParticipantALivrer> ListeParticipantsALivrer(Integer idLivraison){

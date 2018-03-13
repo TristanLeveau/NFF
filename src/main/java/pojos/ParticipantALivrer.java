@@ -2,49 +2,29 @@ package pojos;
 
 public class ParticipantALivrer {
 
-    private Integer idInstance;
-    private Integer idLivraison;
-    private Integer idParticipant;
+    private Integer idParticipantALivrer;
 
     private String nom;
     private String prenom;
-    private String date;
+    private String email;
+    private String motDePasse;
 
 
-    public ParticipantALivrer(Integer idInstance, Integer idLivraison, Integer idParticipant, String nom, String prenom, String date) {
-        this.idInstance = idInstance;
-        this.idLivraison = idLivraison;
-        this.idParticipant = idParticipant;
+    public ParticipantALivrer(Integer idParticipantALivrer, String nom, String prenom, String email, String motDePasse) {
+        this.idParticipantALivrer = idParticipantALivrer;
         this.nom = nom;
         this.prenom = prenom;
-        this.date = date;
+        this.email = email;
+        this.motDePasse = motDePasse;
     }
 
 
-    public Integer getIdInstance() {
-        return idInstance;
+    public Integer getIdParticipantALivrer() {
+        return idParticipantALivrer;
     }
 
-
-
-    public void setIdInstance(Integer idInstance) {
-        this.idInstance = idInstance;
-    }
-
-    public Integer getIdLivraison() {
-        return idLivraison;
-    }
-
-    public void setIdLivraison(Integer idLivraison) {
-        this.idLivraison = idLivraison;
-    }
-
-    public Integer getIdParticipant() {
-        return idParticipant;
-    }
-
-    public void setIdParticipant(Integer idParticipant) {
-        this.idParticipant = idParticipant;
+    public void setIdParticipantALivrer(Integer idParticipantALivrer) {
+        this.idParticipantALivrer = idParticipantALivrer;
     }
 
     public String getNom() {
@@ -59,17 +39,19 @@ public class ParticipantALivrer {
         return prenom;
     }
 
+    public String getEmail(){return email;}
+
+    public void setEmail(String email){this.email=email;}
+
+    public String getMotDePasse(){return motDePasse;}
+
+    public void setMotDePasse(String motDePasse){this.email=motDePasse;}
+
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
 
-    public String getDate() {
-        return date;
-    }
 
-    public void setDate(String date) {
-        this.date = date;
-    }
 
 
 

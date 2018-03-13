@@ -16,7 +16,7 @@ public class ListeClientsServlet extends AbstractGenericServlet {
 
     private static final long serialVersionUID = 5402133218271984030L;
 
-    @Override
+   /* @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
 
@@ -30,6 +30,6 @@ public class ListeClientsServlet extends AbstractGenericServlet {
 
         resp.sendRedirect("listeclients");
     }
-
+    */
 }
 

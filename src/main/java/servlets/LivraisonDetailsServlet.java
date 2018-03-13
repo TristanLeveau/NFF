@@ -1,7 +1,7 @@
 package servlets;
 
 import pojos.Livraison;
-import pojos.Participant;
+//import pojos.Participant;
 import pojos.ParticipantALivrer;
 import services.LivraisonService;
 import org.thymeleaf.TemplateEngine;
@@ -23,11 +23,10 @@ public class LivraisonDetailsServlet extends AbstractGenericServlet {
 		WebContext context = new WebContext(req, resp, getServletContext());
 
 
-		Integer idLivraison = Integer.parseInt(req.getParameter("id"));
+		Integer idLivraison = Integer.parseInt(req.getParameter("idlivraison"));
 		Livraison livraison = LivraisonService.getInstance().getLivraison(idLivraison);
 		context.setVariable("livraison", livraison);
 		context.setVariable("participantsALivrer", LivraisonService.getInstance().ListeParticipantsALivrer(idLivraison));
-		context.setVariable("newParticipantALivrer", new ParticipantALivrer(null, idLivraison,null, null, null,livraison.getDate()));
 		if (livraison == null) {
 			resp.sendRedirect("home");
 		}

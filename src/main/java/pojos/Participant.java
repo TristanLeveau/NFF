@@ -1,4 +1,4 @@
-package pojos;
+/*package pojos;
 
 public class Participant {
 
@@ -46,3 +46,4 @@ public class Participant {
         this.motDePasse=motDePasse;
     }
 }
+*/

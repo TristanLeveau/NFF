@@ -16,7 +16,7 @@ import java.io.IOException;
 @WebServlet("/livraisonmodif")
 public class LivraisonModificationServlet extends AbstractGenericServlet {
 
-    @Override
+  /*  @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Integer id = Integer.parseInt(req.getParameter("id"));
         TemplateEngine templateEngine = this.createTemplateEngine(req);
@@ -44,4 +44,5 @@ public class LivraisonModificationServlet extends AbstractGenericServlet {
             resp.sendRedirect("home");
         }
     }
+    */
 }

@@ -39,7 +39,7 @@
 				<tr th:each="livraison : ${livraisons}">
 					<td th:text="${livraison.date}"></td>
 					<td th:text="${livraison.contenu}"></td>
-					<td><a th:href="'livraisondetail?id='+${livraison.id}" type="button" class="btn btn-info btn-lg">Voir le détail</a></td>
+					<td><a th:href="'livraisondetail?idlivraison='+${livraison.id}" type="button" class="btn btn-info btn-lg">Voir le détail</a></td>
 				</tr>
 				</tbody>
 			</table>
