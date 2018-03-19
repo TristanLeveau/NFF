@@ -71,4 +71,8 @@ public class LivraisonService {
 		List participantsALivrer = participantDao.ListeParticipantsALivrer(idLivraison);
 		return participantsALivrer;
 	}
+
+	public void addAbonnement5(ParticipantALivrer newParticipantALivrer){
+		participantDao.addAbonnement5(newParticipantALivrer);
+	}
 }

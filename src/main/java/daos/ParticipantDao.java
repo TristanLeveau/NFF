@@ -102,14 +102,15 @@ public class ParticipantDao {
         return null;
     }
 */
-    public void addParticipantALivrer(ParticipantALivrer newParticipantALivrer, int idLivraison,String dateLivraison, int idParticipant){
+    public void addParticipantALivrer(ParticipantALivrer newParticipantALivrer, int idLivraison){
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("INSERT INTO participant(idLivraison,idParticipant prenom,nom,dateLivraison) VALUES (?,?,?,?,?)")) {
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO participant(idlivraison, prenom,nom, email, motDePasse) VALUES (?,?,?,?,?)")) {
             statement.setInt(1,idLivraison);
-            statement.setInt(2, idParticipant);
-            statement.setString(3, newParticipantALivrer.getPrenom());
-            statement.setString(4, newParticipantALivrer.getNom());
-            statement.setString(5,dateLivraison);
+            statement.setString(2, newParticipantALivrer.getPrenom());
+            statement.setString(3, newParticipantALivrer.getNom());
+            statement.setString(4, newParticipantALivrer.getEmail());
+            statement.setString(5, newParticipantALivrer.getMotDePasse());
+
             statement.executeUpdate();
         } catch (SQLException e) {
             throw new NFFRuntimeException("Erreur lors de la récupération des données", e);
@@ -138,16 +139,34 @@ public class ParticipantDao {
         return participantLivraisonList;
     }
 
-    public void addParticipantALivrer(ParticipantALivrer newParticipantALivrer,Integer idLivraison) {
+
+    public void addAbonnement5(ParticipantALivrer newParticipantALivrer){
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("INSERT INTO participantALivrer(nom,prenom,email,motDePasse,livraison) VALUES (?,?,?,?,?)")) {
-            statement.setInt(1, newParticipantALivrer.getIdParticipantALivrer());
+        PreparedStatement statement = connection.prepareStatement(
+                "INSERT INTO participantALivrer(nom,prenom,email,motDePasse,idlivraison) VALUES (?,?,?,?,1),(?,?,?,?,2),(?,?,?,?,3),(?,?,?,?,4),(?,?,?,?,5)"
+        )){
+            statement.setString(1, newParticipantALivrer.getNom());
             statement.setString(2, newParticipantALivrer.getPrenom());
             statement.setString(3, newParticipantALivrer.getEmail());
             statement.setString(4, newParticipantALivrer.getMotDePasse());
-            statement.setInt(5,idLivraison);
-            statement.executeUpdate();
-        } catch (SQLException e) {
+            statement.setString(5, newParticipantALivrer.getNom());
+            statement.setString(6, newParticipantALivrer.getPrenom());
+            statement.setString(7, newParticipantALivrer.getEmail());
+            statement.setString(8, newParticipantALivrer.getMotDePasse());
+            statement.setString(19, newParticipantALivrer.getNom());
+            statement.setString(10, newParticipantALivrer.getPrenom());
+            statement.setString(11, newParticipantALivrer.getEmail());
+            statement.setString(12, newParticipantALivrer.getMotDePasse());
+            statement.setString(13, newParticipantALivrer.getNom());
+            statement.setString(14, newParticipantALivrer.getPrenom());
+            statement.setString(15, newParticipantALivrer.getEmail());
+            statement.setString(16, newParticipantALivrer.getMotDePasse());
+            statement.setString(17, newParticipantALivrer.getNom());
+            statement.setString(18, newParticipantALivrer.getPrenom());
+            statement.setString(19, newParticipantALivrer.getEmail());
+            statement.setString(20, newParticipantALivrer.getMotDePasse());
+
+        }catch (SQLException e) {
             throw new NFFRuntimeException("Erreur lors de la récupération des données", e);
         }
     }

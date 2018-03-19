@@ -1,9 +1,9 @@
 package pojos;
 
 public enum Semestre {
-    S1("Semestre 1"),
-    S2("Semestre 2");
-
+    S1("Semestre 1 (25€)"),
+    S2("5 paniers - Semestre 2 (25€)"),
+    S1S2("10 paniers - 2 semestres (45€)");
     private String label;
 
     Semestre(String label) {
