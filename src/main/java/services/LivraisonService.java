@@ -3,8 +3,7 @@ package services;
 import daos.ParticipantDao;
 import daos.LivraisonDao;
 import pojos.Livraison;
-//import pojos.Participant;
-import pojos.ParticipantALivrer;
+import pojos.Participant;
 import java.io.IOException;
 import java.util.List;
 
@@ -63,16 +62,25 @@ public class LivraisonService {
 	return newParticipantLivraison;
 }*/
 
-	public void addParticipantALivrer(ParticipantALivrer newParticipantLivraison, Integer idLivraison) {
-		participantDao.addParticipantALivrer(newParticipantLivraison,idLivraison);
+	public void addParticipant (Participant newParticipant, Integer idLivraison) {
+		if(newParticipant.getNom() == null || "".equals(newParticipant.getNom())) {
+			throw new IllegalArgumentException("Un nom doit être renseigné.");
+		}
+		if (newParticipant.getPrenom()==null|| "".equals(newParticipant.getPrenom())){
+			throw new IllegalArgumentException("Un prénom doit être spécifié");
+		}
+		if (newParticipant.getEmail()==null|| "".equals(newParticipant.getEmail())){
+			throw new IllegalArgumentException("Un email doit être spécifié");
+		}
+		participantDao.addParticipant(newParticipant,idLivraison);
 	}
 
-	public List<ParticipantALivrer> ListeParticipantsALivrer(Integer idLivraison){
-		List participantsALivrer = participantDao.ListeParticipantsALivrer(idLivraison);
-		return participantsALivrer;
+	public List<Participant> ListeParticipants(Integer idLivraison){
+		List participants = participantDao.ListeParticipants(idLivraison);
+		return participants;
 	}
 
-	public void addAbonnement5(ParticipantALivrer newParticipantALivrer){
-		participantDao.addAbonnement5(newParticipantALivrer);
+	public void addAbonnement5(Participant newParticipant){
+		participantDao.addAbonnement5(newParticipant);
 	}
 }

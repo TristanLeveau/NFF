@@ -36,11 +36,11 @@
 							</tr>
 							</thead>
 							<tbody>
-							<tr th:each="participantALivrer : ${participantsALivrer}">
-								<td th:text="${participantALivrer.idParticipantALivrer}"></td>
-								<td th:text="${participantALivrer.nom}"></td>
-								<td th:text="${participantALivrer.prenom}"></td>
-								<td th:text="${participantALivrer.email}"></td>
+							<tr th:each="participant : ${participants}">
+								<td th:text="${participant.idParticipant}"></td>
+								<td th:text="${participant.nom}"></td>
+								<td th:text="${participant.prenom}"></td>
+								<td th:text="${participant.email}"></td>
 							</tr>
 							</tbody>
 						</table>

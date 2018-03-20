@@ -3,7 +3,7 @@ package servlets;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 import pojos.Livraison;
-import pojos.ParticipantALivrer;
+import pojos.Participant;
 import pojos.Semestre;
 import services.LivraisonService;
 
@@ -26,7 +26,7 @@ public class AddAbonnementServlet extends AbstractGenericServlet{
             req.getSession().removeAttribute("livraisonCreationError");
             req.getSession().removeAttribute("livraisonCreationData");
         } else {
-            context.setVariable("participantabonnement", new ParticipantALivrer(null,null,null,null,null));
+            context.setVariable("participantabonnement", new Participant(null,null,null,null,null));
         }
 
         templateEngine.process("abonnement", context, resp.getWriter());
@@ -39,16 +39,16 @@ public class AddAbonnementServlet extends AbstractGenericServlet{
         String email = req.getParameter("email");
         String motDePasse = req.getParameter("motDePasse");
 
-        ParticipantALivrer newParticipantALivrer = new ParticipantALivrer(null, nom, prenom,email, motDePasse);
+        Participant newParticipant = new Participant(null, nom, prenom,email, motDePasse);
 
         try {
-            LivraisonService.getInstance().addAbonnement5(newParticipantALivrer);
+            LivraisonService.getInstance().addAbonnement5(newParticipant);
             resp.sendRedirect("validationlivraison");
         }
 
         catch (IllegalArgumentException e) {
             req.getSession().setAttribute("ParticipationCreationError", e.getMessage());
-            req.getSession().setAttribute("ParticipationCreationData", newParticipantALivrer);
+            req.getSession().setAttribute("ParticipationCreationData", newParticipant);
             resp.sendRedirect("home");
         }
 

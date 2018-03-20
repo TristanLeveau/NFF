@@ -31,7 +31,7 @@ public class LivraisonDaoTestCase extends AbstractDaoTestCase {
         //WHEN
         List<Livraison> livraisons = livraisonDao.listLivraisons();
         //THEN
-        // Assertions.assertThat(livraisons).hasSize(3);
+        Assertions.assertThat(livraisons).hasSize(3);
         Assertions.assertThat(livraisons).extracting("id","contenu","date").containsOnly(
                 Assertions.tuple(1,"salade","03/04/2018"),
                 Assertions.tuple(2,"tomate","03/04/2018"),

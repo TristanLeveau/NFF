@@ -15,7 +15,6 @@ public abstract class AbstractDaoTestCase {
 	        Statement statement = connection.createStatement()){
 			statement.executeUpdate("DELETE FROM participant");
 			statement.executeUpdate("DELETE FROM livraison");
-
 	        this.insertDataSet(statement);
 		}
 	}
