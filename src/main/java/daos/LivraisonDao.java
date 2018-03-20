@@ -1,10 +1,12 @@
 package daos;
 
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import exceptions.NFFRuntimeException;
 import pojos.Livraison;
 import pojos.Semestre;
 
 import javax.servlet.http.Part;
+import javax.sql.DataSource;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.*;
@@ -12,6 +14,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LivraisonDao {
+
+	public DataSource getDatasource(){
+		MysqlDataSource dataSource = new MysqlDataSource();
+		dataSource.setServerName("localhost");
+		dataSource.setPort(3306);
+		dataSource.setDatabaseName("projet_perso");
+		dataSource.setUser("root");
+		dataSource.setPassword("AZEpoi77!");
+
+		return dataSource;
+	}
 
 	public List<Livraison> listLivraisons() {
 		List<Livraison> livraisons = new ArrayList<>();

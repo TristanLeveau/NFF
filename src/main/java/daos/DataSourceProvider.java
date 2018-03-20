@@ -9,6 +9,17 @@ import java.util.Properties;
 
 public class DataSourceProvider {
 
+	protected DataSource getDatasource() {
+		MysqlDataSource dataSource = new MysqlDataSource();
+		dataSource.setServerName("localhost");
+		dataSource.setPort(3306);
+		dataSource.setDatabaseName("northfreshfarmers");
+		dataSource.setUser("root");
+		dataSource.setPassword("AZEpoi77!");
+
+		return dataSource;
+	}
+
 	private static class DataSourceProviderHolder {
 		private final static DataSourceProvider instance = new DataSourceProvider();
 	}

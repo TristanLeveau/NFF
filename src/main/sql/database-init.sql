@@ -15,8 +15,8 @@ CREATE TABLE `participant` (
   `motDePasse` varchar(45) DEFAULT NULL,
    `livraison` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX fk_participant_soiree_idx (livraison ASC),
-  CONSTRAINT fk_participant_soiree FOREIGN KEY (livraison) REFERENCES livraison(id))ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  INDEX fk_participant_livraison_idx (livraison ASC),
+  CONSTRAINT fk_participant_livraison FOREIGN KEY (livraison) REFERENCES livraison(id))ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `participantALivrer` (
@@ -27,6 +27,6 @@ CREATE TABLE `participantALivrer` (
   `motDePasse` varchar(45) DEFAULT NULL,
   `livraison` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX fk_participant_soiree_idx (soiree ASC),
-  CONSTRAINT fk_participant_soiree FOREIGN KEY (livraison) REFERENCES soiree(id))ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  INDEX fk_participant_livraison_idx (livraison ASC),
+  CONSTRAINT fk_participant_livraison FOREIGN KEY (livraison) REFERENCES livraison(id))ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
