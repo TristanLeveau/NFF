@@ -19,9 +19,9 @@ public class LivraisonDao {
 		MysqlDataSource dataSource = new MysqlDataSource();
 		dataSource.setServerName("localhost");
 		dataSource.setPort(3306);
-		dataSource.setDatabaseName("projet_perso");
+		dataSource.setDatabaseName("northFreshFarmers");
 		dataSource.setUser("root");
-		dataSource.setPassword("AZEpoi77!");
+		dataSource.setPassword("tristan123");
 
 		return dataSource;
 	}

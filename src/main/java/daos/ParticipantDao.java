@@ -106,12 +106,9 @@ public class ParticipantDao {
         return null;
     }
 */
-<<<<<<< HEAD
 
-    public void addParticipantALivrer(ParticipantALivrer newParticipantALivrer, int idLivraison,String dateLivraison, int idParticipant){
-=======
+
     public void addParticipantALivrer(ParticipantALivrer newParticipantALivrer, int idLivraison){
->>>>>>> 9f3ac0f9f6a248f2f0bc7165053105819ca21cba
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement("INSERT INTO participant(idlivraison, prenom,nom, email, motDePasse) VALUES (?,?,?,?,?)")) {
             statement.setInt(1,idLivraison);
