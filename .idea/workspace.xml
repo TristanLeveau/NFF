@@ -7,25 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39ffeaea-92f6-4a6d-9236-26685526176e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/AddAbonnementServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/abonnement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/ParticipantDao.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/ParticipantDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/pojos/Semestre.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/pojos/Semestre.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationLivraisonServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationLivraisonServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/daos/ParticipantDao.class" afterPath="$PROJECT_DIR$/target/classes/daos/ParticipantDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pojos/Semestre.class" afterPath="$PROJECT_DIR$/target/classes/pojos/Semestre.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/LivraisonService.class" afterPath="$PROJECT_DIR$/target/classes/services/LivraisonService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/ParticipationLivraisonServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ParticipationLivraisonServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java" afterPath="$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pojos/Semestre.java" afterPath="$PROJECT_DIR$/src/main/java/pojos/Semestre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/LivraisonService.java" afterPath="$PROJECT_DIR$/src/main/java/services/LivraisonService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/database-init.sql" afterPath="$PROJECT_DIR$/src/main/sql/database-init.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/common.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/common.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,16 +46,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="abonnement.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/abonnement.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,9 +59,25 @@
       <file leaf-file-name="database-init.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="15" />
+            <state relative-caret-position="143">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LivraisonDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/daos/LivraisonDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-544">
+              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="33" />
+              <folding>
+                <marker date="1519164880000" expanded="true" signature="586:642" ph="SELECT * FRO... livraison" />
+                <marker date="1519164880000" expanded="true" signature="1197:1252" ph="SELECT * FRO... livraison" />
+                <marker date="1519164880000" expanded="true" signature="1877:1927" ph="INSERT INTO livraison... " />
+                <marker date="1519164880000" expanded="true" signature="2397:2444" ph="UPDATE livra... " />
+                <marker date="1519164880000" expanded="true" signature="2785:2834" ph="UPDATE livra... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,33 +102,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParticipantDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ParticipantDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="151" column="33" lean-forward="false" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
+            <state relative-caret-position="-544">
+              <caret line="122" column="86" lean-forward="false" selection-start-line="122" selection-start-column="86" selection-end-line="122" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1521459649000" expanded="true" signature="602:672" ph="INSERT INTO participant... " />
-                <marker date="1521459649000" expanded="true" signature="1437:1479" ph="SELECT * FRO... participant" />
-                <marker date="1521459649000" expanded="true" signature="2424:2481" ph="SELECT * FRO... participant" />
-                <marker date="1521459649000" expanded="true" signature="3456:3522" ph="SELECT * FRO... participant" />
-                <marker date="1521459649000" expanded="true" signature="4464:4550" ph="INSERT INTO participantALivrer... " />
-                <marker date="1521459649000" expanded="true" signature="5407:5488" ph="SELECT * FRO... participantALivrer" />
-                <marker date="1521459649000" expanded="true" signature="6493:6551" ph="INSERT INTO participantALivrer... " />
-                <marker date="1521459649000" expanded="true" signature="6493:6571" ph="INSERT INTO participantALivrer... " />
-                <marker date="1521459649000" expanded="true" signature="6493:6631" ph="INSERT INTO participantALivrer... " />
-                <marker date="1521459649000" expanded="true" signature="6493:6643" ph="INSERT INTO participantALivrer... " />
+                <marker date="1521530961000" expanded="true" signature="602:672" ph="INSERT INTO participant... " />
+                <marker date="1521530961000" expanded="true" signature="1437:1479" ph="SELECT * FRO... participant" />
+                <marker date="1521530961000" expanded="true" signature="2424:2481" ph="SELECT * FRO... participant" />
+                <marker date="1521530961000" expanded="true" signature="3456:3522" ph="SELECT * FRO... participant" />
+                <marker date="1521530961000" expanded="true" signature="4464:4550" ph="INSERT INTO participantALivrer... " />
+                <marker date="1521530961000" expanded="true" signature="5407:5469" ph="SELECT * FRO... participantALivrer" />
+                <marker date="1521530961000" expanded="true" signature="6474:6532" ph="INSERT INTO participantALivrer... " />
+                <marker date="1521530961000" expanded="true" signature="6474:6552" ph="INSERT INTO participantALivrer... " />
+                <marker date="1521530961000" expanded="true" signature="6474:6612" ph="INSERT INTO participantALivrer... " />
+                <marker date="1521530961000" expanded="true" signature="6474:6624" ph="INSERT INTO participantALivrer... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validationlivraison.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="validationlivraison.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="236">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -244,10 +233,10 @@
         <option value="$PROJECT_DIR$/src/main/java/pojos/Semestre.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/AddAbonnementServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/abonnement.html" />
-        <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" />
-        <option value="$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html" />
+        <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java" />
       </list>
     </option>
   </component>
@@ -265,8 +254,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="130" />
+    <option name="x" value="67" />
+    <option name="y" value="62" />
     <option name="width" value="1440" />
     <option name="height" value="682" />
   </component>
@@ -321,134 +310,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="daos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pojos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawesome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawesome" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawesome" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NFF" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NFF" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -683,12 +544,12 @@
       <workItem from="1519232748047" duration="8902000" />
       <workItem from="1483228965872" duration="18519000" />
       <workItem from="1520682658455" duration="11616000" />
-      <workItem from="1521451032886" duration="6956000" />
+      <workItem from="1521451032886" duration="7898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125980000" />
+    <option name="totallyTimeSpent" value="126922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,7 +561,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="130" width="1440" height="682" extended-state="0" />
+    <frame x="67" y="62" width="1440" height="682" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1035,20 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daos/LivraisonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <marker date="1519164880000" expanded="true" signature="586:642" ph="SELECT * FRO... livraison" />
-            <marker date="1519164880000" expanded="true" signature="1197:1252" ph="SELECT * FRO... livraison" />
-            <marker date="1519164880000" expanded="true" signature="1877:1927" ph="INSERT INTO livraison... " />
-            <marker date="1519164880000" expanded="true" signature="2397:2444" ph="UPDATE livra... " />
-            <marker date="1519164880000" expanded="true" signature="2785:2834" ph="UPDATE livra... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/LivraisonService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -1137,14 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1153,31 +992,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="151" column="33" lean-forward="false" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
+        <state relative-caret-position="236">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/daos/LivraisonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1521459649000" expanded="true" signature="602:672" ph="INSERT INTO participant... " />
-            <marker date="1521459649000" expanded="true" signature="1437:1479" ph="SELECT * FRO... participant" />
-            <marker date="1521459649000" expanded="true" signature="2424:2481" ph="SELECT * FRO... participant" />
-            <marker date="1521459649000" expanded="true" signature="3456:3522" ph="SELECT * FRO... participant" />
-            <marker date="1521459649000" expanded="true" signature="4464:4550" ph="INSERT INTO participantALivrer... " />
-            <marker date="1521459649000" expanded="true" signature="5407:5488" ph="SELECT * FRO... participantALivrer" />
-            <marker date="1521459649000" expanded="true" signature="6493:6551" ph="INSERT INTO participantALivrer... " />
-            <marker date="1521459649000" expanded="true" signature="6493:6571" ph="INSERT INTO participantALivrer... " />
-            <marker date="1521459649000" expanded="true" signature="6493:6631" ph="INSERT INTO participantALivrer... " />
-            <marker date="1521459649000" expanded="true" signature="6493:6643" ph="INSERT INTO participantALivrer... " />
+            <marker date="1519164880000" expanded="true" signature="586:642" ph="SELECT * FRO... livraison" />
+            <marker date="1519164880000" expanded="true" signature="1197:1252" ph="SELECT * FRO... livraison" />
+            <marker date="1519164880000" expanded="true" signature="1877:1927" ph="INSERT INTO livraison... " />
+            <marker date="1519164880000" expanded="true" signature="2397:2444" ph="UPDATE livra... " />
+            <marker date="1519164880000" expanded="true" signature="2785:2834" ph="UPDATE livra... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="-544">
+          <caret line="122" column="86" lean-forward="false" selection-start-line="122" selection-start-column="86" selection-end-line="122" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1521530961000" expanded="true" signature="602:672" ph="INSERT INTO participant... " />
+            <marker date="1521530961000" expanded="true" signature="1437:1479" ph="SELECT * FRO... participant" />
+            <marker date="1521530961000" expanded="true" signature="2424:2481" ph="SELECT * FRO... participant" />
+            <marker date="1521530961000" expanded="true" signature="3456:3522" ph="SELECT * FRO... participant" />
+            <marker date="1521530961000" expanded="true" signature="4464:4550" ph="INSERT INTO participantALivrer... " />
+            <marker date="1521530961000" expanded="true" signature="5407:5469" ph="SELECT * FRO... participantALivrer" />
+            <marker date="1521530961000" expanded="true" signature="6474:6532" ph="INSERT INTO participantALivrer... " />
+            <marker date="1521530961000" expanded="true" signature="6474:6552" ph="INSERT INTO participantALivrer... " />
+            <marker date="1521530961000" expanded="true" signature="6474:6612" ph="INSERT INTO participantALivrer... " />
+            <marker date="1521530961000" expanded="true" signature="6474:6624" ph="INSERT INTO participantALivrer... " />
+          </folding>
         </state>
       </provider>
     </entry>

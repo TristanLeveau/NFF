@@ -120,7 +120,7 @@ public class ParticipantDao {
     public List<ParticipantALivrer> ListeParticipantsALivrer(Integer idLivraison) {
         List<ParticipantALivrer> participantLivraisonList = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM northFreshFarmers2.participant WHERE idlivraison=? ORDER BY id DESC")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE idlivraison=? ORDER BY id DESC")) {
             statement.setInt(1, idLivraison);
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
