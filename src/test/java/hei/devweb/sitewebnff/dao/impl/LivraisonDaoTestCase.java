@@ -39,5 +39,59 @@ public class LivraisonDaoTestCase extends AbstractDaoTestCase {
         );
     }
 
+    @Test
+    public void shouldAddLivraison() throws SQLException {
+        //GIVEN
+        Livraison livraison = new Livraison(null, "20/03/2018", "double salade");
+        //WHEN
+        livraisonDao.addLivraison(livraison);
+        //THEN
+        try (Connection connection = livraisonDao.getDatasource().getConnection();
+             Statement stmt = connection.createStatement()) {
+            try (ResultSet rs = stmt.executeQuery("SELECT * FROM livraison WHERE date = '20/03/2018'")) {
+                Assertions.assertThat(rs.next()).isTrue();
+                Assertions.assertThat(rs.getInt("id")).isGreaterThan(0);
+                Assertions.assertThat(rs.getString("date")).isEqualTo("20/03/2018");
+                Assertions.assertThat(rs.getString("contenu")).isEqualTo("double salade");
+                Assertions.assertThat(rs.next()).isFalse();
+            }
+        }
+    }
+
+    @Test
+    public void shouldGetLivraison() throws SQLException {
+        //WHEN
+        livraisonDao.getLivraison(3);
+        //THEN
+        try (Connection connection = livraisonDao.getDatasource().getConnection();
+             Statement stmt = connection.createStatement()) {
+            try (ResultSet rs = stmt.executeQuery("SELECT * FROM livraison WHERE id = 3")){
+                Assertions.assertThat(rs.next()).isTrue();
+                Assertions.assertThat(rs.getInt("id")).isEqualTo(3);
+                Assertions.assertThat(rs.getString("date")).isEqualTo("03/04/2018");
+                Assertions.assertThat(rs.getString("contenu")).isEqualTo("oignon");
+                Assertions.assertThat(rs.next()).isFalse();
+            }
+        }
+
+    }
+
+    @Test
+    public void shouldSupprimerLivraison() {
+        //WHEN
+        livraisonDao.supprimerLivraison(1);
+        //THEN
+        try (Connection connection = livraisonDao.getDatasource().getConnection();
+             Statement stmt = connection.createStatement()) {
+            try (ResultSet rs = stmt.executeQuery("SELECT * FROM livraison WHERE idAnnonce = 1")) {
+                Assertions.assertThat(rs.getInt("id")).isNull();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

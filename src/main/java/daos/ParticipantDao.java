@@ -1,8 +1,10 @@
 package daos;
 
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import exceptions.NFFRuntimeException;
 import pojos.Participant;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,6 +13,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ParticipantDao {
+
+    public DataSource getDatasource(){
+        MysqlDataSource dataSource = new MysqlDataSource();
+        dataSource.setServerName("localhost");
+        dataSource.setPort(3306);
+        dataSource.setDatabaseName("northFreshFarmers");
+        dataSource.setUser("root");
+        dataSource.setPassword("AZEpoi77!");
+
+        return dataSource;
+    }
 
     // Ajout d'un participant
 
