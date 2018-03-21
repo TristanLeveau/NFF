@@ -18,9 +18,9 @@ public class ParticipantDao {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setServerName("localhost");
         dataSource.setPort(3306);
-        dataSource.setDatabaseName("northFreshFarmers");
+        dataSource.setDatabaseName("northFreshFarmers2");
         dataSource.setUser("root");
-        dataSource.setPassword("AZEpoi77!");
+        dataSource.setPassword("tristan123");
 
         return dataSource;
     }
@@ -47,12 +47,12 @@ public class ParticipantDao {
     public List<Participant> ListeParticipants(Integer idLivraison) {
         List<Participant> participantLivraisonList = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE livraison=? ORDER BY id DESC")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE livraison=? ORDER BY idparticipant DESC")) {
             statement.setInt(1, idLivraison);
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     participantLivraisonList.add(new Participant(
-                            resultSet.getInt("id"),
+                            resultSet.getInt("idparticipant"),
                             resultSet.getString("nom"),
                             resultSet.getString("prenom"),
                             resultSet.getString("email"),
