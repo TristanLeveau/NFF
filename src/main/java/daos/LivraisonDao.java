@@ -19,7 +19,7 @@ public class LivraisonDao {
 		MysqlDataSource dataSource = new MysqlDataSource();
 		dataSource.setServerName("localhost");
 		dataSource.setPort(3306);
-		dataSource.setDatabaseName("northFreshFarmers2");
+		dataSource.setDatabaseName("northFreshFarmers3");
 		dataSource.setUser("root");
 		dataSource.setPassword("tristan123");
 
@@ -31,11 +31,11 @@ public class LivraisonDao {
 
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
 				Statement statement = connection.createStatement();
-				ResultSet resultSet = statement.executeQuery("SELECT * FROM livraison WHERE supprime=false ORDER BY id")) {
+				ResultSet resultSet = statement.executeQuery("SELECT * FROM livraison WHERE supprime=false ORDER BY idlivraison")) {
 			while (resultSet.next()) {
 				livraisons.add(
 						new Livraison(
-								resultSet.getInt("id"),
+								resultSet.getInt("idlivraison"),
 								resultSet.getString("date"),
 								resultSet.getString("contenu")
 						));
@@ -54,12 +54,12 @@ public class LivraisonDao {
 
 	public Livraison getLivraison(Integer id) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-				PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE id = ? AND supprime=false")) {
+				PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE idlivraison = ? AND supprime=false")) {
 			statement.setInt(1, id);
 			try (ResultSet resultSet = statement.executeQuery()) {
 				while (resultSet.next()) {
 					return new Livraison(
-							resultSet.getInt("id"),
+							resultSet.getInt("idlivraison"),
 							resultSet.getString("date"),
 							resultSet.getString("contenu")
 					);
@@ -84,7 +84,7 @@ public class LivraisonDao {
 
 	public void supprimerLivraison(Integer id) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET supprime=true WHERE id = ?")) {
+			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET supprime=true WHERE idlivraison = ?")) {
 			statement.setInt(1, id);
 			statement.executeUpdate();
 		} catch (SQLException e) {
@@ -94,7 +94,7 @@ public class LivraisonDao {
 
 	public void updateLivraison (Livraison newLivraison) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE id=?")) {
+			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE idlivraison=?")) {
 			statement.setString(1, newLivraison.getDate());
 			statement.setString(2, newLivraison.getContenu());
 			statement.setInt(3, newLivraison.getId());

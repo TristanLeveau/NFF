@@ -11,6 +11,7 @@ public class Participant {
 
 
     public Participant(Integer idParticipant, String nom, String prenom, String email, String motDePasse) {
+        super();
         this.idParticipant = idParticipant;
         this.nom = nom;
         this.prenom = prenom;
@@ -23,9 +24,7 @@ public class Participant {
         return idParticipant;
     }
 
-    public void setIdParticipant(Integer idParticipant) {
-        this.idParticipant = idParticipant;
-    }
+    public void setIdParticipant(Integer idParticipant) { this.idParticipant = idParticipant; }
 
     public String getNom() {
         return nom;

@@ -18,7 +18,7 @@ public class ParticipantDao {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setServerName("localhost");
         dataSource.setPort(3306);
-        dataSource.setDatabaseName("northFreshFarmers2");
+        dataSource.setDatabaseName("northFreshFarmers3");
         dataSource.setUser("root");
         dataSource.setPassword("tristan123");
 

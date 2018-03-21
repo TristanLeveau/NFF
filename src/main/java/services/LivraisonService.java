@@ -28,8 +28,8 @@ public class LivraisonService {
 
 	}
 	
-	public Livraison getLivraison(Integer id) {
-		return livraisonDao.getLivraison(id);
+	public Livraison getLivraison(Integer idLivraison) {
+		return livraisonDao.getLivraison(idLivraison);
 	}
 
 	public void addLivraison(Livraison newLivraison) throws IOException {
@@ -38,8 +38,8 @@ public class LivraisonService {
 
 
 
-	public void supprimerLivraison(Integer id){
-		livraisonDao.supprimerLivraison(id);
+	public void supprimerLivraison(Integer idLivraison){
+		livraisonDao.supprimerLivraison(idLivraison);
 	}
 
 

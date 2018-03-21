@@ -3,23 +3,23 @@ package pojos;
 
 public class Livraison {
 
-	private Integer id;
+	private Integer idLivraison;
 	private String date;
 	private String contenu;
 
-	public Livraison(Integer id, String date, String contenu) {
+	public Livraison(Integer idLivraison, String date, String contenu) {
 		super();
-		this.id = id;
+		this.idLivraison = idLivraison;
 		this.date = date;
 		this.contenu = contenu;
 
 	}
 	
 	public Integer getId() {
-		return id;
+		return idLivraison;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setId(Integer idLivraison) {
+		this.idLivraison = idLivraison;
 	}
 	public String getDate() {
 		return date;
