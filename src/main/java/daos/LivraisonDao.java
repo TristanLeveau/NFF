@@ -3,19 +3,17 @@ package daos;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import exceptions.NFFRuntimeException;
 import pojos.Livraison;
+import pojos.Participant;
 import pojos.Semestre;
-
-import javax.servlet.http.Part;
 import javax.sql.DataSource;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class LivraisonDao {
 
-	public DataSource getDatasource(){
+	public DataSource getDatasource() {
 		MysqlDataSource dataSource = new MysqlDataSource();
 		dataSource.setServerName("localhost");
 		dataSource.setPort(3306);
@@ -30,8 +28,8 @@ public class LivraisonDao {
 		List<Livraison> livraisons = new ArrayList<>();
 
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-				Statement statement = connection.createStatement();
-				ResultSet resultSet = statement.executeQuery("SELECT * FROM livraison WHERE supprime=false ORDER BY idlivraison")) {
+			 Statement statement = connection.createStatement();
+			 ResultSet resultSet = statement.executeQuery("SELECT * FROM livraison WHERE supprime=false ORDER BY idlivraison")) {
 			while (resultSet.next()) {
 				livraisons.add(
 						new Livraison(
@@ -50,11 +48,9 @@ public class LivraisonDao {
 	}
 
 
-
-
 	public Livraison getLivraison(Integer id) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-				PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE idlivraison = ? AND supprime=false")) {
+			 PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE idlivraison = ? AND supprime=false")) {
 			statement.setInt(1, id);
 			try (ResultSet resultSet = statement.executeQuery()) {
 				while (resultSet.next()) {
@@ -70,10 +66,10 @@ public class LivraisonDao {
 		}
 		return null;
 	}
-	
+
 	public void addLivraison(Livraison newLivraison) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-				PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu) VALUES (?, ?)")) {
+			 PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu) VALUES (?, ?)")) {
 			statement.setString(1, newLivraison.getDate());
 			statement.setString(2, newLivraison.getContenu());
 			statement.executeUpdate();
@@ -92,7 +88,7 @@ public class LivraisonDao {
 		}
 	}
 
-	public void updateLivraison (Livraison newLivraison) {
+	public void updateLivraison(Livraison newLivraison) {
 		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
 			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE idlivraison=?")) {
 			statement.setString(1, newLivraison.getDate());
@@ -102,5 +98,29 @@ public class LivraisonDao {
 		} catch (SQLException e) {
 			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
 		}
+	}
+
+
+	public List<Participant> ListeParticipantsByEmailMdp(String emailParticipant, String motDePasse) {
+		List<Participant> participantLivraisonList = new ArrayList<>();
+		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+			 PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE email=? AND motDePasse=? ORDER BY idparticipant DESC")) {
+			statement.setString(1, emailParticipant);
+			statement.setString(2, motDePasse);
+			try (ResultSet resultSet = statement.executeQuery()) {
+				while (resultSet.next()) {
+					participantLivraisonList.add(new Participant(
+							resultSet.getInt("idparticipant"),
+							resultSet.getString("nom"),
+							resultSet.getString("prenom"),
+							resultSet.getString("email"),
+							resultSet.getString("motDePasse")
+					));
+				}
+			}
+		} catch (SQLException e) {
+			throw new NFFRuntimeException("Erreur lors de la liste", e);
+		}
+		return participantLivraisonList;
 	}
 }

@@ -83,4 +83,21 @@ public class LivraisonService {
 	public void addAbonnement5(Participant newParticipant){
 		participantDao.addAbonnement5(newParticipant);
 	}
+
+	public List<Participant> ListeParticipantsByEmailMdp(String email, String motDePasse){
+
+		if (motDePasse==null|| "".equals(motDePasse)){
+			throw new IllegalArgumentException("Un mot de passe doit être spécifié");
+		}
+		if (email==null|| "".equals(email)){
+			throw new IllegalArgumentException("Un email doit être spécifié");
+		}
+		List participants = livraisonDao.ListeParticipantsByEmailMdp(email, motDePasse);
+
+		if (participants == null){
+			throw new IllegalArgumentException("Aucune inscription correspondante...");
+		}
+		return participants;
+	}
+
 }
