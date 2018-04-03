@@ -13,16 +13,7 @@ import java.util.List;
 
 public class LivraisonDao {
 
-	public DataSource getDatasource() {
-		MysqlDataSource dataSource = new MysqlDataSource();
-		dataSource.setServerName("localhost");
-		dataSource.setPort(3306);
-		dataSource.setDatabaseName("northFreshFarmers3");
-		dataSource.setUser("root");
-		dataSource.setPassword("tristan123");
 
-		return dataSource;
-	}
 
 	public List<Livraison> listLivraisons() {
 		List<Livraison> livraisons = new ArrayList<>();
@@ -93,7 +84,7 @@ public class LivraisonDao {
 			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE idlivraison=?")) {
 			statement.setString(1, newLivraison.getDate());
 			statement.setString(2, newLivraison.getContenu());
-			statement.setInt(3, newLivraison.getId());
+			statement.setInt(3, newLivraison.getIdLivraison());
 			statement.executeUpdate();
 		} catch (SQLException e) {
 			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);

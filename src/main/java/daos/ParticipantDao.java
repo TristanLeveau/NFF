@@ -2,6 +2,7 @@ package daos;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import exceptions.NFFRuntimeException;
+import pojos.Livraison;
 import pojos.Participant;
 
 import javax.sql.DataSource;
@@ -14,7 +15,7 @@ import java.util.List;
 
 public class ParticipantDao {
 
-    public DataSource getDatasource(){
+    public DataSource getDatasource() {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setServerName("localhost");
         dataSource.setPort(3306);
@@ -27,14 +28,15 @@ public class ParticipantDao {
 
     // Ajout d'un participant
 
-    public void addParticipant(Participant newParticipant, int idLivraison){
+    public void addParticipant(Participant newParticipant, int idLivraison, String date){
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("INSERT INTO participant(prenom,nom, email, motDePasse,livraison) VALUES (?,?,?,?,?)")) {
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO participant(prenom,nom, email, motDePasse,livraison, date) VALUES (?,?,?,?,?,?)")) {
             statement.setString(1, newParticipant.getPrenom());
             statement.setString(2, newParticipant.getNom());
             statement.setString(3, newParticipant.getEmail());
             statement.setString(4, newParticipant.getMotDePasse());
             statement.setInt(5,idLivraison);
+            statement.setString(6,date);
 
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -104,6 +106,21 @@ public class ParticipantDao {
         }catch (SQLException e) {
             throw new NFFRuntimeException("Erreur lors de la récupération des données", e);
         }
+    }
+
+    public String getDateParticipant(Integer idLivraison){
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT date FROM livraison WHERE idlivraison = ? AND supprime=false")) {
+            statement.setInt(1, idLivraison);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    return resultSet.getString("date");
+                }
+            }
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la récupération de la date", e);
+        }
+        return null;
     }
 
     // Inscription

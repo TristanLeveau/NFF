@@ -1,7 +1,9 @@
 package services;
 
+import daos.ClientDao;
 import daos.ParticipantDao;
 import daos.LivraisonDao;
+import pojos.Client;
 import pojos.Livraison;
 import pojos.Participant;
 import java.io.IOException;
@@ -9,7 +11,7 @@ import java.util.List;
 
 public class LivraisonService {
 
-
+	private ClientDao clientDao = new ClientDao();
 	private LivraisonDao livraisonDao = new LivraisonDao();
 	private ParticipantDao participantDao = new ParticipantDao();
 
@@ -62,7 +64,7 @@ public class LivraisonService {
 	return newParticipantLivraison;
 }*/
 
-	public void addParticipant (Participant newParticipant, Integer idLivraison) {
+	public void addParticipant (Participant newParticipant, Integer idLivraison, String date) {
 		if(newParticipant.getNom() == null || "".equals(newParticipant.getNom())) {
 			throw new IllegalArgumentException("Un nom doit être renseigné.");
 		}
@@ -72,7 +74,7 @@ public class LivraisonService {
 		if (newParticipant.getEmail()==null|| "".equals(newParticipant.getEmail())){
 			throw new IllegalArgumentException("Un email doit être spécifié");
 		}
-		participantDao.addParticipant(newParticipant,idLivraison);
+		participantDao.addParticipant(newParticipant,idLivraison, date);
 	}
 
 	public List<Participant> ListeParticipants(Integer idLivraison){
@@ -83,6 +85,9 @@ public class LivraisonService {
 	public void addAbonnement5(Participant newParticipant){
 		participantDao.addAbonnement5(newParticipant);
 	}
+
+
+
 
 	public List<Participant> ListeParticipantsByEmailMdp(String email, String motDePasse){
 
@@ -98,6 +103,33 @@ public class LivraisonService {
 			throw new IllegalArgumentException("Aucune inscription correspondante...");
 		}
 		return participants;
+	}
+
+
+	// ------------------------ SERVICE CLIENT ------------------------------
+
+	public void addClient (Client newClient) throws Exception {
+		if(newClient.getNom() == null || "".equals(newClient.getNom())) {
+			throw new IllegalArgumentException("Un nom doit être renseigné.");
+		}
+		if (newClient.getPrenom()==null|| "".equals(newClient.getPrenom())){
+			throw new IllegalArgumentException("Un prénom doit être spécifié");
+		}
+		if (newClient.getEmail()==null|| "".equals(newClient.getEmail())){
+			throw new IllegalArgumentException("Un email doit être spécifié");
+		}
+		clientDao.addClient(newClient);
+	}
+
+	public Client getClientByEmailMdp(String email, String motDePasse) throws Exception {
+		Client newClient = clientDao.getClientByEmailMdp(email, motDePasse);
+		if (newClient.getEmail()==null|| "".equals(newClient.getEmail())){
+			throw new IllegalArgumentException("Un email doit être spécifié");
+		}
+
+
+		return newClient;
+
 	}
 
 }

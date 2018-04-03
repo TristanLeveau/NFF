@@ -15,10 +15,10 @@ public class Livraison {
 
 	}
 	
-	public Integer getId() {
+	public Integer getIdLivraison() {
 		return idLivraison;
 	}
-	public void setId(Integer idLivraison) {
+	public void setIdLivraison(Integer idLivraison) {
 		this.idLivraison = idLivraison;
 	}
 	public String getDate() {

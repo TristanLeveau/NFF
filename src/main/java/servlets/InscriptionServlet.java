@@ -1,6 +1,6 @@
 package servlets;
 
-//import pojos.Participant;
+import pojos.Client;
 import pojos.Livraison;
 import services.LivraisonService;
 import org.thymeleaf.TemplateEngine;
@@ -16,17 +16,17 @@ import java.io.IOException;
 public class InscriptionServlet extends AbstractGenericServlet {
 
 
-   /* protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
         WebContext context = new WebContext(req, resp, getServletContext());
         if(req.getSession().getAttribute("utilisateurCreationError") != null) {
             context.setVariable("errorMessage", req.getSession().getAttribute("utilisateurCreationError"));
-            context.setVariable("participant",(Participant) req.getSession().getAttribute("utilisateurCreationData"));
+            context.setVariable("client",(Client) req.getSession().getAttribute("utilisateurCreationData"));
 
-            req.getSession().removeAttribute("ParticipantCreationError");
-            req.getSession().removeAttribute("ParticipantCreationData");
+            req.getSession().removeAttribute("ClientCreationError");
+            req.getSession().removeAttribute("ClientCreationData");
         } else {
-            context.setVariable("participant", new Participant( null,null,null, null, null));
+            context.setVariable("client", new Client( null,null,null, null, null));
         }
 
         templateEngine.process("inscription", context, resp.getWriter());
@@ -40,19 +40,21 @@ public class InscriptionServlet extends AbstractGenericServlet {
          String email = req.getParameter("email");
          String motDePasse = req.getParameter("motDePasse");
 
-        Participant newParticipant = new Participant(null, nom, prenom,email, motDePasse);
+        Client newClient = new Client(null, nom, prenom,email, motDePasse);
 
         try {
-            LivraisonService.getInstance().addParticipant(newParticipant);
+            LivraisonService.getInstance().addClient(newClient);
             resp.sendRedirect("home");
         }
 
         catch (IllegalArgumentException e) {
             req.getSession().setAttribute("ParticipationCreationError", e.getMessage());
-            req.getSession().setAttribute("ParticipationCreationData", newParticipant);
+            req.getSession().setAttribute("ParticipationCreationData", newClient);
             resp.sendRedirect("home");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
-    }*/
+    }
 
 }

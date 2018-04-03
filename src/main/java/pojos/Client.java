@@ -1,8 +1,8 @@
 package pojos;
 
-public class Participant {
+public class Client {
 
-    private Integer idParticipant;
+    private Integer idClient;
 
     private String nom;
     private String prenom;
@@ -10,9 +10,9 @@ public class Participant {
     private String motDePasse;
 
 
-    public Participant(Integer idParticipant, String nom, String prenom, String email, String motDePasse) {
+    public Client(Integer idClient, String nom, String prenom, String email, String motDePasse) {
         super();
-        this.idParticipant = idParticipant;
+        this.idClient = idClient;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
@@ -20,11 +20,11 @@ public class Participant {
     }
 
 
-    public Integer getIdParticipant() {
-        return idParticipant;
+    public Integer getIdClient() {
+        return idClient;
     }
 
-    public void setIdParticipant(Integer idParticipant) { this.idParticipant = idParticipant; }
+    public void setIdClient(Integer idParticipant) { this.idClient = idParticipant; }
 
     public String getNom() {
         return nom;
@@ -49,6 +49,4 @@ public class Participant {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
-
-
 }

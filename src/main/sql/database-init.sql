@@ -1,5 +1,5 @@
 CREATE TABLE `livraison` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idlivraison` int(11) NOT NULL AUTO_INCREMENT,
   `contenu` mediumtext DEFAULT NULL,
   `semestre` varchar(40) DEFAULT NULL,
   `date` char(10) DEFAULT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE `livraison` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `participant` (
-   `id` int(11) NOT NULL AUTO_INCREMENT,
+   `idparticipant` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(45) DEFAULT NULL,
   `prenom` varchar(45) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
@@ -19,5 +19,13 @@ CREATE TABLE `participant` (
   CONSTRAINT fk_participant_livraison FOREIGN KEY (livraison) REFERENCES livraison(id))ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+CREATE TABLE `client` (
+   `idclient` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(45) DEFAULT NULL,
+  `prenom` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `motDePasse` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 

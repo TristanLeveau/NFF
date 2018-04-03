@@ -22,24 +22,14 @@
 
             <span class="border border-success">
                         <form method="post" class="formulaireHorizontal">
-                            <div class="form-row align-middle">
-                                <div class="form-group col-md-4">
-                                    <label for="inputPrenom">Prénom : </label>
-                                    <input type="text" class="form-control" id="inputPrenom" name="prenom" placeholder="Prénom" th:value="${participant.prenom}">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputNom">Nom : </label>
-                                    <input type="text" class="form-control" id="inputNom" name="nom" placeholder="Nom" th:value="${participant.nom}">
-                                </div>
-                            </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="inputEmail">Email : </label>
-                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" th:value="${participant.email}">
+                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" th:value="${email}">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputMotDePasse">Mot de passe : </label>
-                                    <input type="password" class="form-control" id="inputMotDePasse" name="motDePasse" placeholder="Mot de passe" th:value="${participant.motDePasse}">
+                                    <input type="password" class="form-control" id="inputMotDePasse" name="motDePasse" placeholder="Mot de passe" th:value="${motDePasse}">
                                 </div>
                             </div>
 
