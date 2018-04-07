@@ -10,9 +10,8 @@
 </head>
 
 <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
-<div class="container-fluid">
-    <header th:replace="~{common::header}"></header>
-</div>
+
+
 
 <div class="d-flex justify-content-center">
     <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center;">
@@ -25,26 +24,26 @@
                             <div class="form-row align-middle">
                                 <div class="form-group col-md-4">
                                     <label for="inputPrenom">Prénom : </label>
-                                    <input type="text" class="form-control" id="inputPrenom" name="prenom" placeholder="Prénom" th:value="${client.prenom}">
+                                    <input type="text" class="form-control" id="inputPrenom" name="prenom" placeholder="Prénom" th:value="${user.prenom}">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputNom">Nom : </label>
-                                    <input type="text" class="form-control" id="inputNom" name="nom" placeholder="Nom" th:value="${client.nom}">
+                                    <input type="text" class="form-control" id="inputNom" name="nom" placeholder="Nom" th:value="${user.nom}">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="inputEmail">Email : </label>
-                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" th:value="${client.email}">
+                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" th:value="${user.email}">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputMotDePasse">Mot de passe : </label>
-                                    <input type="password" class="form-control" id="inputMotDePasse" name="motDePasse" placeholder="Mot de passe" th:value="${client.motDePasse}">
+                                    <input type="password" class="form-control" id="inputMotDePasse" name="motDePasse" placeholder="Mot de passe" th:value="${user.motDePasse}">
                                 </div>
                             </div>
 
                             <div class="form-group col-md-4">
-                                <button type="submit" class="btn boutonvalider">S'inscrire à la livraison</button>
+                                <button type="submit" class="btn boutonvalider">S'inscrire à NFF</button>
                             </div>
                         </form>
                     </span>

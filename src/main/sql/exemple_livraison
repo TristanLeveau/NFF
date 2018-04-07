@@ -1,9 +1,9 @@
-INSERT INTO livraison VALUES (1,null, 'Salade Tomate Oignon','S1', '29/09/18',null,0);
-INSERT INTO livraison VALUES (2,null, 'Salade Tomate Oignon','S1', '11/11/18',null,0);
-INSERT INTO livraison VALUES (3,null, 'Salade Tomate Oignon','S1', '21/11/18',null,0);
-INSERT INTO livraison VALUES (4,null, 'Salade Tomate Oignon','S1', '05/12/18',null,0);
+INSERT INTO livraison VALUES (1, 'Salade Tomate Oignon','S1', '29/09/18',0);
+INSERT INTO livraison VALUES (2, 'Salade Tomate Oignon','S1', '11/11/18',0);
+INSERT INTO livraison VALUES (3, 'Salade Tomate Oignon','S1', '21/11/18',0);
+INSERT INTO livraison VALUES (4, 'Salade Tomate Oignon','S1', '05/12/18',0);
 
-INSERT INTO participant (nom, prenom,email,motDePasse)  VALUES ("Tristan", "LEVEAU","tristan.leveau@hei.yncrea.fr","tristan123");
-INSERT INTO participant (nom, prenom,email,motDePasse)  VALUES ("Alae-Eddine", "RACHIDI","alae.rachidi@hei.yncrea.fr","alae123");
-INSERT INTO participant (nom, prenom,email,motDePasse)  VALUES ("Jean", "DUPONT","jean.dupont@hei.yncrea.fr","jean123");
-INSERT INTO participant (nom, prenom,email,motDePasse)  VALUES ("John", "DOE","john.doe@hei.yncrea.fr","john123");
+INSERT INTO user (nom, prenom,email,motDePasse)  VALUES ("Tristan", "LEVEAU","tristan.leveau@hei.yncrea.fr","tristan123");
+INSERT INTO user (nom, prenom,email,motDePasse)  VALUES ("Alae-Eddine", "RACHIDI","alae.rachidi@hei.yncrea.fr","alae123");
+INSERT INTO user (nom, prenom,email,motDePasse)  VALUES ("Jean", "DUPONT","jean.dupont@hei.yncrea.fr","jean123");
+INSERT INTO user (nom, prenom,email,motDePasse)  VALUES ("John", "DOE","john.doe@hei.yncrea.fr","john123");

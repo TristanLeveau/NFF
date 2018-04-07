@@ -1,9 +1,10 @@
 package servlets;
 
 import pojos.Semestre;
-import services.LivraisonService;
+//import services.LivraisonService;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
+import services.LivraisonService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,13 +22,21 @@ public class HomeServlet extends AbstractGenericServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		TemplateEngine templateEngine = this.createTemplateEngine(req);
 		WebContext context = new WebContext(req, resp, getServletContext());
+
+
 		context.setVariable("livraisons", LivraisonService.getInstance().listAllLivraisons());
+
 		templateEngine.process("home", context, resp.getWriter());
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		resp.sendRedirect("home");
+
+		HttpSession session = req.getSession();
+
+		if (session.getAttribute("user")==null){
+			resp.sendRedirect("deconnexion");
+		}
 	}
 	
 }

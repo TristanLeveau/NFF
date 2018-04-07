@@ -13,10 +13,7 @@ public abstract class AbstractDaoTestCase {
 		try(
 	        Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
 	        Statement statement = connection.createStatement()){
-			statement.executeUpdate("DELETE FROM participant");
-			statement.executeUpdate("DELETE FROM livraison");
-			statement.executeUpdate("DELETE FROM client");
-
+			//statement.executeUpdate("DELETE FROM user");
 			this.insertDataSet(statement);
 		}
 	}

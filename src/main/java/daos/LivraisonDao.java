@@ -1,11 +1,8 @@
 package daos;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import exceptions.NFFRuntimeException;
 import pojos.Livraison;
-import pojos.Participant;
-import pojos.Semestre;
-import javax.sql.DataSource;
+import pojos.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,105 +10,107 @@ import java.util.List;
 
 public class LivraisonDao {
 
+    public List<Livraison> listLivraisons() {
+        List<Livraison> livraisons = new ArrayList<>();
+
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM livraison WHERE supprime=false ORDER BY idlivraison")) {
+            while (resultSet.next()) {
+                livraisons.add(
+                        new Livraison(
+                                resultSet.getInt("idlivraison"),
+                                resultSet.getString("date"),
+                                resultSet.getString("contenu")
+                        ));
 
 
-	public List<Livraison> listLivraisons() {
-		List<Livraison> livraisons = new ArrayList<>();
+            }
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
+        }
 
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 Statement statement = connection.createStatement();
-			 ResultSet resultSet = statement.executeQuery("SELECT * FROM livraison WHERE supprime=false ORDER BY idlivraison")) {
-			while (resultSet.next()) {
-				livraisons.add(
-						new Livraison(
-								resultSet.getInt("idlivraison"),
-								resultSet.getString("date"),
-								resultSet.getString("contenu")
-						));
+        return livraisons;
+    }
 
 
-			}
-		} catch (SQLException e) {
-			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
-		}
+    public Livraison getLivraison(Integer id) {
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE idlivraison = ? AND supprime=false")) {
+            statement.setInt(1, id);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    return new Livraison(
+                            resultSet.getInt("idlivraison"),
+                            resultSet.getString("date"),
+                            resultSet.getString("contenu")
+                    );
+                }
+            }
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
+        }
+        return null;
+    }
 
-		return livraisons;
-	}
+    public void addLivraison(Livraison livraison) {
 
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu,semestre,supprime) VALUES (?, ?,'S1',0)")) {
 
-	public Livraison getLivraison(Integer id) {
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE idlivraison = ? AND supprime=false")) {
-			statement.setInt(1, id);
-			try (ResultSet resultSet = statement.executeQuery()) {
-				while (resultSet.next()) {
-					return new Livraison(
-							resultSet.getInt("idlivraison"),
-							resultSet.getString("date"),
-							resultSet.getString("contenu")
-					);
-				}
-			}
-		} catch (SQLException e) {
-			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
-		}
-		return null;
-	}
+            statement.setString(1, livraison.getDate());
+            statement.setString(2, livraison.getContenu());
+            statement.executeUpdate();
 
-	public void addLivraison(Livraison newLivraison) {
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("INSERT INTO livraison(date, contenu) VALUES (?, ?)")) {
-			statement.setString(1, newLivraison.getDate());
-			statement.setString(2, newLivraison.getContenu());
-			statement.executeUpdate();
-		} catch (SQLException e) {
-			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
-		}
-	}
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
+        }
+    }
 
-	public void supprimerLivraison(Integer id) {
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET supprime=true WHERE idlivraison = ?")) {
-			statement.setInt(1, id);
-			statement.executeUpdate();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
+    public void supprimerLivraison(Integer id) {
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET supprime=true WHERE idlivraison = ?")) {
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
-	public void updateLivraison(Livraison newLivraison) {
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE idlivraison=?")) {
-			statement.setString(1, newLivraison.getDate());
-			statement.setString(2, newLivraison.getContenu());
-			statement.setInt(3, newLivraison.getIdLivraison());
-			statement.executeUpdate();
-		} catch (SQLException e) {
-			throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
-		}
-	}
+    public void updateLivraison(Livraison newLivraison) {
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE idlivraison=?")) {
+            statement.setString(1, newLivraison.getDate());
+            statement.setString(2, newLivraison.getContenu());
+            statement.setInt(3, newLivraison.getIdLivraison());
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
+        }
+    }
 
 
-	public List<Participant> ListeParticipantsByEmailMdp(String emailParticipant, String motDePasse) {
-		List<Participant> participantLivraisonList = new ArrayList<>();
-		try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-			 PreparedStatement statement = connection.prepareStatement("SELECT * FROM participant WHERE email=? AND motDePasse=? ORDER BY idparticipant DESC")) {
-			statement.setString(1, emailParticipant);
-			statement.setString(2, motDePasse);
-			try (ResultSet resultSet = statement.executeQuery()) {
-				while (resultSet.next()) {
-					participantLivraisonList.add(new Participant(
-							resultSet.getInt("idparticipant"),
-							resultSet.getString("nom"),
-							resultSet.getString("prenom"),
-							resultSet.getString("email"),
-							resultSet.getString("motDePasse")
-					));
-				}
-			}
-		} catch (SQLException e) {
-			throw new NFFRuntimeException("Erreur lors de la liste", e);
-		}
-		return participantLivraisonList;
-	}
+   /* public List<User> ListeParticipantsByEmailMdp(String email, String motDePasse) {
+        List<User> participantLivraisonList = new ArrayList<>();
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM user WHERE email=? AND motDePasse=? ORDER BY iduser DESC")) {
+            statement.setString(1, email);
+            statement.setString(2, motDePasse);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    participantLivraisonList.add(new User(
+                            resultSet.getInt("idUser"),
+                            resultSet.getString("nom"),
+                            resultSet.getString("prenom"),
+                            resultSet.getString("email"),
+                            resultSet.getString("motDePasse")
+                    ));
+                }
+            }
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la liste", e);
+        }
+        return participantLivraisonList;
+    }*/
+
 }

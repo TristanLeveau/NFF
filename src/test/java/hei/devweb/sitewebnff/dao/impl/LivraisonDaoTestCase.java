@@ -1,39 +1,28 @@
 package hei.devweb.sitewebnff.dao.impl;
 
 import daos.DataSourceProvider;
-import org.junit.Assert.*;
-import org.assertj.core.api.Assertions;
 import daos.LivraisonDao;
-import org.junit.Before;
+import exceptions.NFFRuntimeException;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import pojos.Livraison;
-import pojos.Participant;
 
-import java.sql.ResultSet;
-
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.groups.Tuple.tuple;
 
 public class LivraisonDaoTestCase extends AbstractDaoTestCase {
 
-    private LivraisonDao livraisonDao = new LivraisonDao();
+    LivraisonDao livraisonDao = new LivraisonDao();
 
     @Override
     public void insertDataSet(Statement statement) throws Exception {
-        statement.executeUpdate("INSERT INTO livraison(idlivraison, contenu, date) VALUES (1,'salade','03/04/2018')");
-        statement.executeUpdate("INSERT INTO livraison(idlivraison, contenu, date) VALUES (2,'tomate','12/05/2018')");
-        statement.executeUpdate("INSERT INTO livraison(idlivraison, contenu, date) VALUES (3,'oignon','20/06/2018')");
-        statement.executeUpdate("INSERT INTO participant(idparticipant,nom, prenom, email, motDePasse, livraison) VALUES (1, 'nom1', 'prenom1','email1@email1.fr', 'mdp1', 1)");
-        statement.executeUpdate("INSERT INTO participant(idparticipant,nom, prenom, email, motDePasse, livraison) VALUES (2, 'nom1', 'prenom1','email1@email1.fr', 'mdp1', 1)");
-        statement.executeUpdate("INSERT INTO participant(idparticipant,nom, prenom, email, motDePasse, livraison) VALUES (3, 'nom1', 'prenom1','email1@email1.fr', 'mdp1', 1)");
-        statement.executeUpdate("INSERT INTO client(idclient,nom, prenom, email, motDePasse) VALUES (1, 'nom1', 'prenom1','email1@email1.fr', 'mdp1')");
-        statement.executeUpdate("INSERT INTO client(idclient,nom, prenom, email, motDePasse) VALUES (2, 'nom2', 'prenom2','email2@email2.fr', 'mdp2')");
-        statement.executeUpdate("INSERT INTO client(idclient,nom, prenom, email, motDePasse) VALUES (3, 'nom3', 'prenom3','email2@email3.fr', 'mdp3')");
+        statement.executeUpdate("DELETE FROM user");
+        statement.executeUpdate("DELETE FROM livraison");
+        statement.executeUpdate("INSERT INTO livraison VALUES (1, 'Salade Tomate Oignon','S1', '29/09/18',0);");
+        statement.executeUpdate("INSERT INTO livraison VALUES (2, 'Salade Tomate Oignon','S1', '11/11/18',0);");
+        statement.executeUpdate("INSERT INTO livraison VALUES (3, 'Salade Tomate Oignon','S1', '21/11/18',0);");
+        statement.executeUpdate("INSERT INTO livraison VALUES (4, 'Salade Tomate Oignon','S1', '05/12/18',0);");
 
     }
 
@@ -42,50 +31,49 @@ public class LivraisonDaoTestCase extends AbstractDaoTestCase {
         //WHEN
         List<Livraison> livraisons = livraisonDao.listLivraisons();
         //THEN
-        Assertions.assertThat(livraisons).hasSize(3);
+        Assertions.assertThat(livraisons).hasSize(4);
         Assertions.assertThat(livraisons).extracting("contenu","date").containsOnly(
-                Assertions.tuple("salade","03/04/2018"),
-                Assertions.tuple("tomate","12/05/2018"),
-                Assertions.tuple("oignon","20/06/2018")
+                Assertions.tuple("Salade Tomate Oignon","29/09/18"),
+                Assertions.tuple("Salade Tomate Oignon","11/11/18"),
+                Assertions.tuple("Salade Tomate Oignon","21/11/18"),
+                Assertions.tuple("Salade Tomate Oignon","05/12/18")
+
+
         );
     }
 
     @Test
     public void shouldAddLivraison() throws SQLException {
         //GIVEN
-        Livraison livraison = new Livraison(null, "2018-04-12", "Concombre");
+        Livraison livraison = new Livraison(null, "21/01/2018", "Salade Tomates Poireaux");
         //WHEN
         livraisonDao.addLivraison(livraison);
         //THEN
         try (Connection connection = DataSourceProvider.getInstance().getDatasource().getConnection();
-             Statement stmt = connection.createStatement()) {
-            try (ResultSet rs = stmt.executeQuery("SELECT * FROM livraison WHERE date = '2018-04-12'")) {
-                Assertions.assertThat(rs.next()).isTrue();
+             Statement stmt = connection.createStatement();
+             ResultSet rs = stmt.executeQuery("SELECT * FROM livraison WHERE contenu = 'Salade Tomates Poireaux'")) {
                 Assertions.assertThat(rs.getInt("idlivraison")).isGreaterThan(0);
-                Assertions.assertThat(rs.getString("date")).isEqualTo("2018-04-12");
-                Assertions.assertThat(rs.getString("contenu")).isEqualTo("Concombre");
+                Assertions.assertThat(rs.getString("date")).isEqualTo("21/01/2018");
+                Assertions.assertThat(rs.getString("contenu")).isEqualTo("Salade Tomates Poireaux");
                 Assertions.assertThat(rs.next()).isFalse();
             }
         }
-    }
+
 
     @Test
     public void shouldGetLivraison() throws SQLException {
         //WHEN
-        livraisonDao.getLivraison(3);
+        Livraison livraison = livraisonDao.getLivraison(3);
         //THEN
-        try (Connection connection = DataSourceProvider.getInstance().getDatasource().getConnection();
-             Statement stmt = connection.createStatement()) {
-            try (ResultSet rs = stmt.executeQuery("SELECT * FROM livraison WHERE idlivraison = 3")){
-                Assertions.assertThat(rs.next()).isTrue();
-                Assertions.assertThat(rs.getInt("idlivraison")).isEqualTo(3);
-                Assertions.assertThat(rs.getString("date")).isEqualTo("20/06/2018");
-                Assertions.assertThat(rs.getString("contenu")).isEqualTo("oignon");
-                Assertions.assertThat(rs.next()).isFalse();
-            }
-        }
+        Assertions.assertThat(livraison).isNotNull();
+        Assertions.assertThat(livraison.getIdLivraison()).isEqualTo(3);
+        Assertions.assertThat(livraison.getDate()).isEqualTo("21/11/18");
+        Assertions.assertThat(livraison.getContenu()).isEqualTo("Salade Tomate Oignon");
 
     }
+
+
+
 
     @Test
     public void shouldSupprimerLivraison() {
@@ -95,7 +83,7 @@ public class LivraisonDaoTestCase extends AbstractDaoTestCase {
         try (Connection connection = DataSourceProvider.getInstance().getDatasource().getConnection();
              Statement stmt = connection.createStatement()) {
             try (ResultSet rs = stmt.executeQuery("SELECT * FROM livraison WHERE idlivraison = 1")) {
-                Assertions.assertThat(rs.getInt("idlivraison")).isNull();
+                Assertions.assertThat(rs.getInt("idLivraison")).isNull();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -103,7 +91,7 @@ public class LivraisonDaoTestCase extends AbstractDaoTestCase {
             e.printStackTrace();
         }
     }
-
+/*
     @Test
     public void shouldListParticipantByEmailMdp(){
 
@@ -119,5 +107,6 @@ public class LivraisonDaoTestCase extends AbstractDaoTestCase {
         );
 
     }
+*/
 
 }

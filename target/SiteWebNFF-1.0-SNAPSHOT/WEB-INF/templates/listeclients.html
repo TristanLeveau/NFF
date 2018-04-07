@@ -24,7 +24,6 @@
 
         <div id="mainContent" class="container-fluid">
             <h3>Voici tous les inscrits NFF</h3>
-            <h4>Tu peux leur rajouter des crédits pour qu'ils puissent commander!</h4>
 
             <div class="table-responsive">
                 <table class="table">
@@ -37,11 +36,11 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr th:each="participant : ${participants}">
-                        <td th:text="${participant.id}"></td>
-                        <td th:text="${participant.nom}"></td>
-                        <td th:text="${participant.prenom}"></td>
-                        <td th:text="${participant.email}"></td>
+                    <tr th:each="user : ${users}">
+                        <td th:text="${user.idUser}"></td>
+                        <td th:text="${user.nom}"></td>
+                        <td th:text="${user.prenom}"></td>
+                        <td th:text="${user.email}"></td>
                         <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ajouter des crédits</button></td>
 
                     </tr>

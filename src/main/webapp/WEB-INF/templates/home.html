@@ -23,6 +23,7 @@
 	<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
 
 	<div id="mainContent" class="container-fluid">
+		<h3 th:text="${session.user.nom}"></h3>
 		<h3>Commande ton panier North-Fresh Farmers</h3>
 		<h4>Choisis la date à laquelle tu souhaite recevoir ton panier : </h4>
 
@@ -39,7 +40,7 @@
 				<tr th:each="livraison : ${livraisons}">
 					<td th:text="${livraison.date}"></td>
 					<td th:text="${livraison.contenu}"></td>
-					<td><a th:href="'participationlivraison?idlivraison='+${livraison.idLivraison}" type="button" class="btn btn-info btn-lg">Participer</a></td>
+					<td><a th:href="'livraisondetails?idlivraison='+${livraison.idLivraison}" type="button" class="btn btn-info btn-lg">Participer</a></td>
 				</tr>
 				</tbody>
 			</table>
