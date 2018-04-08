@@ -26,6 +26,8 @@ CREATE TABLE `commande` (
   CONSTRAINT fk_user_commande FOREIGN KEY (idusercommande) REFERENCES user(iduser),
   CONSTRAINT fk_livraison_commande FOREIGN KEY (idlivraisoncommande) REFERENCES livraison(idlivraison))ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+SELECT * FROM commande a, user b WHERE a.idusercommande = b.iduser;
+SELECT * FROM commande a, livraison b WHERE a.idlivraisoncommande = b.idlivraison;
 
 
 

@@ -27,17 +27,15 @@
                 <thead>
                 <tr>
                     <th>ID Commande</th>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Email</th>
+                    <th>Contenu</th>
+                    <th>Date</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="participant : ${listelivraisonsbyparticipant}">
-                    <td th:text="${participant.idParticipant}"></td>
-                    <td th:text="${participant.nom}"></td>
-                    <td th:text="${participant.prenom}"></td>
-                    <td th:text="${participant.email}"></td>
+                <tr th:each="commandeparuser : ${listelivraisonuser}">
+                    <td th:text="${commandeparuser.idCommande}"></td>
+                    <td th:text="${commandeparuser.contenu}"></td>
+                    <td th:text="${commandeparuser.date}"></td>
                 </tr>
                 </tbody>
             </table>

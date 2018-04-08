@@ -7,10 +7,12 @@ import services.CommandeService;
 import services.LivraisonService;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@WebServlet("/livraisondetailsadmin")
 public class LivraisonDetailsAdminServlet extends AbstractGenericServlet {
 
     @Override
@@ -24,13 +26,13 @@ public class LivraisonDetailsAdminServlet extends AbstractGenericServlet {
         context.setVariable("livraison", livraison);
         context.setVariable("commandes", CommandeService.getInstance().listCommandeByIdLivraison(idLivraison));
         if (livraison == null) {
-            resp.sendRedirect("home");
+            resp.sendRedirect("livraisonvalidee");
         }
 
         TemplateEngine templateEngine = this.createTemplateEngine(req);
 
 
-        templateEngine.process("livraisondetailadmin", context, resp.getWriter());    }
+        templateEngine.process("livraisondetailsadmin", context, resp.getWriter());    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

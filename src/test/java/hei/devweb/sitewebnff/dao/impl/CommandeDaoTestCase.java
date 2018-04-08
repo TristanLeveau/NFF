@@ -5,6 +5,7 @@ import daos.DataSourceProvider;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import pojos.Commande;
+import pojos.CommandeParLivraison;
 import pojos.User;
 
 import java.sql.Connection;
@@ -45,16 +46,16 @@ public class CommandeDaoTestCase extends AbstractDaoTestCase {
     @Test
     public void shouldAddCommande() throws Exception{
 
-        Integer idLivraison = 2;
-        Integer idUser = 2;
+        Integer idLivraison = 20;
+        Integer idUser = 20;
         commandeDao.addCommande(idLivraison,idUser);
 
         try(Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT (idusercommande) FROM commande")){
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM commande WHERE")){
             Assertions.assertThat(resultSet.next()).isTrue();
-            //Assertions.assertThat(resultSet.getInt("idcommande")).isNotNull();
-            //Assertions.assertThat(resultSet.getInt("idlivraisoncommande")).isEqualTo(2);
+            Assertions.assertThat(resultSet.getInt("idcommande")).isNotNull();
+            Assertions.assertThat(resultSet.getInt("idlivraisoncommande")).isEqualTo(2);
             Assertions.assertThat(resultSet.getInt("idusercommande")).isEqualTo(2);
             Assertions.assertThat(resultSet.next()).isFalse();
 
@@ -72,7 +73,7 @@ public class CommandeDaoTestCase extends AbstractDaoTestCase {
         statement.executeUpdate("INSERT INTO commande VALUES (8, 3, 1);");
 
         Integer idLivraison = 1;
-        List<Commande> commandes = commandeDao.listCommandeByIdLivraison(idLivraison);
+        List<CommandeParLivraison> commandes = commandeDao.listCommandeByIdLivraison(idLivraison);
 
         Assertions.assertThat(commandes).hasSize(2);
         Assertions.assertThat(commandes).extracting("idCommande").containsOnly(5,8);

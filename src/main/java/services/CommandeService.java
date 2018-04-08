@@ -2,6 +2,8 @@ package services;
 
 import daos.CommandeDao;
 import pojos.Commande;
+import pojos.CommandeParLivraison;
+import pojos.CommandeParUser;
 import pojos.User;
 
 import java.util.List;
@@ -10,9 +12,7 @@ public class CommandeService {
 
     CommandeDao commandeDao = new CommandeDao();
 
-    private static class CommandeServiceHolder {
-        private static CommandeService instance = new CommandeService();
-    }
+    private static class CommandeServiceHolder { private static CommandeService instance = new CommandeService();}
 
     public static CommandeService getInstance() {
         return CommandeServiceHolder.instance;
@@ -20,8 +20,14 @@ public class CommandeService {
 
     private CommandeService() { }
 
-    public List<Commande> listCommandeByIdLivraison(Integer idLivraison) {
-        return commandeDao.listCommandeByIdLivraison(idLivraison);
+    public List<CommandeParLivraison> listCommandeByIdLivraison(Integer idLivraison) { return commandeDao.listCommandeByIdLivraison(idLivraison); }
+
+    public List<CommandeParUser> listCommandeByUser (Integer idUser) {
+        return commandeDao.listCommandeByUser(idUser);
+    }
+
+    public void addCommande(Integer idUser, Integer idLivraison){
+        commandeDao.addCommande(idUser, idLivraison);
     }
 
 }

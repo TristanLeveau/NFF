@@ -34,11 +34,12 @@
 					</tr>
 					</thead>
 					<tbody>
-					<tr th:each="participant : ${participants}">
-						<td th:text="${participant.idParticipant}"></td>
-						<td th:text="${participant.nom}"></td>
-						<td th:text="${participant.prenom}"></td>
-						<td th:text="${participant.email}"></td>
+					<tr th:each="commandeparlivraison : ${commandes}">
+						<td th:text="${commandeparlivraison.idCommande}"></td>
+						<td th:text="${commandeparlivraison.nom}"></td>
+						<td th:text="${commandeparlivraison.prenom}"></td>
+						<td th:text="${commandeparlivraison.email}"></td>
+
 					</tr>
 					</tbody>
 				</table>

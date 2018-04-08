@@ -10,27 +10,22 @@
 </head>
 
 <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
+
 <div class="container-fluid">
     <header th:replace="~{common::header}"></header>
 </div>
+
 <div class="d-flex justify-content-center">
     <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
         <div class="container">
-            <h1>Administration</h1>
-            <p>Bienvenue! Voici les fonctionnalités admin.</p>
-            <div class="list-group">
-                <a href="livraisonadd" class="list-group-item list-group-item-action">Ajouter une livraison</a>
-                <a href="listelivraisonadmin" class="list-group-item list-group-item-action">Récapitulatif des livraisons</a>
-                <a href="listeclients" class="list-group-item list-group-item-action">Liste des inscrits</a>
-                <a href="#" class="list-group-item list-group-item-action">Écrire un article</a>
-            </div>
+            <h3>Livraison validée! Tu recevras ton panier à la date indiquée.</h3>
+            <p>Tu peux retourner <a href="home">aux livraisons</a> ou accéder à <a href="profil"></a></p>
+            <p class="sousTitre"></p>
         </div>
     </div>
 </div>
 
-
 <footer th:replace="~{common::footer}"></footer>
-
 
 </body>
 </html>

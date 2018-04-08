@@ -2,6 +2,8 @@ package daos;
 
 import exceptions.NFFRuntimeException;
 import pojos.Commande;
+import pojos.CommandeParLivraison;
+import pojos.CommandeParUser;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,22 +28,54 @@ public class CommandeDao {
 
     }
 
-   public List<Commande> listCommandeByIdLivraison (Integer idLivraison){
-   List<Commande> Listecommande = new ArrayList<>();
+   public List<CommandeParLivraison> listCommandeByIdLivraison (Integer idLivraison){
+
+        List<CommandeParLivraison> ListeCommandeParLivraison = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-    PreparedStatement statement = connection.prepareStatement("SELECT * FROM commande WHERE idlivraisoncommande=? ORDER BY idcommande DESC")) {
+    PreparedStatement statement = connection.prepareStatement("SELECT * FROM commande a, user b WHERE a.idusercommande = b.iduser AND a.idlivraisoncommande = ?")) {
                     statement.setInt(1, idLivraison);
                     try (ResultSet resultSet = statement.executeQuery()) {
                         while (resultSet.next()) {
-                            Listecommande.add(new Commande(
-                                    resultSet.getInt("idcommande")
+                            ListeCommandeParLivraison.add(new CommandeParLivraison(
+                                    resultSet.getInt("idcommande"),
+                                    resultSet.getInt("iduser"),
+                                    resultSet.getString("nom"),
+                                    resultSet.getString("prenom"),
+                                    resultSet.getString("email")
+
                             ));
                 }
                 }
                 }catch (SQLException e) {
             throw new NFFRuntimeException("Erreur lors de la liste",e);
         }
-        return Listecommande;
+        return ListeCommandeParLivraison;
 
    }
+
+    public List<CommandeParUser> listCommandeByUser (Integer idUser){
+
+        List<CommandeParUser> ListeCommandeParLivraison = new ArrayList<>();
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM commande a, livraison b WHERE a.idlivraisoncommande = b.idlivraison AND a.idusercommande = ?")) {
+            statement.setInt(1, idUser);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    ListeCommandeParLivraison.add(new CommandeParUser(
+                            resultSet.getInt("idcommande"),
+                            resultSet.getInt("idlivraison"),
+                            resultSet.getString("date"),
+                            resultSet.getString("contenu")
+
+                    ));
+                }
+            }
+        }catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la liste",e);
+        }
+        return ListeCommandeParLivraison;
+
+    }
+
+
 }

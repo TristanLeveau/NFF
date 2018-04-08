@@ -7,153 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39ffeaea-92f6-4a6d-9236-26685526176e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/daos/UserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pojos/Commande.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pojos/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/services/CommandeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/AjoutLivraisonServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ConnexionServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/DeconnexionServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ListeUsersServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ProfilServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/UserDaoTestCase.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/daos/ClientDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pojos/Client.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pojos/Participant.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/AddAbonnementServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/AproposServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/ConnexionProfilServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/GestionServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/ListeClientsServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/LivraisonAjoutServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/LivraisonByParticipantServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/LivraisonModificationServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/LivraisonSuppressionServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/MesLivraisonsServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/ProfilUtilisateurServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/ValidationLivraisonServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/abonnement.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/apropos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/confirmationsuppr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestionlivraison.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listelivraisonbyparticipant.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonmodif.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonsconnexion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationlivraison.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profilutilisateur.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/ClientDaoTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/ParticipantDaoTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/ClientDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/ParticipantDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/pojos/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/pojos/Participant.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/AddAbonnementServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/AproposServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ConnexionProfilServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/GestionServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ListeClientsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonAjoutServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonByParticipantServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonDetailsAdminServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonDetailsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonModificationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonSuppressionServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/MesLivraisonsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ProfilUtilisateurServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ValidationLivraisonServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/abonnement.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/apropos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/confirmationsuppr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/connexionprofil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/gestionlivraison.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/listelivraisonbyparticipant.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetailadmin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisonmodif.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisonsconnexion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/participationlivraison.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/profilutilisateur.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/validationlivraison.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/daos/ClientDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/daos/ParticipantDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pojos/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pojos/Participant.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/AddAbonnementServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/AproposServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/ConnexionProfilServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/GestionServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/ListeClientsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/LivraisonAjoutServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/LivraisonByParticipantServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/LivraisonDetailsAdminServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/LivraisonDetailsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/LivraisonModificationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/LivraisonSuppressionServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/MesLivraisonsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/ProfilUtilisateurServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/ValidationLivraisonServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/ClientDaoTestCase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/ParticipantDaoTestCase.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexionprofil.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailadmin.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/DataSourceProvider.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/DataSourceProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/LivraisonDao.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/LivraisonDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService$LivraisonServiceHolder.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService$LivraisonServiceHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/LivraisonService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/AdministrationServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/AdministrationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ErreurServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ErreurServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pojos/CommandeParLivraison.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pojos/CommandeParUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ListeLivraisonAdminServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/LivraisonSuppressionServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ParticipationValideeServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listelivraisonadmin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationvalidee.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/CommandeDao.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/CommandeDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/CommandeService$CommandeServiceHolder.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/CommandeService$CommandeServiceHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/CommandeService.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/services/CommandeService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/HomeServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/HomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/InscriptionServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/InscriptionServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonDetailsAdminServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/LivraisonDetailsAdminServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationLivraisonServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationLivraisonServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/daos/LivraisonDao.class" afterPath="$PROJECT_DIR$/target/classes/daos/LivraisonDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/LivraisonService$LivraisonServiceHolder.class" afterPath="$PROJECT_DIR$/target/classes/services/LivraisonService$LivraisonServiceHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/LivraisonService.class" afterPath="$PROJECT_DIR$/target/classes/services/LivraisonService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/AdministrationServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/AdministrationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/ErreurServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ErreurServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ProfilServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ProfilServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/daos/CommandeDao.class" afterPath="$PROJECT_DIR$/target/classes/daos/CommandeDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/CommandeService$CommandeServiceHolder.class" afterPath="$PROJECT_DIR$/target/classes/services/CommandeService$CommandeServiceHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/CommandeService.class" afterPath="$PROJECT_DIR$/target/classes/services/CommandeService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/HomeServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/HomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/InscriptionServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/InscriptionServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/LivraisonDetailsAdminServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/LivraisonDetailsAdminServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/ParticipationLivraisonServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ParticipationLivraisonServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/AbstractDaoTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/AbstractDaoTestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/LivraisonDaoTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/LivraisonDaoTestCase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/ProfilServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ProfilServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/daos/LivraisonDao.java" afterPath="$PROJECT_DIR$/src/main/java/daos/LivraisonDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pojos/Livraison.java" afterPath="$PROJECT_DIR$/src/main/java/pojos/Livraison.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/LivraisonService.java" afterPath="$PROJECT_DIR$/src/main/java/services/LivraisonService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/AdministrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/AdministrationServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ErreurServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ErreurServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" afterPath="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/CommandeService.java" afterPath="$PROJECT_DIR$/src/main/java/services/CommandeService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/InscriptionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/InscriptionServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ProfilServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ProfilServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/database-init.sql" afterPath="$PROJECT_DIR$/src/main/sql/database-init.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/exemple_livraison" afterPath="$PROJECT_DIR$/src/main/sql/exemple_livraison" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listeclients.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listeclients.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonadd.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonadd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/AbstractDaoTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/AbstractDaoTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/LivraisonDaoTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/LivraisonDaoTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/accueil.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/accueil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/common.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/erreur.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/erreur.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/home.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/inscription.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/inscription.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/listeclients.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/listeclients.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisonadd.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisonadd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/admin.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetailsadmin.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetailsadmin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/profil.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/profil.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -172,81 +62,110 @@
       <file leaf-file-name="CommandeDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/daos/CommandeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="142" lean-forward="false" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
+            <state relative-caret-position="-422">
+              <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+              <folding>
+                <marker date="1523187132000" expanded="true" signature="584:655" ph="INSERT INTO commande... " />
+                <marker date="1523187132000" expanded="true" signature="1272:1368" ph="SELECT * FRO... commande" />
+                <marker date="1523187132000" expanded="true" signature="2531:2637" ph="SELECT * FRO... commande" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LivraisonDetailsAdminServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4">
+              <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1522998489000" expanded="true" signature="519:590" ph="INSERT INTO commande... " />
-                <marker date="1522998489000" expanded="true" signature="1165:1240" ph="SELECT * FRO... participant" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractDaoTestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/AbstractDaoTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <marker date="1522998626000" expanded="true" signature="454:466" ph="DELETE FROM " />
-                <marker date="1522998626000" expanded="true" signature="454:470" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandeDaoTestCase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommandeDaoTestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="77" column="81" lean-forward="false" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
+            <state relative-caret-position="94">
+              <caret line="54" column="86" lean-forward="false" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1523000728000" expanded="true" signature="573:589" ph="DELETE FROM " />
-                <marker date="1523000728000" expanded="true" signature="627:648" ph="DELETE FROM " />
-                <marker date="1523000728000" expanded="true" signature="684:704" ph="DELETE FROM " />
-                <marker date="1523000728000" expanded="true" signature="745:858" ph="INSERT INTO user... " />
-                <marker date="1523000728000" expanded="true" signature="897:1004" ph="INSERT INTO user... " />
-                <marker date="1523000728000" expanded="true" signature="1043:1155" ph="INSERT INTO user... " />
-                <marker date="1523000728000" expanded="true" signature="1195:1270" ph="INSERT INTO livraison... " />
-                <marker date="1523000728000" expanded="true" signature="1310:1385" ph="INSERT INTO livraison... " />
-                <marker date="1523000728000" expanded="true" signature="1425:1500" ph="INSERT INTO livraison... " />
-                <marker date="1523000728000" expanded="true" signature="1540:1615" ph="INSERT INTO livraison... " />
-                <marker date="1523000728000" expanded="true" signature="1656:1693" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="1733:1770" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="1810:1847" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="1887:1924" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="2342:2379" ph="SELECT * FRO... commande" />
-                <marker date="1523000728000" expanded="true" signature="2342:2382" ph="SELECT * FRO... commande" />
-                <marker date="1523000728000" expanded="true" signature="3049:3086" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="3124:3161" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="3199:3236" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="3274:3311" ph="INSERT INTO commande... " />
-                <marker date="1523000728000" expanded="true" signature="3310:3311" ph="INSERT INTO livraison... " />
+                <marker date="1523197756000" expanded="true" signature="608:624" ph="DELETE FROM " />
+                <marker date="1523197756000" expanded="true" signature="662:683" ph="DELETE FROM " />
+                <marker date="1523197756000" expanded="true" signature="719:739" ph="DELETE FROM " />
+                <marker date="1523197756000" expanded="true" signature="780:893" ph="INSERT INTO user... " />
+                <marker date="1523197756000" expanded="true" signature="932:1039" ph="INSERT INTO user... " />
+                <marker date="1523197756000" expanded="true" signature="1078:1190" ph="INSERT INTO user... " />
+                <marker date="1523197756000" expanded="true" signature="1230:1305" ph="INSERT INTO livraison... " />
+                <marker date="1523197756000" expanded="true" signature="1345:1420" ph="INSERT INTO livraison... " />
+                <marker date="1523197756000" expanded="true" signature="1460:1535" ph="INSERT INTO livraison... " />
+                <marker date="1523197756000" expanded="true" signature="1575:1650" ph="INSERT INTO livraison... " />
+                <marker date="1523197756000" expanded="true" signature="1691:1728" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="1768:1805" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="1845:1882" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="1922:1959" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="2379:2401" ph="SELECT * FRO... commande" />
+                <marker date="1523197756000" expanded="true" signature="2379:2407" ph="SELECT * FRO... commande" />
+                <marker date="1523197756000" expanded="true" signature="2379:2410" ph="SELECT * FRO... commande" />
+                <marker date="1523197756000" expanded="true" signature="3073:3110" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="3148:3185" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="3223:3260" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="3298:3335" ph="INSERT INTO commande... " />
+                <marker date="1523197756000" expanded="true" signature="3334:3335" ph="INSERT INTO livraison... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="livraisondetailsadmin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html">
+      <file leaf-file-name="ParticipationValideeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ParticipationValideeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+            <state relative-caret-position="142">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="livraisondetails.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LivraisonDetailsAdminServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java">
+      <file leaf-file-name="participationvalidee.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationvalidee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="24" column="108" lean-forward="false" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="59">
+              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accueil.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="31" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccueilServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AccueilServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="18" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -254,8 +173,8 @@
       <file leaf-file-name="CommandeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/CommandeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="-22">
+              <caret line="14" column="113" lean-forward="false" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,58 +182,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LivraisonService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/LivraisonService.java">
+      <file leaf-file-name="ParticipationLivraisonServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="162">
+              <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoTestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/UserDaoTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1522930293000" expanded="true" signature="498:611" ph="INSERT INTO user... " />
-                <marker date="1522930293000" expanded="true" signature="648:755" ph="INSERT INTO user... " />
-                <marker date="1522930293000" expanded="true" signature="792:904" ph="INSERT INTO user... " />
-                <marker date="1522930293000" expanded="true" signature="1333:1374" ph="SELECT * FRO... user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LivraisonDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/daos/LivraisonDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1522939706000" expanded="true" signature="528:593" ph="SELECT * FRO... livraison" />
-                <marker date="1522939706000" expanded="true" signature="1341:1405" ph="SELECT * FRO... livraison" />
-                <marker date="1522939706000" expanded="true" signature="2228:2303" ph="INSERT INTO livraison... " />
-                <marker date="1522939706000" expanded="true" signature="2838:2894" ph="UPDATE livra... " />
-                <marker date="1522939706000" expanded="true" signature="3294:3352" ph="UPDATE livra... " />
-                <marker date="1522939706000" expanded="true" signature="4059:4129" ph="SELECT * FRO... user" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -325,8 +198,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -364,14 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/monprofil.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/LivraisonByParticipantServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/daos/DataSourceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/daos/ParticipantDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listelivraisonbyparticipant.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailadmin.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/gestionlivraison.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ConnexionProfilServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/pojos/Client.java" />
@@ -386,8 +251,6 @@
         <option value="$PROJECT_DIR$/src/main/java/servlets/InscriptionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexion.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ProfilServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ConnexionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/DeconnexionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/LivraisonService.java" />
@@ -398,23 +261,33 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonadd.html" />
         <option value="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/LivraisonDaoTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ErreurServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/AdministrationServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/AjoutLivraisonServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ListeUsersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/pojos/Commande.java" />
-        <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" />
-        <option value="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/AbstractDaoTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/ListeLivraisonAdminServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pojos/CommandeParUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pojos/CommandeParLivraison.java" />
+        <option value="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/ProfilServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/LivraisonSuppressionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listelivraisonadmin.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html" />
         <option value="$PROJECT_DIR$/src/main/java/services/CommandeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonvalidee.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/ParticipationValideeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" />
       </list>
     </option>
   </component>
@@ -438,10 +311,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="36" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="27" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="608" />
+    <option name="height" value="590" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -524,6 +398,58 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="servlets" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NFF copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF copie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFF copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF copie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFF copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF copie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFF copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF copie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFF copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF copie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFF copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF copie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NFF copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NFF copie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -543,19 +469,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alayd\Desktop\SiteWebNFF\src\main\webapp\css" />
-      <recent name="$PROJECT_DIR$/src/main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/servlets" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates" />
+      <recent name="$PROJECT_DIR$/src/main/java/pojos" />
+      <recent name="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl" />
+      <recent name="$PROJECT_DIR$/src/main/sql" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pojos" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates" />
-      <recent name="$PROJECT_DIR$/src/main/java/pojos" />
-      <recent name="$PROJECT_DIR$/src/main/java/servlets" />
-      <recent name="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl" />
-      <recent name="$PROJECT_DIR$/src/main/sql" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alayd\Desktop\SiteWebNFF\src\main\webapp\css" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -907,14 +833,11 @@
       <workItem from="1521617513002" duration="5138000" />
       <workItem from="1522512994809" duration="56701000" />
       <workItem from="1522923189287" duration="30660000" />
-      <workItem from="1523090076245" duration="490000" />
+      <workItem from="1523090076245" duration="12413000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandeDaoTestCase - 2018.04.06 at 09h 25m 56s.xml">
-      <configuration name="CommandeDaoTestCase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandeDaoTestCase - 2018.04.06 at 09h 26m 12s.xml">
       <configuration name="CommandeDaoTestCase" configurationId="JUnit" />
     </history-entry>
@@ -942,9 +865,12 @@
     <history-entry file="CommandeDaoTestCase - 2018.04.06 at 09h 44m 10s.xml">
       <configuration name="CommandeDaoTestCase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommandeDaoTestCase - 2018.04.07 at 14h 51m 57s.xml">
+      <configuration name="CommandeDaoTestCase" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231986000" />
+    <option name="totallyTimeSpent" value="243909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -956,12 +882,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="36" width="1440" height="608" extended-state="1" />
+    <frame x="27" y="23" width="1440" height="590" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3235725" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220339" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
@@ -969,7 +895,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32612056" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48367348" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50211865" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1007,16 +933,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3235725" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220339" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48367348" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50211865" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22031474" sideWeight="0.80604535" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22317597" sideWeight="0.80604535" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.019662922" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1041,41 +967,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmproject/filters/EncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/connexionprofil.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/NFFRuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AbstractGenericServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmproject/filters/ConnexionFiltre.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/validationlivraison.html" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,20 +979,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/daos/ClientDao.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/ParticipantDaoTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/ClientDaoTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listeclients.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-24">
@@ -1111,41 +993,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeconnexionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ConnexionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ProfilServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/Livraison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1160,16 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/InscriptionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="57" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,6 +1032,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,75 +1053,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ListeUsersServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AccueilServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="76" lean-forward="true" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/Commande.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1288,8 +1065,8 @@
         <state relative-caret-position="99">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1008#1014#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1008#1014#0" expanded="false" />
             <marker date="1522939457000" expanded="true" signature="424:485" ph="INSERT INTO user... " />
             <marker date="1522939457000" expanded="true" signature="1246:1277" ph="SELECT * FRO... user" />
             <marker date="1522939457000" expanded="true" signature="2017:2051" ph="SELECT * FRO... user" />
@@ -1303,7 +1080,7 @@
         <state relative-caret-position="150">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1522949507000" expanded="true" signature="532:548" ph="DELETE FROM " />
             <marker date="1522949507000" expanded="true" signature="585:606" ph="DELETE FROM " />
             <marker date="1522949507000" expanded="true" signature="643:718" ph="INSERT INTO livraison... " />
@@ -1328,24 +1105,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daos/CommandeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="142" lean-forward="false" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1522998489000" expanded="true" signature="519:590" ph="INSERT INTO commande... " />
-            <marker date="1522998489000" expanded="true" signature="1165:1240" ph="SELECT * FRO... participant" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/UserDaoTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1522930293000" expanded="true" signature="498:611" ph="INSERT INTO user... " />
             <marker date="1522930293000" expanded="true" signature="648:755" ph="INSERT INTO user... " />
             <marker date="1522930293000" expanded="true" signature="792:904" ph="INSERT INTO user... " />
@@ -1354,48 +1119,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="77" column="81" lean-forward="false" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523000728000" expanded="true" signature="573:589" ph="DELETE FROM " />
-            <marker date="1523000728000" expanded="true" signature="627:648" ph="DELETE FROM " />
-            <marker date="1523000728000" expanded="true" signature="684:704" ph="DELETE FROM " />
-            <marker date="1523000728000" expanded="true" signature="745:858" ph="INSERT INTO user... " />
-            <marker date="1523000728000" expanded="true" signature="897:1004" ph="INSERT INTO user... " />
-            <marker date="1523000728000" expanded="true" signature="1043:1155" ph="INSERT INTO user... " />
-            <marker date="1523000728000" expanded="true" signature="1195:1270" ph="INSERT INTO livraison... " />
-            <marker date="1523000728000" expanded="true" signature="1310:1385" ph="INSERT INTO livraison... " />
-            <marker date="1523000728000" expanded="true" signature="1425:1500" ph="INSERT INTO livraison... " />
-            <marker date="1523000728000" expanded="true" signature="1540:1615" ph="INSERT INTO livraison... " />
-            <marker date="1523000728000" expanded="true" signature="1656:1693" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="1733:1770" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="1810:1847" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="1887:1924" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="2342:2379" ph="SELECT * FRO... commande" />
-            <marker date="1523000728000" expanded="true" signature="2342:2382" ph="SELECT * FRO... commande" />
-            <marker date="1523000728000" expanded="true" signature="3049:3086" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="3124:3161" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="3199:3236" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="3274:3311" ph="INSERT INTO commande... " />
-            <marker date="1523000728000" expanded="true" signature="3310:3311" ph="INSERT INTO livraison... " />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        <state relative-caret-position="108">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/Livraison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/Commande.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/daos/LivraisonDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
+        <state relative-caret-position="863">
           <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1409,9 +1183,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/LivraisonService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="19">
           <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1419,30 +1201,235 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ListeLivraisonAdminServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="50" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/CommandeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="-13">
+          <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ConnexionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="24" column="108" lean-forward="false" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
+        <state relative-caret-position="321">
+          <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/InscriptionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="57" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ListeUsersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/CommandeParLivraison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/CommandeParUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="15" column="94" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ProfilServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listelivraisonadmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="45" column="86" lean-forward="false" selection-start-line="45" selection-start-column="86" selection-end-line="45" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LivraisonSuppressionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="39" column="64" lean-forward="false" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/CommandeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="14" column="113" lean-forward="false" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AccueilServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationvalidee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/daos/CommandeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <marker date="1523187132000" expanded="true" signature="584:655" ph="INSERT INTO commande... " />
+            <marker date="1523187132000" expanded="true" signature="1272:1368" ph="SELECT * FRO... commande" />
+            <marker date="1523187132000" expanded="true" signature="2531:2637" ph="SELECT * FRO... commande" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ParticipationValideeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="54" column="86" lean-forward="false" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
+          <folding>
+            <marker date="1523197756000" expanded="true" signature="608:624" ph="DELETE FROM " />
+            <marker date="1523197756000" expanded="true" signature="662:683" ph="DELETE FROM " />
+            <marker date="1523197756000" expanded="true" signature="719:739" ph="DELETE FROM " />
+            <marker date="1523197756000" expanded="true" signature="780:893" ph="INSERT INTO user... " />
+            <marker date="1523197756000" expanded="true" signature="932:1039" ph="INSERT INTO user... " />
+            <marker date="1523197756000" expanded="true" signature="1078:1190" ph="INSERT INTO user... " />
+            <marker date="1523197756000" expanded="true" signature="1230:1305" ph="INSERT INTO livraison... " />
+            <marker date="1523197756000" expanded="true" signature="1345:1420" ph="INSERT INTO livraison... " />
+            <marker date="1523197756000" expanded="true" signature="1460:1535" ph="INSERT INTO livraison... " />
+            <marker date="1523197756000" expanded="true" signature="1575:1650" ph="INSERT INTO livraison... " />
+            <marker date="1523197756000" expanded="true" signature="1691:1728" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="1768:1805" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="1845:1882" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="1922:1959" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="2379:2401" ph="SELECT * FRO... commande" />
+            <marker date="1523197756000" expanded="true" signature="2379:2407" ph="SELECT * FRO... commande" />
+            <marker date="1523197756000" expanded="true" signature="2379:2410" ph="SELECT * FRO... commande" />
+            <marker date="1523197756000" expanded="true" signature="3073:3110" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="3148:3185" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="3223:3260" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="3298:3335" ph="INSERT INTO commande... " />
+            <marker date="1523197756000" expanded="true" signature="3334:3335" ph="INSERT INTO livraison... " />
           </folding>
         </state>
       </provider>

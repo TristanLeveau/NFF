@@ -16,13 +16,16 @@ import java.io.IOException;
 @WebServlet("/home")
 public class HomeServlet extends AbstractGenericServlet {
 
-	private static final long serialVersionUID = 5402133218271984030L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		HttpSession session = req.getSession();
 		TemplateEngine templateEngine = this.createTemplateEngine(req);
 		WebContext context = new WebContext(req, resp, getServletContext());
 
+		if (session.getAttribute("user")==null){
+			resp.sendRedirect("deconnexion");
+		}
 
 		context.setVariable("livraisons", LivraisonService.getInstance().listAllLivraisons());
 
