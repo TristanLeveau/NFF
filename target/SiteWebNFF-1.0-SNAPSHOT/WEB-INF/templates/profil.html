@@ -21,7 +21,9 @@
             <h3>Bienvenue, [[${session.user.prenom}]] [[${session.user.nom}]]</h3>
             <p class="sousTitre">Adresse mail : [[${session.user.email}]]</p>
         <h4>Tes livraisons</h4>
-        <p class="sousTitre">Voici les livraisons auxquelles tu t'es inscrit.</p>
+            <div th:if="${listelivraisonuser.isEmpty()}"> Tu ne t'es pas encore inscrit à une livraison...</div>
+            <div th:if="${listelivraisonuser.isEmpty()==false}">
+            <p class="sousTitre">Voici les livraisons auxquelles tu t'es inscrit.</p>
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -39,7 +41,7 @@
                 </tr>
                 </tbody>
             </table>
-        </div>
+        </div></div>
         </div>
     </div>
 </div>

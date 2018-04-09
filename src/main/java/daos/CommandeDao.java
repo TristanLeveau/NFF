@@ -23,7 +23,7 @@ public class CommandeDao {
             statement.executeUpdate();
 
         } catch (SQLException e) {
-            throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
+            throw new NFFRuntimeException("Erreur lors de l'ajout de la participation...", e);
         }
 
     }

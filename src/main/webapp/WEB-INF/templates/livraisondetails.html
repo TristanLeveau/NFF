@@ -22,7 +22,9 @@
 			<h4>ID Livraison :</h4>
 			<p th:text="${livraison.idLivraison}" class="resume"></p>
 
-			<a href="home"><button type="button" class="btn btn-success">Je participe</button></a>
+			<form>
+			<a th:href="'validation?idlivraison='+${livraison.idLivraison}"><button type="button" class="btn btn-success">Je participe</button></a>
+			</form>
 		</div>
 	</div>
 </div>
