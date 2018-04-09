@@ -7,27 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39ffeaea-92f6-4a6d-9236-26685526176e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/servlets/ValidationServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/CommandeDao.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/daos/CommandeDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationLivraisonServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationLivraisonServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationValideeServlet.class" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/classes/servlets/ParticipationValideeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/daos/CommandeDao.class" afterPath="$PROJECT_DIR$/target/classes/daos/CommandeDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/ParticipationLivraisonServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ParticipationLivraisonServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/ParticipationValideeServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/ParticipationValideeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" afterPath="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/ParticipationValideeServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/ParticipationValideeServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationvalidee.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationvalidee.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetails.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/participationvalidee.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/participationvalidee.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/profil.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/profil.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/database-init.sql" afterPath="$PROJECT_DIR$/src/main/sql/database-init.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,18 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ValidationServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ValidationServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -171,11 +139,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="erreur.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="erreur.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database-init.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -276,7 +254,6 @@
         <option value="$PROJECT_DIR$/src/main/java/services/CommandeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/LivraisonDetailsAdminServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisonvalidee.html" />
-        <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
         <option value="$PROJECT_DIR$/src/main/java/daos/CommandeDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/hei/devweb/sitewebnff/dao/impl/CommandeDaoTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ParticipationLivraisonServlet.java" />
@@ -287,6 +264,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationvalidee.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/inscription.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html" />
+        <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
       </list>
     </option>
   </component>
@@ -847,7 +825,7 @@
       <workItem from="1521617513002" duration="5138000" />
       <workItem from="1522512994809" duration="56701000" />
       <workItem from="1522923189287" duration="30660000" />
-      <workItem from="1523090076245" duration="19530000" />
+      <workItem from="1523090076245" duration="19830000" />
     </task>
     <servers />
   </component>
@@ -884,7 +862,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251026000" />
+    <option name="totallyTimeSpent" value="251326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1291,14 +1269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/daos/DataSourceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -1475,6 +1445,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding />
         </state>
       </provider>
