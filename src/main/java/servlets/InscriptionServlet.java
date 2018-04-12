@@ -21,6 +21,11 @@ public class InscriptionServlet extends AbstractGenericServlet {
 
         TemplateEngine templateEngine = this.createTemplateEngine(req);
         WebContext context = new WebContext(req, resp, getServletContext());
+
+        if (req.getSession().getAttribute("user") != null){
+            resp.sendRedirect("home");
+        }
+
         if(req.getSession().getAttribute("UserCreationError") != null){
             context.setVariable("errormessage",req.getSession().getAttribute("UserCreationError"));
             context.setVariable("user", (User) req.getSession().getAttribute("UserCreationData"));

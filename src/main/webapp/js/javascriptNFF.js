@@ -2,6 +2,15 @@ function AccesProtege() {
     self.location.href=prompt("Mot de passe :","");
 }
 
+function AccesProtegeB(){
+    var mp = prompt('Entre le mdp :');
+
+    if(mp=='admin123'){
+        location.href="admin";
+    }
+
+}
+
 function open_infos()
 {
     width = 300;

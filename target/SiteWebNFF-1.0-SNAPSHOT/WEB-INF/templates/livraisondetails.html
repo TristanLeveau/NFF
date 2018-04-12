@@ -16,14 +16,14 @@
 <div class="d-flex justify-content-center">
 	<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
 		<div class="container">
-			<h3>Livraison du [[${livraison.date}]]</h3>
+			<h3>Participer à la livraison du [[${livraison.date}]]</h3>
 				<h4>Contenu :</h4>
 				<p th:text="${livraison.contenu}" class="resume"></p>
 			<h4>ID Livraison :</h4>
 			<p th:text="${livraison.idLivraison}" class="resume"></p>
 
 			<form>
-			<a th:href="'validation?idlivraison='+${livraison.idLivraison}"><button type="button" class="btn btn-success">Je participe</button></a>
+			<a th:href="'validation?idlivraison='+${livraison.idLivraison}"><button type="button" class="btn btn-success">Confirmer la participation</button></a>
 			</form>
 		</div>
 	</div>

@@ -11,7 +11,7 @@
 
     <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
 
-    <div class="container-fluid">
+    <div class="container-fluid" th:if="${session.user!=null}">
         <header th:replace="~{common::header}"></header>
     </div>
 

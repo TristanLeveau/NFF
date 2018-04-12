@@ -23,11 +23,16 @@ public class ProfilServlet extends AbstractGenericServlet {
         WebContext context = new WebContext(req, resp, getServletContext());
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user");
-        Integer idUser = user.getIdUser();
-        context.setVariable("listelivraisonuser", CommandeService.getInstance().listCommandeByUser(idUser));
 
-        templateEngine.process("profil", context, resp.getWriter());
+        if (user==null){
+            resp.sendRedirect("deconnexion");
+        }
 
+        else {
+            Integer idUser = user.getIdUser();
+            context.setVariable("listelivraisonuser", CommandeService.getInstance().listCommandeByUser(idUser));
+            templateEngine.process("profil", context, resp.getWriter());
 
+        }
     }
 }

@@ -19,6 +19,10 @@ public class ConnexionServlet extends AbstractGenericServlet {
         TemplateEngine templateEngine = this.createTemplateEngine(req);
         WebContext context = new WebContext(req, resp, getServletContext());
 
+        if (req.getSession().getAttribute("user") != null){
+            resp.sendRedirect("home");
+        }
+
         if(req.getSession().getAttribute("UserCreationError") != null){
             context.setVariable("errormessage",req.getSession().getAttribute("UserConnexionError"));
             context.setVariable("email", (String) req.getSession().getAttribute("UserConnexionData"));
@@ -29,6 +33,7 @@ public class ConnexionServlet extends AbstractGenericServlet {
             req.getSession().removeAttribute("UserCreationData2");
 
         }
+
         else{
             context.setVariable("user",new User(null,null,null,null,null));
         }

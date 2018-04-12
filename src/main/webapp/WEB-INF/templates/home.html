@@ -16,16 +16,18 @@
 
 
 	<body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
-<div class="container-fluid">
+<div class="container-fluid" th:if="${session.user!=null}">
 	<header th:replace="~{common::header}"></header>
 </div>
+
 <div class="d-flex justify-content-center">
 	<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
-
-	<div id="mainContent" class="container-fluid">
-		<h3 th:text="${session.user.nom}"></h3>
-		<h3>Commande ton panier North-Fresh Farmers</h3>
-		<h4>Choisis la date à laquelle tu souhaite recevoir ton panier : </h4>
+	<div id="mainContent" class="container-fluid" >
+		<div th:if="${session.user==null}">Vous devez vous connecter pour accéder à cette page.</div>
+		<div th:if="${session.user!=null}">
+		<h3>Bonjour, [[${session.user.prenom}]] [[${session.user.nom}]]</h3>
+		<h3>Commandes ton panier North-Fresh Farmers</h3>
+		<h4>Choisis la date à laquelle tu souhaites recevoir ton panier : </h4>
 
 		<div class="table-responsive">
 			<table class="table">
@@ -48,6 +50,7 @@
 
 
 		<a class="nav-link disabled red" href="javascript:AccesProtege()">Administration</a>
+		</div>
 	</div>
 
 	</div>

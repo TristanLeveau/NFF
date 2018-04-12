@@ -49,6 +49,10 @@ public class AjoutLivraisonServlet extends AbstractGenericServlet{
             resp.sendRedirect("deconnexion");
         }
 
+        if (date==null || contenu==null ){
+            resp.sendRedirect("erreurchamp");
+        }
+
         Livraison livraison = new Livraison(null, date, contenu);
 
         try{
