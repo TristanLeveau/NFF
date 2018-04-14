@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+// Servlet : Liste de tous les inscrits sur le site
 @WebServlet("/listeclients")
 public class ListeUsersServlet extends AbstractGenericServlet {
 

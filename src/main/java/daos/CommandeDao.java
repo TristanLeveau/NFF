@@ -14,6 +14,8 @@ import java.util.List;
 
 public class CommandeDao {
 
+
+    // Ajout d'une commande
     public void addCommande(Integer idUser, Integer idLivraison){
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement("INSERT INTO commande(idusercommande, idlivraisoncommande) VALUES (?, ?)")) {
@@ -28,6 +30,7 @@ public class CommandeDao {
 
     }
 
+    // Liste des commandes par livraison
    public List<CommandeParLivraison> listCommandeByIdLivraison (Integer idLivraison){
 
         List<CommandeParLivraison> ListeCommandeParLivraison = new ArrayList<>();
@@ -53,6 +56,7 @@ public class CommandeDao {
 
    }
 
+    // Liste des commandes par utilisateur
     public List<CommandeParUser> listCommandeByUser (Integer idUser){
 
         List<CommandeParUser> ListeCommandeParLivraison = new ArrayList<>();

@@ -5,6 +5,8 @@ import pojos.User;
 
 import java.util.List;
 
+// Gestion des services d' utilisateur.
+
 public class UserService {
 
     private UserDao userDao = new UserDao();

@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+// Servlet : Inscription et création de session
 @WebServlet("/inscription")
 public class InscriptionServlet extends AbstractGenericServlet {
     @Override

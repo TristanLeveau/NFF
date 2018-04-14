@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+// Servlet : Détails des livraisons côté admin.
 @WebServlet("/livraisondetailsadmin")
 public class LivraisonDetailsAdminServlet extends AbstractGenericServlet {
 

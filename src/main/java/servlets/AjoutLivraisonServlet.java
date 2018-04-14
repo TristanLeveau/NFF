@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-
+// Servlet : Ajout d'une livraison
 @WebServlet("/livraisonadd")
 public class AjoutLivraisonServlet extends AbstractGenericServlet{
 
@@ -49,16 +49,14 @@ public class AjoutLivraisonServlet extends AbstractGenericServlet{
             resp.sendRedirect("deconnexion");
         }
 
-        if (date==null || contenu==null ){
-            resp.sendRedirect("erreurchamp");
-        }
 
         Livraison livraison = new Livraison(null, date, contenu);
-
+        if (livraison==null ){
+            resp.sendRedirect("erreurchamp");
+        }
         try{
-            LivraisonService.getInstance().addLivraison(livraison);
-            resp.sendRedirect("home");
-
+                LivraisonService.getInstance().addLivraison(livraison);
+                resp.sendRedirect("home");
         }catch (IllegalArgumentException e){
             req.getSession().setAttribute("UserCreationError", e.getMessage());
             req.getSession().setAttribute("UserCreationData", livraison);

@@ -1,5 +1,7 @@
 package pojos;
 
+// Objet java Commande Par User : Permet de lister les commandes pour chaque utilisateur
+
 public class CommandeParUser {
 
     private Integer idCommande;

@@ -10,6 +10,7 @@ import java.util.List;
 
 public class LivraisonDao {
 
+    // Liste des livraisons
     public List<Livraison> listLivraisons() {
         List<Livraison> livraisons = new ArrayList<>();
 
@@ -34,6 +35,7 @@ public class LivraisonDao {
     }
 
 
+    // Retourne la livraison dont l'ID est demandé
     public Livraison getLivraison(Integer id) {
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement("SELECT * FROM livraison WHERE idlivraison = ? AND supprime=false")) {
@@ -53,6 +55,7 @@ public class LivraisonDao {
         return null;
     }
 
+    // Ajoute une livraison
     public void addLivraison(Livraison livraison) {
 
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
@@ -67,6 +70,7 @@ public class LivraisonDao {
         }
     }
 
+    // Supprime une livraison
     public void supprimerLivraison(Integer id) {
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET supprime=true WHERE idlivraison = ?")) {
@@ -77,6 +81,7 @@ public class LivraisonDao {
         }
     }
 
+    // Fonction de mise à jour d'une livraison ( non-utilisée)
     public void updateLivraison(Livraison newLivraison) {
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET date=?, contenu=? WHERE idlivraison=?")) {

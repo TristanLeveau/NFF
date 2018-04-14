@@ -16,6 +16,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
+
+// Servlet : Participation à une livraison
 @WebServlet("/livraisondetails")
 public class ParticipationLivraisonServlet extends AbstractGenericServlet{
 

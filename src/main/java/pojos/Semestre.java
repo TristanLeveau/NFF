@@ -1,5 +1,6 @@
 package pojos;
 
+// Objet java Semestre: Non utilisé, mis en place pour tester les abonnements.
 public enum Semestre {
     S1("Semestre 1 (25€)"),
     S2("5 paniers - Semestre 2 (25€)"),

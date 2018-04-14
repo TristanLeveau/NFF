@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+// Servlet : Page d'entrée sur le site, liste des livraisons
 @WebServlet("/home")
 public class HomeServlet extends AbstractGenericServlet {
 

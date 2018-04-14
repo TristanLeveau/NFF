@@ -1,6 +1,6 @@
 package pojos;
 
-// Création de l'objet utilisateur
+// Objet Java utilisateur
 
 public class User {
 

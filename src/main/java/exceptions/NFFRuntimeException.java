@@ -1,5 +1,8 @@
 package exceptions;
 
+
+// Gestion des erreurs
+
 public class NFFRuntimeException extends RuntimeException {
 
 	private static final long serialVersionUID = 9025730660535871559L;

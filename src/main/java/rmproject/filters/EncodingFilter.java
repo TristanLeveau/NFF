@@ -4,6 +4,7 @@ import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+// Filtre Web d'encodage UTF 8
 @WebFilter(filterName = "EncodingFilter")
 public class EncodingFilter implements Filter {
 

@@ -1,5 +1,6 @@
 package pojos;
 
+// Objet java commande
 public class Commande {
 
     private Integer idCommande;

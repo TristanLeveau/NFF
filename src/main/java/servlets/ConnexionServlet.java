@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-
+// Servlet : Connexion et création de session
 @WebServlet("/connexion")
 public class ConnexionServlet extends AbstractGenericServlet {
     @Override

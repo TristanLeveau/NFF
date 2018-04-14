@@ -8,6 +8,7 @@ import pojos.User;
 
 import java.util.List;
 
+// Gestion des services de commande
 public class CommandeService {
 
     CommandeDao commandeDao = new CommandeDao();

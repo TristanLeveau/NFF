@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+// Servlet : Suppression d'une livraison
 @WebServlet("/suppression")
 public class  LivraisonSuppressionServlet extends AbstractGenericServlet{
 

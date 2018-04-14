@@ -6,6 +6,9 @@ import pojos.Livraison;
 import java.io.IOException;
 import java.util.List;
 
+
+// Gestion des services de livraison
+
 public class LivraisonService {
 
     private LivraisonDao livraisonDao = new LivraisonDao();

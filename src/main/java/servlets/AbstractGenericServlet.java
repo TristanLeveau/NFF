@@ -8,6 +8,8 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
+
+// Servlet générique à la base de tous les autres servlets.
 public abstract class AbstractGenericServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -3522594466607040543L;

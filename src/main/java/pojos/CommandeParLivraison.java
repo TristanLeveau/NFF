@@ -2,6 +2,7 @@ package pojos;
 
 import java.util.List;
 
+// Objet java Commande Par Livraison : Permet de lister les commandes pour chaque livraison
 public class CommandeParLivraison {
 
     private Integer idCommande;

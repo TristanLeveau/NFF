@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+
+// Servlet : Profil utilisateur
 @WebServlet("/profil")
 public class ProfilServlet extends AbstractGenericServlet {
     @Override

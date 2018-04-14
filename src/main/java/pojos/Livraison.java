@@ -1,6 +1,6 @@
 package pojos;
 
-
+// Objet java Livraison
 public class Livraison {
 
 	private Integer idLivraison;

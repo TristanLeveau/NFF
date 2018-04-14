@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+// Servlet : Page de validation
 @WebServlet("/participationvalidee")
 public class ParticipationValideeServlet extends AbstractGenericServlet {
 
