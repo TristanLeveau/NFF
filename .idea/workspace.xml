@@ -7,7 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39ffeaea-92f6-4a6d-9236-26685526176e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/database-init.sql" afterPath="$PROJECT_DIR$/src/main/sql/database-init.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetails.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/livraisondetails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/profil.html" afterPath="$PROJECT_DIR$/target/SiteWebNFF-1.0-SNAPSHOT/WEB-INF/templates/profil.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,7 +29,7 @@
       <file leaf-file-name="CommandeDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/daos/CommandeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="1168">
               <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
               <folding>
                 <marker date="1523796606000" expanded="true" signature="613:684" ph="INSERT INTO commande... " />
@@ -62,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database-init.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database-init.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="64" column="52" lean-forward="true" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+            <state relative-caret-position="126">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -82,12 +85,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="livraisondetails.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="livraisondetails.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="120" lean-forward="false" selection-start-line="25" selection-start-column="105" selection-end-line="25" selection-end-column="120" />
-              <folding />
+            <state relative-caret-position="129">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,8 +100,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="123">
+              <caret line="15" column="108" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -181,7 +186,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/participationvalidee.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreur.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueil.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/erreurchamp.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetailsadmin.html" />
@@ -230,6 +234,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html" />
         <option value="$PROJECT_DIR$/src/main/sql/database-init.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html" />
       </list>
     </option>
   </component>
@@ -801,7 +806,7 @@
       <workItem from="1522923189287" duration="30660000" />
       <workItem from="1523090076245" duration="30550000" />
       <workItem from="1523537929610" duration="169000" />
-      <workItem from="1523692869934" duration="7106000" />
+      <workItem from="1523692869934" duration="8421000" />
     </task>
     <servers />
   </component>
@@ -838,7 +843,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269321000" />
+    <option name="totallyTimeSpent" value="270636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1310,33 +1315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daos/CommandeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding>
-            <marker date="1523796606000" expanded="true" signature="613:684" ph="INSERT INTO commande... " />
-            <marker date="1523796606000" expanded="true" signature="1342:1438" ph="SELECT * FRO... commande" />
-            <marker date="1523796606000" expanded="true" signature="1342:1459" ph="SELECT * FRO... commande" />
-            <marker date="1523796606000" expanded="true" signature="2665:2771" ph="SELECT * FRO... commande" />
-            <marker date="1523796606000" expanded="true" signature="2665:2792" ph="SELECT * FRO... commande" />
-            <marker date="1523796606000" expanded="true" signature="3740:3794" ph="UPDATE comma... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/listelivraisonadmin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="45" column="128" lean-forward="false" selection-start-line="45" selection-start-column="128" selection-end-line="45" selection-end-column="128" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="120" lean-forward="false" selection-start-line="25" selection-start-column="105" selection-end-line="25" selection-end-column="120" />
           <folding />
         </state>
       </provider>
@@ -1359,14 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/profil.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1377,9 +1351,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/sql/database-init.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="64" column="52" lean-forward="true" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+        <state relative-caret-position="126">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/daos/CommandeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+          <folding>
+            <marker date="1523796606000" expanded="true" signature="613:684" ph="INSERT INTO commande... " />
+            <marker date="1523796606000" expanded="true" signature="1342:1438" ph="SELECT * FRO... commande" />
+            <marker date="1523796606000" expanded="true" signature="1342:1459" ph="SELECT * FRO... commande" />
+            <marker date="1523796606000" expanded="true" signature="2665:2771" ph="SELECT * FRO... commande" />
+            <marker date="1523796606000" expanded="true" signature="2665:2792" ph="SELECT * FRO... commande" />
+            <marker date="1523796606000" expanded="true" signature="3740:3794" ph="UPDATE comma... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="15" column="108" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/livraisondetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,60 +1,61 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <title>North-Fresh Farmers</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-</head>
+    <head>
+        <title>North-Fresh Farmers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    </head>
 
-<body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
+    <body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
 
-<div class="container-fluid">
-    <header th:replace="~{common::header}"></header>
-</div>
+        <div class="container-fluid">
+            <header th:replace="~{common::header}"></header>
+        </div>
 
-<div class="d-flex justify-content-center">
-    <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
-        <div class="container">
-            <div th:if="${session.user==null}">Vous devez vous connecter pour accéder à cette page.</div>
-            <div th:if="${session.user!=null}">
-            <h3>Bienvenue, [[${session.user.prenom}]] [[${session.user.nom}]]</h3>
-            <p class="sousTitre">Adresse mail : [[${session.user.email}]]</p>
-        <h4>Tes livraisons</h4>
-            <div th:if="${listelivraisonuser.isEmpty()}"> Tu ne t'es pas encore inscrit à une livraison...</div>
-            <div th:if="${listelivraisonuser.isEmpty()==false}">
-            <p class="sousTitre">Voici les livraisons auxquelles tu t'es inscrit.</p>
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>ID Commande</th>
-                    <th>Contenu</th>
-                    <th>Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each="commandeparuser : ${listelivraisonuser}">
-                    <td th:text="${commandeparuser.idCommande}"></td>
-                    <td th:text="${commandeparuser.contenu}"></td>
-                    <td th:text="${commandeparuser.date}"></td>
-                    <td>
-                        <button type="button" class="btn btn-primary " style="background-color:red; color:white;">
-                            <a th:href="'suppressioncommande?confirmation=true&idcommande='+${commandeparuser.idCommande}">Supprimer la commande</a>
-                        </button>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div></div>
+        <div class="d-flex justify-content-center">
+            <div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
+                <div class="container">
+                    <div th:if="${session.user==null}">Vous devez vous connecter pour accéder à cette page.</div>
+                    <div th:if="${session.user!=null}">
+                        <h3>Bienvenue, [[${session.user.prenom}]] [[${session.user.nom}]]</h3>
+                        <p class="sousTitre">Adresse mail : [[${session.user.email}]]</p>
+                        <h4>Tes commandes</h4>
+                        <div th:if="${listelivraisonuser.isEmpty()}"> Tu ne t'es pas encore inscrit à une livraison...</div>
+                        <div th:if="${listelivraisonuser.isEmpty()==false}">
+                            <p class="sousTitre">Voici les livraisons auxquelles tu t'es inscrit.</p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID Commande</th>
+                                            <th>Contenu</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr th:each="commandeparuser : ${listelivraisonuser}">
+                                            <td th:text="${commandeparuser.idCommande}"></td>
+                                            <td th:text="${commandeparuser.contenu}"></td>
+                                            <td th:text="${commandeparuser.date}"></td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary " style="background-color:red; color:white;">
+                                                    <a th:href="'suppressioncommande?confirmation=true&idcommande='+${commandeparuser.idCommande}">Supprimer la commande</a>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-<footer th:replace="~{common::footer}"></footer>
+        <footer th:replace="~{common::footer}"></footer>
 
-</body>
+    </body>
 </html>
