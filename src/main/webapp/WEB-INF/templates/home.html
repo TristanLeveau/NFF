@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-
 	<head>
 		<title>North-Fresh Farmers</title>
 		<meta charset="UTF-8">
@@ -14,60 +13,48 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 
-
 	<body style="color:black; background-image:url(img/imagefond.jpg);opacity:0.95;filter:alpha(opacity=95);  ">
-<div class="container-fluid" th:if="${session.user!=null}">
-	<header th:replace="~{common::header}"></header>
-</div>
 
-<div class="d-flex justify-content-center">
-	<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
-	<div id="mainContent" class="container-fluid" >
-		<div th:if="${session.user==null}">Vous devez vous connecter pour accéder à cette page.</div>
-		<div th:if="${session.user!=null}">
-		<h3>Bonjour, [[${session.user.prenom}]] [[${session.user.nom}]]</h3>
-		<h3>Commandes ton panier North-Fresh Farmers</h3>
-		<h4>Choisis la date à laquelle tu souhaites recevoir ton panier : </h4>
-
-		<div class="table-responsive">
-			<table class="table">
-				<thead>
-				<tr>
-					<th>Date</th>
-					<th>Contenu</th>
-					<th>Détails</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr th:each="livraison : ${livraisons}">
-					<td th:text="${livraison.date}"></td>
-					<td th:text="${livraison.contenu}"></td>
-					<td><a th:href="'livraisondetails?idlivraison='+${livraison.idLivraison}" type="button" class="btn btn-info btn-lg">Participer</a></td>
-				</tr>
-				</tbody>
-			</table>
+		<div class="container-fluid" th:if="${session.user!=null}">
+			<header th:replace="~{common::header}"></header>
 		</div>
 
+		<div class="d-flex justify-content-center">
+			<div class="jumbotron jumbotron-fluid" style="width: 85%; align-self: center">
+				<div class="container">
+					<div th:if="${session.user==null}">Vous devez vous connecter pour accéder à cette page.</div>
+					<div th:if="${session.user!=null}">
+						<h3>Bonjour, [[${session.user.prenom}]] [[${session.user.nom}]]</h3>
+						<h3>Commandes ton panier North-Fresh Farmers</h3>
+						<h4>Choisis la date à laquelle tu souhaites recevoir ton panier : </h4>
 
-		<a class="nav-link disabled red" href="javascript:AccesProtege()">Administration</a>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Date</th>
+										<th>Contenu</th>
+										<th>Détails</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr th:each="livraison : ${livraisons}">
+										<td th:text="${livraison.date}"></td>
+										<td th:text="${livraison.contenu}"></td>
+										<td><a th:href="'livraisondetails?idlivraison='+${livraison.idLivraison}" type="button" class="btn btn-info btn-lg">Participer</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<a class="nav-link disabled red" href="javascript:AccesProtege()">Administration</a>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 
-	</div>
-	</div>
-</div>
-</div>
+		<footer th:replace="~{common::footer}"></footer>
 
+	</body>
 
-
-	<hr align="center" size="4" color="black" width="80%">
-
-
-</div>
-
-
-<footer th:replace="~{common::footer}"></footer>
-
-
-</body>
 </html>

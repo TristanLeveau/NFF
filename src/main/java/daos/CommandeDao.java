@@ -35,7 +35,7 @@ public class CommandeDao {
 
         List<CommandeParLivraison> ListeCommandeParLivraison = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-    PreparedStatement statement = connection.prepareStatement("SELECT * FROM commande a, user b WHERE a.idusercommande = b.iduser AND a.idlivraisoncommande = ?")) {
+    PreparedStatement statement = connection.prepareStatement("SELECT * FROM commande a, user b WHERE a.idusercommande = b.iduser AND a.idlivraisoncommande = ? AND a.supprime=false")) {
                     statement.setInt(1, idLivraison);
                     try (ResultSet resultSet = statement.executeQuery()) {
                         while (resultSet.next()) {
@@ -61,7 +61,7 @@ public class CommandeDao {
 
         List<CommandeParUser> ListeCommandeParLivraison = new ArrayList<>();
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
-             PreparedStatement statement = connection.prepareStatement("SELECT * FROM commande a, livraison b WHERE a.idlivraisoncommande = b.idlivraison AND a.idusercommande = ?")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT * FROM commande a, livraison b WHERE a.idlivraisoncommande = b.idlivraison AND a.idusercommande = ? AND a.supprime=false")) {
             statement.setInt(1, idUser);
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
@@ -79,6 +79,17 @@ public class CommandeDao {
         }
         return ListeCommandeParLivraison;
 
+    }
+
+    // Supprime une commande
+    public void supprimerCommande(Integer idCommande) {
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("UPDATE commande SET supprime=true WHERE idcommande = ?")) {
+            statement.setInt(1, idCommande);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 

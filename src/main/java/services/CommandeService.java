@@ -31,4 +31,9 @@ public class CommandeService {
         commandeDao.addCommande(idUser, idLivraison);
     }
 
+    public void supprimerCommande(Integer idCommande){
+        commandeDao.supprimerCommande(idCommande);
+    }
+
+
 }

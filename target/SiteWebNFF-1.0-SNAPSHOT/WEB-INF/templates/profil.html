@@ -40,6 +40,11 @@
                     <td th:text="${commandeparuser.idCommande}"></td>
                     <td th:text="${commandeparuser.contenu}"></td>
                     <td th:text="${commandeparuser.date}"></td>
+                    <td>
+                        <button type="button" class="btn btn-primary " style="background-color:red; color:white;">
+                            <a th:href="'suppressioncommande?confirmation=true&idcommande='+${commandeparuser.idCommande}">Supprimer la commande</a>
+                        </button>
+                    </td>
                 </tr>
                 </tbody>
             </table>

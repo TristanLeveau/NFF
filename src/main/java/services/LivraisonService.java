@@ -13,9 +13,7 @@ public class LivraisonService {
 
     private LivraisonDao livraisonDao = new LivraisonDao();
 
-    private static class LivraisonServiceHolder {
-        private static LivraisonService instance = new LivraisonService();
-    }
+    private static class LivraisonServiceHolder { private static LivraisonService instance = new LivraisonService();}
 
     public static LivraisonService getInstance() {
         return LivraisonServiceHolder.instance;
@@ -23,22 +21,22 @@ public class LivraisonService {
 
     private LivraisonService() { }
 
-    public List<Livraison> listAllLivraisons() {
-        return livraisonDao.listLivraisons();
+    public List<Livraison> listAllLivraisons() { return livraisonDao.listLivraisons(); }
 
-    }
+    public List<Livraison> listLivraisonsSupprimees() { return livraisonDao.listLivraisonsSupprimees(); }
 
     public Livraison getLivraison(Integer idLivraison) {
         return livraisonDao.getLivraison(idLivraison);
     }
 
-    public void addLivraison(Livraison newLivraison) throws IOException {
-        livraisonDao.addLivraison(newLivraison);
-    }
-
-
+    public void addLivraison(Livraison newLivraison) throws IOException { livraisonDao.addLivraison(newLivraison); }
 
     public void supprimerLivraison(Integer idLivraison){
         livraisonDao.supprimerLivraison(idLivraison);
     }
+
+    public void activerLivraison(Integer idLivraison){
+        livraisonDao.activerLivraison(idLivraison);
+    }
+
 }

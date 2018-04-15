@@ -34,6 +34,29 @@ public class LivraisonDao {
         return livraisons;
     }
 
+    public List<Livraison> listLivraisonsSupprimees() {
+        List<Livraison> livraisons = new ArrayList<>();
+
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM livraison WHERE supprime=true ORDER BY idlivraison")) {
+            while (resultSet.next()) {
+                livraisons.add(
+                        new Livraison(
+                                resultSet.getInt("idlivraison"),
+                                resultSet.getString("date"),
+                                resultSet.getString("contenu")
+                        ));
+
+
+            }
+        } catch (SQLException e) {
+            throw new NFFRuntimeException("Erreur lors de la récupération des livraisons", e);
+        }
+
+        return livraisons;
+    }
+
 
     // Retourne la livraison dont l'ID est demandé
     public Livraison getLivraison(Integer id) {
@@ -74,6 +97,17 @@ public class LivraisonDao {
     public void supprimerLivraison(Integer id) {
         try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
              PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET supprime=true WHERE idlivraison = ?")) {
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Active une livraison
+    public void activerLivraison(Integer id) {
+        try (Connection connection = DataSourceProvider.getInstance().getDataSource().getConnection();
+             PreparedStatement statement = connection.prepareStatement("UPDATE livraison SET supprime=false WHERE idlivraison = ?")) {
             statement.setInt(1, id);
             statement.executeUpdate();
         } catch (SQLException e) {
