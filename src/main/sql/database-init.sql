@@ -21,6 +21,7 @@ CREATE TABLE commande (
     idusercommande int(11),
     idlivraisoncommande int(11),
     nombrePaniers int,
+    supprime bit(1) NULL DEFAULT 0,
     PRIMARY KEY (idcommande),
     FOREIGN KEY (idusercommande) REFERENCES user(iduser),
     FOREIGN KEY (idlivraisoncommande) REFERENCES livraison(idlivraison)
@@ -48,18 +49,18 @@ CREATE TABLE commande (
         INSERT INTO livraison VALUES (9, 'Champignons Carottes Marrons','S2', '28/01/19',0);
         INSERT INTO livraison VALUES (10, 'Cerise Courgettes Concombre','S2', '05/02/19',0);
 
-        INSERT INTO commande VALUES (1, 1, 1, 1);
-        INSERT INTO commande VALUES (2, 1, 10, 1);
-        INSERT INTO commande VALUES (3, 2, 2, 2);
-        INSERT INTO commande VALUES (4, 2, 9, 2);
-        INSERT INTO commande VALUES (5, 3, 3, 2);
-        INSERT INTO commande VALUES (6, 3, 7, 2);
-        INSERT INTO commande VALUES (7, 4, 4, 2);
-        INSERT INTO commande VALUES (8, 5, 6, 2);
-        INSERT INTO commande VALUES (9, 6, 5, 2);
-        INSERT INTO commande VALUES (10, 6, 5, 2);
-        INSERT INTO commande VALUES (11, 7, 6, 2);
-        INSERT INTO commande VALUES (12, 7, 4, 2);
-        INSERT INTO commande VALUES (13, 8, 7, 2);
-        INSERT INTO commande VALUES (14, 9, 3, 2);
-        INSERT INTO commande VALUES (15, 10, 8, 2);
+        INSERT INTO commande VALUES (1, 1, 1, 1,0);
+        INSERT INTO commande VALUES (2, 1, 10, 1,0);
+        INSERT INTO commande VALUES (3, 2, 2, 2,0);
+        INSERT INTO commande VALUES (4, 2, 9, 2,0);
+        INSERT INTO commande VALUES (5, 3, 3, 2,0);
+        INSERT INTO commande VALUES (6, 3, 7, 2,0);
+        INSERT INTO commande VALUES (7, 4, 4, 2,0);
+        INSERT INTO commande VALUES (8, 5, 6, 2,0);
+        INSERT INTO commande VALUES (9, 6, 5, 2,0);
+        INSERT INTO commande VALUES (10, 6, 5, 2,0);
+        INSERT INTO commande VALUES (11, 7, 6, 2,0);
+        INSERT INTO commande VALUES (12, 7, 4, 2,0);
+        INSERT INTO commande VALUES (13, 8, 7, 2,0);
+        INSERT INTO commande VALUES (14, 9, 3, 2,0);
+        INSERT INTO commande VALUES (15, 10, 8,2,0);
