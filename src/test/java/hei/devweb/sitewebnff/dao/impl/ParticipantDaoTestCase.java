@@ -1,19 +1,9 @@
 package hei.devweb.sitewebnff.dao.impl;
 
 
-import daos.ParticipantDao;
-import org.junit.Assert.*;
-import org.assertj.core.api.Assertions;
-import daos.LivraisonDao;
-import org.junit.Before;
 import org.junit.Test;
-import pojos.Livraison;
 import pojos.Participant;
 
-import java.sql.ResultSet;
-
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 

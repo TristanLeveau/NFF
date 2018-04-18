@@ -13,11 +13,11 @@ public class DataSourceProvider {
 
 	public DataSource getDatasource() {
 		MysqlDataSource dataSource = new MysqlDataSource();
-		dataSource.setServerName("localhost");
+		dataSource.setServerName("jfrpocyduwfg38kq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com\t");
 		dataSource.setPort(3306);
-		dataSource.setDatabaseName("northfreshfarmers");
-		dataSource.setUser("root");
-		dataSource.setPassword("tristan123");
+		dataSource.setDatabaseName("b7traorj9eq6vt7m");
+		dataSource.setUser("mmfvxsar2cfss3lw");
+		dataSource.setPassword("xi7upgcxwlgyw6jy");
 
 		return dataSource;
 	}
