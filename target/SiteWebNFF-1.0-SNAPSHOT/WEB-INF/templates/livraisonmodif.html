@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Modifier la livraison</title>
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body style="color:black; background-image:url(img/imagefond.jpg); ">
+<header th:replace="~{common::header}"></header>
+
+<div id="mainContent" class="container-fluid">
+    <section class="ajoutlivraison">
+        <article class="livraisonCadre">
+            <h3>Modifier la livraison</h3>
+            <p class="alert alert-danger" role="alert" th:if="${errorMessage != null}" th:text="${errorMessage}"></p>
+            <form method="post" class="formulaireHorizontal" enctype="multipart/form-data">
+                <div class="groupeFormulaire">
+                    <label for="inputVille" class="colonne1 control-label">Semestre</label>
+                    <div class="colonne2">
+                        <select class="formulaireControle" name="semestre" id="inputVille" th:value="${livraison.semestre}">
+                            <option th:each="semestre : ${semestres}" th:value="${semestre.name()}" th:text="${semestre.label}"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="groupeFormulaire">
+                    <label for="inputResume" class="colonne1 control-label">Contenu</label>
+                    <div class="colonne3">
+                        <textarea class="formulaireControle" name="resume" id="inputResume" placeholder="Résumé" maxlength="150" th:value="${livraison.contenu}">[[${livraison.contenu}]]</textarea>
+                    </div>
+                </div>
+                <div class="groupeFormulaire">
+                    <label for="inputDate" class="colonne1 control-label">Date</label>
+                    <div class="colonne2">
+                        <input type="text" class="formulaireControle" name="date" id="inputDate" placeholder="JJ/MM/AAAA" maxlength="10" th:value="${livraison.date}">
+                    </div>
+                </div>
+                <div class="groupeFormulaire">
+                    <div class="colonne3">
+                        <button type="submit" class="bouton1">Modifier la livraison</button>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+</div>
+
+        <footer th:replace="~{common::footer}"></footer>
+
+</body>
+</html>
